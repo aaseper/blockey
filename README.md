@@ -1,1 +1,2 @@
-# blockey
+# Blockey: Gestor de contraseñas inclusivo basado en bitwarden
+Desarrollo de Blockey, un gestor de contraseñas diseñado especialmente para usuarios mayores o con necesidades especiales que enfrentan dificultades con las soluciones convencionales. Basado en el ampliamente utilizado Bitwarden, Blockey ha sido objeto de diversas mejoras y ajustes personalizados, respaldados por rigurosas pruebas, con el objetivo de proporcionar una experiencia segura y accesible para un público diverso y global.
