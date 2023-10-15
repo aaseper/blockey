@@ -1,0 +1,39 @@
+2023-10-14 19:28:52.567 +00:00 [Information] Identity started.
+2023-10-14 19:31:23.178 +00:00 [Error] Unsuccessful token response from https://identity.bitwarden.com/ for client "installation.6e5ca9fb-6095-4f62-95e1-b09b013f28f8" with status BadRequest-"Bad Request"
+2023-10-14 19:31:23.180 +00:00 [Error] Unable to send "POST" request to "https://push.bitwarden.com/push/register" because an access token was unable to be obtained
+2023-10-14 19:32:19.408 +00:00 [Error] The operation has timed out.
+System.TimeoutException: The operation has timed out.
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at Bit.Core.Services.MailKitSmtpMailDeliveryService.SendEmailAsync(MailMessage message) in /home/runner/work/server/server/src/Core/Services/Implementations/MailKitSmtpMailDeliveryService.cs:line 79
+   at Bit.Core.Services.HandlebarsMailService.SendWelcomeEmailAsync(User user) in /home/runner/work/server/server/src/Core/Services/Implementations/HandlebarsMailService.cs:line 266
+   at Bit.Core.Services.UserService.RegisterUserAsync(User user, String masterPassword, String token, Nullable`1 orgUserId) in /home/runner/work/server/server/src/Core/Services/Implementations/UserService.cs:line 326
+   at Bit.Identity.Controllers.AccountsController.PostRegister(RegisterRequestModel model) in /home/runner/work/server/server/src/Identity/Controllers/AccountsController.cs:line 42
+   at lambda_method9(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-14 19:33:43.981 +00:00 [Error] Unable to send "POST" request to "https://push.bitwarden.com/push/register" because an access token was unable to be obtained
+2023-10-14 19:35:18.181 +00:00 [Error] The operation has timed out.
+System.TimeoutException: The operation has timed out.
+   at MailKit.Net.SocketUtils.ConnectAsync(String host, Int32 port, IPEndPoint localEndPoint, Int32 timeout, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.MailService.ConnectNetwork(String host, Int32 port, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.ConnectAsync(String host, Int32 port, SecureSocketOptions options, Boolean doAsync, CancellationToken cancellationToken)
+   at Bit.Core.Services.MailKitSmtpMailDeliveryService.SendEmailAsync(MailMessage message) in /home/runner/work/server/server/src/Core/Services/Implementations/MailKitSmtpMailDeliveryService.cs:line 79
+   at Bit.Core.Services.HandlebarsMailService.SendWelcomeEmailAsync(User user) in /home/runner/work/server/server/src/Core/Services/Implementations/HandlebarsMailService.cs:line 266
+   at Bit.Core.Services.UserService.RegisterUserAsync(User user, String masterPassword, String token, Nullable`1 orgUserId) in /home/runner/work/server/server/src/Core/Services/Implementations/UserService.cs:line 326
+   at Bit.Identity.Controllers.AccountsController.PostRegister(RegisterRequestModel model) in /home/runner/work/server/server/src/Identity/Controllers/AccountsController.cs:line 42
+   at lambda_method9(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-14 19:40:18.208 +00:00 [Error] Unable to send "POST" request to "https://push.bitwarden.com/push/register" because an access token was unable to be obtained

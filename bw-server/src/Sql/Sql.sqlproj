@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="0.1.9-preview" />
+  <PropertyGroup>
+    <Name>Sql</Name>
+    <ProjectGuid>{58554e52-fdec-4832-aff9-302b01e08dca}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033,CI</ModelCollation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Build Remove="dbo_future/**/*"/>
+  </ItemGroup>
+</Project>

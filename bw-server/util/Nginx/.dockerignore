@@ -1,0 +1,9 @@
+*
+!entrypoint.sh
+!nginx.conf
+!proxy.conf
+!security-headers.conf
+!security-headers-ssl.conf
+!mime.types
+!logrotate.sh
+!setup-bwuser.sh
