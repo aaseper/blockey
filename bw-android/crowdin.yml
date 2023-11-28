@@ -1,0 +1,52 @@
+project_id_env: _CROWDIN_PROJECT_ID
+api_token_env: CROWDIN_API_TOKEN
+preserve_hierarchy: true
+files:
+  - source: /src/App/Resources/AppResources.resx
+    dest: /src/App/Resources/%original_file_name%
+    translation: /src/App/Resources/AppResources.%two_letters_code%.resx
+    update_option: update_as_unapproved
+    languages_mapping:
+      two_letters_code:
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+        pt-PT: pt-PT
+        pt-BR: pt-BR
+        en-GB: en-GB
+        en-IN: en-IN
+  - source: /store/apple/en/copy.resx
+    dest: /store/apple/en/%original_file_name%
+    translation: /store/apple/%two_letters_code%/copy.resx
+    update_option: update_as_unapproved
+    languages_mapping:
+      two_letters_code:
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+        pt-PT: pt-PT
+        pt-BR: pt-BR
+        en-GB: en-GB
+        en-IN: en-IN
+  - source: /store/google/en/copy.resx
+    dest: /store/google/en/%original_file_name%
+    translation: /store/google/%two_letters_code%/copy.resx
+    update_option: update_as_unapproved
+    languages_mapping:
+      two_letters_code:
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+        pt-BR: pt-BR
+        pt-PT: pt-PT
+        en-GB: en-GB
+        en-IN: en-IN
+  - source: "/src/watchOS/bitwarden/bitwarden WatchKit Extension/Localization/en.lproj/Localizable.strings"
+    dest: "/src/watchOS/bitwarden/bitwarden WatchKit Extension/Localization/en.lproj/%original_file_name%"
+    translation: "/src/watchOS/bitwarden/bitwarden WatchKit Extension/Localization//%two_letters_code%.lproj/%original_file_name%"
+    update_option: update_as_unapproved
+    languages_mapping:
+      two_letters_code:
+        zh-CN: zh-Hans
+        zh-TW: zh-Hant
+        pt-BR: pt-BR
+        pt-PT: pt-PT
+        en-GB: en-GB
+        en-IN: en-IN

@@ -1,0 +1,39 @@
+---
+name: Version Auto Bump
+
+on:
+  push:
+    tags:
+      - v**
+
+jobs:
+  setup:
+    name: "Setup"
+    runs-on: ubuntu-22.04
+    outputs:
+      version_number: ${{ steps.version.outputs.new-version }}
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+
+      - name: Calculate bumped version
+        id: version
+        env:
+          RELEASE_TAG: ${{ github.ref }}
+        run: |
+          CURR_MAJOR=$(echo $RELEASE_TAG | sed -r 's/refs\/tags\/v([0-9]{4}\.[0-9]{1,2})\.([0-9]{1,2})/\1/')
+          CURR_PATCH=$(echo $RELEASE_TAG | sed -r 's/refs\/tags\/v([0-9]{4}\.[0-9]{1,2})\.([0-9]{1,2})/\2/')
+          echo "Current Major: $CURR_MAJOR"
+          echo "Current Patch: $CURR_PATCH"
+
+          NEW_PATCH=$((CURR_PATCH+1))
+          NEW_VER=$CURR_MAJOR.$NEW_PATCH
+          echo "New Version: $NEW_VER"
+          echo "new-version=$NEW_VER" >> $GITHUB_OUTPUT
+
+  trigger_version_bump:
+    name: Bump version to ${{ needs.setup.outputs.version_number }}
+    needs: setup
+    uses: ./.github/workflows/version-bump.yml
+    with:
+      version_number: ${{ needs.setup.outputs.version_number }}
