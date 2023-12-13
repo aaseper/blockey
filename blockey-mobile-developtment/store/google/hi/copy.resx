@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>बिटवार्डन पासवर्ड मैनेजर</value>
+    <comment>Max 30 characters</comment>
+  </data>
+  <data name="ShortDescription" xml:space="preserve">
+    <value>बिटवाडर्न एक लॉगइन और पासवर्ड मैनेजर है जो आपको ऑनलाइन महफूज़ रखता है।</value>
+    <comment>Max 80 characters</comment>
+  </data>
+  <data name="FullDesciption" xml:space="preserve">
+    <value>बिटवार्डन अंतरराष्ट्रीय कॉरपोरेशन, 8बिट सॉल्यूश्नस एलएलसी की मूल कंपनी है।
+
+द वर्ज, यूएस न्यूज़ एंड वर्ल्ड रिपोर्ट, सीनेट, और कई दूसरे मीडिया संगठन द्वारा बोला गया दुनिया का सबसे बेहतरीन पासवर्ड मैनेजर।
+
+अनगिनत पासवर्ड मैनेज, स्टोर, महफूज़, और शेयर करें कही से भी। बिटवार्डन देता है ओपन सोर्स पासवर्ड मैनेजमेंट सुविधा सबको, चाहे वो घर पर हो, दफ्तर पर हो, या घूम रहे हो।
+
+आप जिन वेबसाइट पर जाते है उनके लिए बनाएं ताकतवर, खास, और बेतरतीब पासवर्ड उनकी सुरक्षा ज़रूरतो के हिसाब से।
+
+बिटवार्डन सेंड किसी को भी एन्क्रिप्टेड जानकारी, फाइल, और सादा टेक्सट, फौरन भेजें।
+
+बिटवार्डन कंपनियों के लिए टीम और बिज़नेस प्लान भी देता है ताकि आप अपने साथ काम करनेवालो के साथ पासवर्ड शेयर करे सुरक्षित होकर।
+
+बिटवार्डन को क्यों चुनें:
+
+ताकतवर एन्क्रिप्शन
+पासवर्ड एडवांस एंड-टू-एंड एन्क्रिप्शन (एईएस-256 बिट, सॉल्टेड हैशटैग, और पीबीकेडीएफ2 शा-256) के साथ सुरक्षित रखा जाता है ताकि आपका डाटा महफूज़ और निजी रहे।
+
+पहले से बना पासवर्ड जेनरेटर
+आप जिन वेबसाइट पर जाते है उनके लिए बनाएं ताकतवर, खास, और बेतरतीब पासवर्ड उनकी सुरक्षा ज़रूरतो के हिसाब से।
+
+अंतरराष्ट्रीय अनुवाद
+40 से ज़्यादा भाषा में बिटवार्डन इस्तेमाल करें, जिसे लिखा है हमारी अंतरराष्ट्रीय दोस्तो ने।
+
+कई प्लेनफॉर्म पर मौजूद
+अपने बिटवार्डन तिजोरी से संवेदनशील डाटा महफूज़ और शेयर करें किसी भी ब्राउज़र, फोन, या डेस्कटॉप जैसे डिवाइसो से।
+</value>
+  <comment>Max 4000 characters</comment>
+  </data>
+  <data name="FeatureGraphic" xml:space="preserve">
+    <value>आपके सारे डिवाइसो के लिए एक सुरक्षित और मुफ्त पासवर्ड मैनेजर</value>
+  </data>
+  <data name="Screenshot1" xml:space="preserve">
+    <value>एक सुरक्षित तिजोरी से अपने सारे लॉगइन और पासवर्ड मैनेज करें</value>
+  </data>
+  <data name="Screenshot2" xml:space="preserve">
+    <value>अपनेआप ताकतवर, बेतरतीब, और महफूज़ पासवर्ड बनाएं</value>
+  </data>
+  <data name="Screenshot3" xml:space="preserve">
+    <value>फिंगरप्रिंट, पिन कोड, या मुख्य पासवर्ड से अपनी तिजोरी सुरक्षित रखें</value>
+  </data>
+  <data name="Screenshot4" xml:space="preserve">
+    <value>अपने वेब ब्राउज़र और दूसरे ऐप से जल्दी लॉगइन करें</value>
+  </data>
+  <data name="Screenshot5" xml:space="preserve">
+    <value>अपने तिजोरी को अलग-अलग डिवाइसों से सिंक और एक्सेस करें
+
+- फोन
+- टैबलेट
+- डेस्कटॉप
+- वेब</value>
+  </data>
+</root>
