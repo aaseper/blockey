@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="1" android:versionName="2023.9.2" android:installLocation="internalOnly" package="com.x8bit.bitwarden">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="001" android:versionName="2023.12.13" android:installLocation="internalOnly" package="com.x8bit.bitwarden">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.NFC" />
@@ -13,7 +13,7 @@
 	<uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
 	<uses-feature android:name="android.hardware.camera" android:required="false" />
 	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
-	<application android:label="Bitwarden" android:theme="@style/LaunchTheme" android:allowBackup="false" tools:replace="android:allowBackup" android:icon="@mipmap/ic_launcher" android:networkSecurityConfig="@xml/network_security_config">
+	<application android:label="Blockey" android:theme="@style/LaunchTheme" android:allowBackup="false" tools:replace="android:allowBackup" android:icon="@mipmap/ic_launcher" android:networkSecurityConfig="@xml/network_security_config">
 		<provider android:name="androidx.core.content.FileProvider" android:authorities="com.x8bit.bitwarden.fileprovider" android:exported="false" android:grantUriPermissions="true">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths" />
 		</provider>
