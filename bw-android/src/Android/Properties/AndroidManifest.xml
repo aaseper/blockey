@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="001" android:versionName="2023.12.13" android:installLocation="internalOnly" package="com.x8bit.bitwarden">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="001" android:versionName="2023.12.17" android:installLocation="internalOnly" package="com.x8bit.bitwarden">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.NFC" />
@@ -25,7 +25,7 @@
 		<!-- Support for LG "Dual Window" mode (for Android < 7.0 users) -->
 		<meta-data android:name="com.lge.support.SPLIT_WINDOW" android:value="true" />
 		<!-- Declare MainActivity manually so we can set LaunchMode using API dependant resource -->
-		<activity android:name="com.x8bit.bitwarden.MainActivity" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|uiMode" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="Bitwarden" android:launchMode="@integer/launchModeAPIlevel" android:theme="@style/LaunchTheme">
+		<activity android:name="com.x8bit.bitwarden.MainActivity" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|uiMode" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="BlocKey" android:launchMode="@integer/launchModeAPIlevel" android:theme="@style/LaunchTheme">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
