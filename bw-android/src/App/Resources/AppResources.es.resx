@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -140,7 +140,7 @@
     <comment>Navigate back to the previous screen.</comment>
   </data>
   <data name="Bitwarden" xml:space="preserve">
-    <value>Bitwarden</value>
+    <value>Blockey</value>
     <comment>App name. Shouldn't ever change.</comment>
   </data>
   <data name="Cancel" xml:space="preserve">
@@ -461,7 +461,7 @@
     <value>Continuar</value>
   </data>
   <data name="CreateAccount" xml:space="preserve">
-    <value>Crear cuenta</value>
+    <value>Crear una cuenta</value>
   </data>
   <data name="CreatingAccount" xml:space="preserve">
     <value>Creando cuenta...</value>
@@ -566,7 +566,7 @@
     <comment>Message shown when interacting with the server</comment>
   </data>
   <data name="LoginOrCreateNewAccount" xml:space="preserve">
-    <value>Identifícate o crea una nueva cuenta para acceder a tu caja fuerte.</value>
+    <value>Iniciar sesión</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Gestionar</value>
@@ -838,7 +838,7 @@
     <comment>For 2FA</comment>
   </data>
   <data name="RememberMe" xml:space="preserve">
-    <value>Recordarme</value>
+    <value>Recuérdame</value>
     <comment>Remember my two-step login</comment>
   </data>
   <data name="SendVerificationCodeAgain" xml:space="preserve">
@@ -2246,7 +2246,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Números (0 al 9)</value>
   </data>
   <data name="SpecialCharacters" xml:space="preserve">
-    <value>Carácteres especiales (!@#$%^&amp;*)</value>
+    <value>Caracteres especiales (!@#$%^&amp;*)</value>
   </data>
   <data name="TapToGoBack" xml:space="preserve">
     <value>Toque para regresar</value>
@@ -2539,7 +2539,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Solicitudes rechazadas</value>
   </data>
   <data name="NoPendingRequests" xml:space="preserve">
-    <value>No hay solicitudes pendientes</value>  
+    <value>No hay solicitudes pendientes</value>
   </data>
   <data name="EnableCamerPermissionToUseTheScanner" xml:space="preserve">
     <value>Habilitar el permiso de la cámara para usar el escáner</value>
@@ -2760,6 +2760,6 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Log in with device</value>
   </data>
   <data name="LoggingInOn" xml:space="preserve">
-    <value>Logging in on</value>
+    <value>Iniciar sesión en: </value>
   </data>
 </root>

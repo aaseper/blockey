@@ -10,7 +10,7 @@ namespace Bit.Droid.Services
     {
         public CultureInfo GetCurrentCultureInfo()
         {
-            var netLanguage = "en";
+            var netLanguage = "es";
             var androidLocale = Java.Util.Locale.Default;
             netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));
             // This gets called a lot - try/catch can be expensive so consider caching or something

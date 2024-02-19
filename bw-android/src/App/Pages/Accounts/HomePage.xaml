@@ -8,7 +8,7 @@
     xmlns:u="clr-namespace:Bit.App.Utilities"
     x:DataType="pages:HomeViewModel"
     x:Name="_page"
-    Title="BlocKey">
+    Title="{Binding PageTitle}">
     <ContentPage.BindingContext>
         <pages:HomeViewModel />
     </ContentPage.BindingContext>
@@ -36,13 +36,13 @@
                     x:Name="_logo"
                     Source="logo.png"
                     VerticalOptions="Center" />
-                <Label Text="Iniciar sesión"
+                <Label Text="{u:I18n LoginOrCreateNewAccount}"
                         StyleClass="text-lg"
                         HorizontalTextAlignment="Center"/>
                 <StackLayout
                     StyleClass="box-row">
                     <Label
-                        Text="Correo electrónico"
+                        Text="{u:I18n EmailAddress}"
                         StyleClass="box-label" />
                     <Entry
                         x:Name="_email"
@@ -71,7 +71,7 @@
                                 Command="{Binding ShowEnvironmentPickerCommand}" />
                         </StackLayout.GestureRecognizers>
                         <Label
-                            Text="Iniciar sesión en: "
+                            Text="{Binding RegionText}"
                             FontSize="13"
                             TextColor="{DynamicResource MutedColor}"
                             VerticalOptions="Center"
@@ -92,7 +92,7 @@
                                 Command="{Binding RememberEmailCommand}" />
                         </StackLayout.GestureRecognizers>
                         <Label
-                            Text="Recuérdame"
+                            Text="{u:I18n RememberMe}"
                             StyleClass="text-sm"
                             HorizontalOptions="FillAndExpand"
                             VerticalOptions="Center"
@@ -106,14 +106,14 @@
                             />
                     </StackLayout>
                 </StackLayout>
-                <Button Text="Continuar"
+                <Button Text="{u:I18n Continue}"
                         StyleClass="btn-primary"
                         IsEnabled="{Binding CanContinue}"
                         Command="{Binding ContinueCommand}"
                         AutomationId="ContinueButton"
                         />
                         
-                <Label FormattedText="Crear una cuenta"
+                <Label FormattedText="{Binding CreateAccountText}"
                        Margin="0, 10"
                         StyleClass="box-footer-label"
                         AutomationId="CreateAccountLabel">

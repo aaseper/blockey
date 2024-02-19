@@ -24,10 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		.github\workflows\build.yml = .github\workflows\build.yml
-		CONTRIBUTING.md = CONTRIBUTING.md
 		crowdin.yml = crowdin.yml
-		README.md = README.md
-		SECURITY.md = SECURITY.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Publisher", "store\google\Publisher\Publisher.csproj", "{256F9E44-0AF5-4D97-A2F9-DA26080C0A5D}"
