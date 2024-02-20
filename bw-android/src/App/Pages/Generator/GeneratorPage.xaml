@@ -534,6 +534,14 @@
                                 Text="{u:I18n AvoidAmbiguousCharacters}"
                                 StyleClass="box-label-regular"
                                 HorizontalOptions="StartAndExpand" />
+                            <Label
+                                Text="Caracteres que se pueden confundir, como la 'l' y la 'i' mayúscula"
+                                StyleClass="box-sub-label"
+                                HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="End"
+                                VerticalOptions="FillAndExpand"
+                                VerticalTextAlignment="Center"
+                                AutomationId="AvoidAmbiguousCharactersValueLabel" />
                             <Switch
                                 IsToggled="{Binding AvoidAmbiguousChars}"
                                 StyleClass="box-value"
