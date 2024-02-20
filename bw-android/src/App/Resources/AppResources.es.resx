@@ -2483,9 +2483,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>La solicitud de acceso ya ha caducado.</value>
   </data>
   <data name="LoginAttemptFromXDoYouWantToSwitchToThisAccount" xml:space="preserve">
-    <value>Intento de inicio de sesión desde:
-{0}
-¿Desea cambiar a esta cuenta?</value>
+    <value>Intento de inicio de sesión desde: {0} ¿Desea cambiar a esta cuenta?</value>
   </data>
   <data name="NewAroundHere" xml:space="preserve">
     <value>¿Nuevo por aquí?</value>
@@ -2569,7 +2567,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Contraseña débil identificada. Utilice una contraseña fuerte para proteger su cuenta. ¿Está seguro de que desea utilizar una contraseña débil?</value>
   </data>
   <data name="Weak" xml:space="preserve">
-    <value>Débil</value>
+    <value>Débil. Añada símbolos y números</value>
   </data>
   <data name="Good" xml:space="preserve">
     <value>Bueno</value>
@@ -2760,6 +2758,6 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Log in with device</value>
   </data>
   <data name="LoggingInOn" xml:space="preserve">
-    <value>Iniciar sesión en: </value>
+    <value>Iniciar sesión en</value>
   </data>
 </root>

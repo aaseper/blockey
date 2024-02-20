@@ -56,6 +56,7 @@ namespace Bit.App.Pages
                 onException: _logger.Exception, allowsMultipleExecutions: false);
             ShowEnvironmentPickerCommand = new AsyncCommand(ShowEnvironmentPickerAsync,
                 onException: _logger.Exception, allowsMultipleExecutions: false);
+            ShowHelpCommand = new AsyncCommand(ShowHelpAsync, allowsMultipleExecutions: false);
             InitAsync().FireAndForget();
         }
 
@@ -116,6 +117,7 @@ namespace Bit.App.Pages
         public AsyncCommand CloseCommand { get; }
         public AsyncCommand CreateAccountCommand { get; }
         public AsyncCommand ShowEnvironmentPickerCommand { get; }
+        public AsyncCommand ShowHelpCommand { get; }
 
         public async Task InitAsync()
         {
@@ -212,6 +214,18 @@ namespace Bit.App.Pages
             {
                 await _configService.GetAsync(true);
                 SelectedEnvironmentName = AppResources.SelfHosted;
+            }
+        }
+
+        public async Task ShowHelpAsync()
+        {
+            try
+            {
+            }
+            catch (Exception ex)
+            {
+                _logger.Exception(ex);
+                await _platformUtilsService.ShowDialogAsync(AppResources.GenericErrorMessage, AppResources.AnErrorHasOccurred, AppResources.Ok);
             }
         }
     }
