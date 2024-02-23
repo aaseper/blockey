@@ -177,7 +177,6 @@ namespace Bit.App.Utilities
             }
             else if (selection == AppResources.Edit)
             {
-                await page.Navigation.PushModalAsync(new NavigationPage(new SendAddEditPage(null, send.Id)));
             }
             else if (selection == AppResources.CopyLink)
             {
@@ -442,11 +441,6 @@ namespace Bit.App.Utilities
                     appOptions.OtpData != null)
                 {
                     Application.Current.MainPage = new NavigationPage(new CipherSelectionPage(appOptions));
-                    return true;
-                }
-                if (appOptions.CreateSend != null)
-                {
-                    Application.Current.MainPage = new NavigationPage(new SendAddEditPage(appOptions));
                     return true;
                 }
             }

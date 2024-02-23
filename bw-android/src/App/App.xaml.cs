@@ -529,9 +529,6 @@ namespace Bit.App
                 case NavigationTarget.OtpCipherSelection:
                     Current.MainPage = new NavigationPage(new CipherSelectionPage(Options));
                     break;
-                case NavigationTarget.SendAddEdit:
-                    Current.MainPage = new NavigationPage(new SendAddEditPage(Options));
-                    break;
             }
         }
     }

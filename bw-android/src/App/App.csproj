@@ -118,10 +118,6 @@
       <DependentUpon>ResetMasterPasswordPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Send\SendGroupingsPage\SendGroupingsPage.xaml.cs">
-      <DependentUpon>SendGroupingsPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Remove="Pages\Accounts\AccountsPopupPage.xaml.cs" />
     <Compile Update="Pages\Accounts\LoginPasswordlessPage.xaml.cs">
       <DependentUpon>LoginPasswordlessPage.xaml</DependentUpon>
