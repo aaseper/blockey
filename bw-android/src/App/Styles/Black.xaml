@@ -15,8 +15,8 @@
     <Color x:Key="InputPlaceholderColor">#707070</Color>
     <Color x:Key="DangerPressedColor">#ff715e</Color>
 
-    <Color x:Key="BackgroundColor">#000000</Color>
-    <Color x:Key="SplashBackgroundColor">#000000</Color>
+    <Color x:Key="BackgroundColor">#0A0A0A</Color>
+    <Color x:Key="SplashBackgroundColor">#0A0A0A</Color>
     <Color x:Key="BorderColor">#282828</Color>
     <Color x:Key="DisabledIconColor">#c7c7cd</Color>
     <Color x:Key="SeparatorColor">#282828</Color>
@@ -31,12 +31,12 @@
 
     <Color x:Key="ListItemBorderColor">#191919</Color>
     <Color x:Key="ListSectionBorderColor">#282828</Color>
-    <Color x:Key="ListSectionBorderBottomColor">#000000</Color>
+    <Color x:Key="ListSectionBorderBottomColor">#0A0A0A</Color>
     <Color x:Key="ListHeaderTextColor">#52bdfb</Color>
-    <Color x:Key="ListHeaderBackgroundColor">#000000</Color>
+    <Color x:Key="ListHeaderBackgroundColor">#0A0A0A</Color>
 
     <Color x:Key="SliderThumbColor">#B9B9B9</Color>
-    <Color x:Key="SliderThumbBorderColor">#000000</Color>
+    <Color x:Key="SliderThumbBorderColor">#0A0A0A</Color>
     <Color x:Key="SliderTrackMinColor">#52bdfb</Color>
     <Color x:Key="SliderTrackMaxColor">#282828</Color>
 
@@ -63,11 +63,11 @@
     <Color x:Key="FabColor">#52bdfb</Color>
     <Color x:Key="FabPressedColor">#3ea1da</Color>
 
-    <Color x:Key="TabBarBackgroundColor">#000000</Color>
+    <Color x:Key="TabBarBackgroundColor">#0A0A0A</Color>
     <Color x:Key="TabBarItemColor">#C0C0C0</Color>
     <Color x:Key="TabBarSelectedItemColor">#52bdfb</Color>
 
-    <Color x:Key="NavigationBarBackgroundColor">#000000</Color>
+    <Color x:Key="NavigationBarBackgroundColor">#0A0A0A</Color>
     <Color x:Key="NavigationBarTextColor">#ffffff</Color>
     
     <Color x:Key="HyperlinkColor">#52bdfb</Color>

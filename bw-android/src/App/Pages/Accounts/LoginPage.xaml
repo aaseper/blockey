@@ -39,7 +39,7 @@
             <ToolbarItem Text="{u:I18n GetPasswordHint}"
                 x:Key="getPasswordHint"
                 x:Name="_getPasswordHint"
-                Clicked="Hint_Clicked" 
+                Clicked="Hint_Clicked"
                 Order="Secondary" />
             <ToolbarItem Text="{u:I18n RemoveAccount}"
                 x:Key="removeAccount"
@@ -113,15 +113,6 @@
                                 Clicked="LogIn_Clicked"
                                 AutomationId="LogInWithMasterPasswordButton"
                                 />
-                        <controls:IconLabelButton
-                            HorizontalOptions="Fill"
-                            VerticalOptions="CenterAndExpand"
-                            Icon="{Binding Source={x:Static core:BitwardenIcons.Device}}"
-                            Label="{u:I18n LogInWithAnotherDevice}"
-                            ButtonCommand="{Binding LogInWithDeviceCommand}"
-                            IsVisible="{Binding IsKnownDevice}"
-                            AutomationId="LogInWithAnotherDeviceButton"
-                            />
                         <Label
                             Text="{Binding LoggingInAsText}"
                             StyleClass="text-sm"

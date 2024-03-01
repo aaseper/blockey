@@ -284,7 +284,7 @@ namespace Bit.App.Pages
         private async void Exit_Clicked(object sender, EventArgs e)
         {
             await _accountListOverlay.HideAsync();
-            await _vm.ExitAsync();
+            _vm.Exit();
         }
 
         private async void AddButton_Clicked(object sender, EventArgs e)

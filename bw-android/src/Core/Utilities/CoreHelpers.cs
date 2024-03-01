@@ -269,10 +269,10 @@ namespace Bit.Core.Utilities
             if (new ColorConverter().ConvertFromString(hexColor) is Color bgColor)
             {
                 var luminance = bgColor.R * 0.299 + bgColor.G * 0.587 + bgColor.B * 0.114;
-                return luminance > threshold ? "#ff000000" : "#ffffffff";
+                return luminance > threshold ? "#ff0A0A0A" : "#ffffffff";
             }
 
-            return "#ff000000";
+            return "#ff0A0A0A";
         }
 
         public static string StringToColor(string str, string fallback)

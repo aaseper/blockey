@@ -130,10 +130,10 @@
                         Text="¿Tiene problemas para iniciar sesión?"
                         StyleClass="box-label" />
                     <Button Text="Ayuda"
-                            StyleClass="btn-secondary"
+                            StyleClass="btn-primary"
                             IsEnabled="{Binding CanContinue}"
                             Command="{Binding ShowHelpCommand}"
-                            AutomationId="CreateAccountLabel"
+                            AutomationId="ShowHelpButton"
                             />
                 </StackLayout>
             </StackLayout>

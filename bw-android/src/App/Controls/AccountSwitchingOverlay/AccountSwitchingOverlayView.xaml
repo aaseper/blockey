@@ -9,7 +9,7 @@
     x:Name="_mainOverlay"
     x:DataType="controls:AccountSwitchingOverlayViewModel"
     x:Class="Bit.App.Controls.AccountSwitchingOverlayView"
-    BackgroundColor="#22000000"
+    BackgroundColor="#220A0A0A"
     Padding="0"
     IsVisible="False">
     <StackLayout

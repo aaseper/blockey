@@ -273,7 +273,7 @@
     <comment>The log out button text (verb).</comment>
   </data>
   <data name="LogoutConfirmation" xml:space="preserve">
-    <value>¿Estás seguro de querer cerrar sesión?</value>
+    <value>¿Está seguro de querer cerrar sesión?</value>
   </data>
   <data name="RemoveAccount" xml:space="preserve">
     <value>Eliminar cuenta</value>
@@ -644,7 +644,7 @@
     <value>Te hemos enviado un correo electrónico con la pista de tu contraseña maestra.</value>
   </data>
   <data name="PasswordOverrideAlert" xml:space="preserve">
-    <value>¿Estás seguro de que quieres sobreescribir la contraseña actual?</value>
+    <value>¿Está seguro de que quieres sobreescribir la contraseña actual?</value>
   </data>
   <data name="PushNotificationAlert" xml:space="preserve">
     <value>Bitwarden mantiene tu caja fuerte automáticamente sincronizada utilizando notificaciones push. Para tener la mejor experiencia posible, por favor, pulsa "Permitir" en la próxima notificación donde se te pregunta si quieres habilitar las notificaciones push.</value>
@@ -793,7 +793,7 @@
     <value>¿Quieres autorellenar o ver esta entrada?</value>
   </data>
   <data name="BitwardenAutofillServiceMatchConfirm" xml:space="preserve">
-    <value>¿Estás seguro de que quieres autorellenar esta entrada? No es una coincidencia completa para "{0}".</value>
+    <value>¿Está seguro de que quieres autorellenar esta entrada? No es una coincidencia completa para "{0}".</value>
   </data>
   <data name="MatchingItems" xml:space="preserve">
     <value>Elementos coincidientes</value>
@@ -883,7 +883,7 @@
     <comment>Message shown when downloading a file</comment>
   </data>
   <data name="AttachmentLargeWarning" xml:space="preserve">
-    <value>Este adjunto ocupa {0}. ¿Estás seguro de que quieres descargarlo en tu dispositivo?</value>
+    <value>Este adjunto ocupa {0}. ¿Está seguro de que quieres descargarlo en tu dispositivo?</value>
     <comment>The placeholder will show the file size of the attachment. Ex "25 MB"</comment>
   </data>
   <data name="AuthenticatorKey" xml:space="preserve">
@@ -2182,7 +2182,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Eliminar tu cuenta es permanente</value>
   </data>
   <data name="DeleteAccountExplanation" xml:space="preserve">
-    <value>Tu cuenta y todos los datos asociados serán borrados e irrecuperables. ¿Estás seguro de que quieres continuar?</value>
+    <value>Tu cuenta y todos los datos asociados serán borrados e irrecuperables. ¿Está seguro de que quieres continuar?</value>
   </data>
   <data name="DeletingYourAccount" xml:space="preserve">
     <value>Eliminar tu cuenta</value>
@@ -2319,7 +2319,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Permitir captura de pantalla</value>
   </data>
   <data name="AreYouSureYouWantToEnableScreenCapture" xml:space="preserve">
-    <value>¿Estás seguro de que quieres activar captura de pantalla?</value>
+    <value>¿Está seguro de que quieres activar captura de pantalla?</value>
   </data>
   <data name="LogInRequested" xml:space="preserve">
     <value>Inicio de sesión solicitado</value>
@@ -2489,7 +2489,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>¿Nuevo por aquí?</value>
   </data>
   <data name="GetMasterPasswordwordHint" xml:space="preserve">
-    <value>Obtener pista de contraseña maestra</value>
+    <value>Si no recuerdas tu contraseña, pulsa aquí</value>
   </data>
   <data name="LoggingInAsXOnY" xml:space="preserve">
     <value>Iniciando sesión como {0} en {1}</value>

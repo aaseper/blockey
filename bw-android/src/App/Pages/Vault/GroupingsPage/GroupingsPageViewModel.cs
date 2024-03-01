@@ -455,9 +455,6 @@ namespace Bit.App.Pages
                 case CipherType.Login:
                     title = AppResources.Logins;
                     break;
-                case CipherType.SecureNote:
-                    title = AppResources.SecureNotes;
-                    break;
                 case CipherType.Card:
                     title = AppResources.Cards;
                     break;
@@ -497,14 +494,9 @@ namespace Bit.App.Pages
             await Page.Navigation.PushAsync(page);
         }
 
-        public async Task ExitAsync()
+        public void Exit()
         {
-            var confirmed = await _platformUtilsService.ShowDialogAsync(AppResources.ExitConfirmation,
-                   AppResources.Exit, AppResources.Yes, AppResources.Cancel);
-            if (confirmed)
-            {
-                _messagingService.Send("exit");
-            }
+            _messagingService.Send("exit");
         }
 
         public async Task SyncAsync()

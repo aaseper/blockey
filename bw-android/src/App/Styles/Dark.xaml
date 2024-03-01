@@ -36,7 +36,7 @@
     <Color x:Key="ListHeaderBackgroundColor">#222222</Color>
 
     <Color x:Key="SliderThumbColor">#B9B9B9</Color>
-    <Color x:Key="SliderThumbBorderColor">#000000</Color>
+    <Color x:Key="SliderThumbBorderColor">#0A0A0A</Color>
     <Color x:Key="SliderTrackMinColor">#52bdfb</Color>
     <Color x:Key="SliderTrackMaxColor">#191919</Color>
 

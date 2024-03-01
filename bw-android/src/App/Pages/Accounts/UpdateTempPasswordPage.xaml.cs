@@ -65,16 +65,11 @@ namespace Bit.App.Pages
             }
         }
 
-        private async void LogOut_Clicked(object sender, EventArgs e)
+        private void LogOut_Clicked(object sender, EventArgs e)
         {
             if (DoOnce())
             {
-                var confirmed = await _platformUtilsService.ShowDialogAsync(AppResources.LogoutConfirmation,
-                    AppResources.LogOut, AppResources.Yes, AppResources.Cancel);
-                if (confirmed)
-                {
-                    _vm.LogOutAction();
-                }
+                _vm.LogOutAction();
             }
         }
 

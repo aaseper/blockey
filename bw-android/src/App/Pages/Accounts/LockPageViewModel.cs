@@ -468,14 +468,9 @@ namespace Bit.App.Pages
             );
         }
 
-        public async Task LogOutAsync()
+        public void LogOut()
         {
-            var confirmed = await _platformUtilsService.ShowDialogAsync(AppResources.LogoutConfirmation,
-                AppResources.LogOut, AppResources.Yes, AppResources.Cancel);
-            if (confirmed)
-            {
-                _messagingService.Send("logout");
-            }
+            _messagingService.Send("logout");
         }
 
         public void ResetPinPasswordFields()

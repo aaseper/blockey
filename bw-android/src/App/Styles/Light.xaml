@@ -2,75 +2,75 @@
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     x:Class="Bit.App.Styles.Light">
-    <Color x:Key="TextColor">#000a4a</Color>
-    <Color x:Key="PrimaryColor">#d6dbf8</Color>
+    <Color x:Key="TextColor">#0A0A0A</Color>
+    <Color x:Key="PrimaryColor">#000a4a</Color>
     <Color x:Key="DangerColor">#dd4b39</Color>
-    <Color x:Key="SuccessColor">#00a65a</Color>
+    <Color x:Key="SuccessColor">#17dc47</Color>
     <Color x:Key="InfoColor">#555555</Color>
-    <Color x:Key="WarningColor">#bf7e16</Color>
+    <Color x:Key="WarningColor">#dc4717</Color>
     <Color x:Key="MutedColor">#777777</Color>
-    <Color x:Key="PasswordNumberColor">#b0b0cc</Color>
+    <Color x:Key="PasswordNumberColor">#243b6e</Color>
     <Color x:Key="PasswordSpecialColor">#c40800</Color>
-    <Color x:Key="ButtonColor">#d6dbf8</Color>
+    <Color x:Key="ButtonColor">#000a4a</Color>
     <Color x:Key="InputPlaceholderColor">#d0d0d0</Color>
     <Color x:Key="DangerPressedColor">#9a0007</Color>
 
-    <Color x:Key="BackgroundColor">#ffffff</Color>
-    <Color x:Key="SplashBackgroundColor">#ffffff</Color>
-    <Color x:Key="BorderColor">#dddddd</Color>
+    <Color x:Key="BackgroundColor">#F2F2F2</Color>
+    <Color x:Key="SplashBackgroundColor">#F2F2F2</Color>
+    <Color x:Key="BorderColor">#d6dbf8</Color>
     <Color x:Key="DisabledIconColor">#c7c7cd</Color>
-    <Color x:Key="SeparatorColor">#dddddd</Color>
+    <Color x:Key="SeparatorColor">#d6dbf8</Color>
     <Color x:Key="TouchColor">#bbbbbb</Color>
 
-    <Color x:Key="BoxBorderColor">#dddddd</Color>
+    <Color x:Key="BoxBorderColor">#d6dbf8</Color>
     <Color x:Key="BoxHeaderTextColor">#000a4a</Color>
 
-    <Color x:Key="TitleTextColor">#000a4a</Color>
-    <Color x:Key="TitleEntryTextColor">#000a4a</Color>
+    <Color x:Key="TitleTextColor">#F2F2F2</Color>
+    <Color x:Key="TitleEntryTextColor">#F2F2F2</Color>
     <Color x:Key="TitleEntryPlaceholderColor">#c0dbeb</Color>
 
-    <Color x:Key="ListItemBorderColor">#070808</Color>
-    <Color x:Key="ListSectionBorderColor">#dddddd</Color>
-    <Color x:Key="ListSectionBorderBottomColor">#dddddd</Color>
+    <Color x:Key="ListItemBorderColor">#f0f0f0</Color>
+    <Color x:Key="ListSectionBorderColor">#d6dbf8</Color>
+    <Color x:Key="ListSectionBorderBottomColor">#d6dbf8</Color>
     <Color x:Key="ListHeaderTextColor">#000a4a</Color>
     <Color x:Key="ListHeaderBackgroundColor">#efeff4</Color>
 
     <Color x:Key="SliderThumbColor">Default</Color>
     <Color x:Key="SliderThumbBorderColor">#b5b5b5</Color>
-    <Color x:Key="SliderTrackMinColor">#d6dbf8</Color>
-    <Color x:Key="SliderTrackMaxColor">#dddddd</Color>
-
-    <Color x:Key="SwitchOnColor">#d6dbf8</Color>
+    <Color x:Key="SliderTrackMinColor">#000a4a</Color>
+    <Color x:Key="SliderTrackMaxColor">#d6dbf8</Color>
+    
+    <Color x:Key="SwitchOnColor">#000a4a</Color>
     <Color x:Key="SwitchThumbColor">#ECECEC</Color>
 
-    <Color x:Key="StepperBackgroundColor">#eeeeee</Color>
-    <Color x:Key="StepperForegroundColor">#070808</Color>
+    <Color x:Key="StepperBackgroundColor">#E8EBFE</Color>
+    <Color x:Key="StepperForegroundColor">#0A0A0A</Color>
 
-    <Color x:Key="ButtonPrimaryBackgroundColor">#d6dbf8</Color>
-    <Color x:Key="ButtonPrimaryBackgroundColorPressed">#dcdcff</Color>
+    <Color x:Key="ButtonPrimaryBackgroundColor">#000a4a</Color>
+    <Color x:Key="ButtonPrimaryBackgroundColorPressed">#4c40cc</Color>
     <Color x:Key="ButtonPrimaryBackgroundColorDisabled">#bbbbbb</Color>
-    <Color x:Key="ButtonPrimaryTextColor">#000a4a</Color>
-    <Color x:Key="ButtonPrimaryTextColorDisabled">#000a4a</Color>
+    <Color x:Key="ButtonPrimaryTextColor">#F2F2F2</Color>
+    <Color x:Key="ButtonPrimaryTextColorDisabled">#F2F2F2</Color>
 
-    <Color x:Key="ButtonBackgroundColor">#eeeeee</Color>
-    <Color x:Key="ButtonBackgroundColorPressed">#cccccc</Color>
-    <Color x:Key="ButtonBackgroundColorDisabled">#eeeeee</Color>
-    <Color x:Key="ButtonBorderColor">#aaaaaa</Color>
-    <Color x:Key="ButtonTextColor">#000a4a</Color>
-    <Color x:Key="ButtonTextColorDisabled">#000a4a</Color>
-    <Color x:Key="ButtonTextColorOpacity">#000a4a</Color>
+    <Color x:Key="ButtonBackgroundColor">#E8EBFE</Color>
+    <Color x:Key="ButtonBackgroundColorPressed">#bdc4fb</Color>
+    <Color x:Key="ButtonBackgroundColorDisabled">#E8EBFE</Color>
+    <Color x:Key="ButtonBorderColor">#A8B0F8</Color>
+    <Color x:Key="ButtonTextColor">#0A0A0A</Color>
+    <Color x:Key="ButtonTextColorDisabled">#A8B0F8</Color>
+    <Color x:Key="ButtonTextColorOpacity">#990000</Color>
 
-    <Color x:Key="FabColor">#d6dbf8</Color>
-    <Color x:Key="FabPressedColor">#dcdcff</Color>
+    <Color x:Key="FabColor">#000a4a</Color>
+    <Color x:Key="FabPressedColor">#178bdc</Color>
 
-    <Color x:Key="TabBarBackgroundColor">#ffffff</Color>
+    <Color x:Key="TabBarBackgroundColor">#F2F2F2</Color>
     <Color x:Key="TabBarItemColor">#757575</Color>
-    <Color x:Key="TabBarSelectedItemColor">#d6dbf8</Color>
+    <Color x:Key="TabBarSelectedItemColor">#000a4a</Color>
 
-    <Color x:Key="NavigationBarBackgroundColor">#d6dbf8</Color>
-    <Color x:Key="NavigationBarTextColor">#000a4a</Color>
-
-    <Color x:Key="HyperlinkColor">#d6dbf8</Color>
-    <Color x:Key="FingerprintPhrase">#C01176</Color>
-    <Color x:Key="ScanningToggleModeTextColor">#dcdcff</Color>
+    <Color x:Key="NavigationBarBackgroundColor">#000a4a</Color>
+    <Color x:Key="NavigationBarTextColor">#F2F2F2</Color>
+    
+    <Color x:Key="HyperlinkColor">#000a4a</Color>
+    <Color x:Key="FingerprintPhrase">#dc177b</Color>
+    <Color x:Key="ScanningToggleModeTextColor">#949cf5</Color>
 </ResourceDictionary>

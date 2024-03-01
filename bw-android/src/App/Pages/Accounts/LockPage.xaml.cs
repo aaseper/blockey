@@ -161,7 +161,7 @@ namespace Bit.App.Pages
             await _accountListOverlay.HideAsync();
             if (DoOnce())
             {
-                await _vm.LogOutAsync();
+                _vm.LogOut();
             }
         }
 
@@ -187,7 +187,7 @@ namespace Bit.App.Pages
 
             if (selection == AppResources.LogOut)
             {
-                await _vm.LogOutAsync();
+                _vm.LogOut();
             }
         }
 

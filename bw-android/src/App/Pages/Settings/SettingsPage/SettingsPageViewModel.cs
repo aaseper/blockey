@@ -266,12 +266,7 @@ namespace Bit.App.Pages
 
         public async Task LogOutAsync()
         {
-            var confirmed = await _platformUtilsService.ShowDialogAsync(AppResources.LogoutConfirmation,
-                AppResources.LogOut, AppResources.Yes, AppResources.Cancel);
-            if (confirmed)
-            {
-                _messagingService.Send("logout");
-            }
+            _messagingService.Send("logout");
         }
 
         public async Task LockAsync()
