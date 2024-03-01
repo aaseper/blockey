@@ -127,7 +127,7 @@
                 <StackLayout
                     StyleClass="box-row">
                     <Label
-                        Text="¿Tiene problemas para inciar sesión?"
+                        Text="¿Tiene problemas para iniciar sesión?"
                         StyleClass="box-label" />
                     <Button Text="Ayuda"
                             StyleClass="btn-secondary"

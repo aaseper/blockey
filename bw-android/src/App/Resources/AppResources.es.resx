@@ -304,7 +304,7 @@
     <comment>Authenticator TOTP feature</comment>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Nombre</value>
+    <value>Título</value>
     <comment>Label for an entity name.</comment>
   </data>
   <data name="No" xml:space="preserve">
@@ -360,7 +360,7 @@
     <comment>The title for the tools page.</comment>
   </data>
   <data name="URI" xml:space="preserve">
-    <value>URI</value>
+    <value>Enlace</value>
     <comment>Label for a uri/url.</comment>
   </data>
   <data name="UseFingerprintToUnlock" xml:space="preserve">
@@ -1011,10 +1011,10 @@ El escaneo se realizará automáticamente.</value>
     <value>Tarjeta</value>
   </data>
   <data name="TypeIdentity" xml:space="preserve">
-    <value>Identidad</value>
+    <value>DNI</value>
   </data>
   <data name="TypeLogin" xml:space="preserve">
-    <value>Entrada</value>
+    <value>Sitio web</value>
   </data>
   <data name="TypeSecureNote" xml:space="preserve">
     <value>Nota segura</value>
@@ -1113,7 +1113,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Octubre</value>
   </data>
   <data name="PassportNumber" xml:space="preserve">
-    <value>Nº de pasaporte</value>
+    <value>Nº de DNI</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Teléfono</value>
@@ -1225,10 +1225,10 @@ El escaneo se realizará automáticamente.</value>
     <value>Eliminar</value>
   </data>
   <data name="NewUri" xml:space="preserve">
-    <value>Nueva URI</value>
+    <value>Nuevo enlace</value>
   </data>
   <data name="URIPosition" xml:space="preserve">
-    <value>URI {0}</value>
+    <value>Enlace {0}</value>
     <comment>Label for a uri/url with position. i.e. URI 1, URI 2, etc</comment>
   </data>
   <data name="BaseDomain" xml:space="preserve">
@@ -1252,7 +1252,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Empieza con</value>
   </data>
   <data name="URIMatchDetection" xml:space="preserve">
-    <value>Tipo de detección de URI</value>
+    <value>Tipo de detección de enlace</value>
   </data>
   <data name="MatchDetection" xml:space="preserve">
     <value>Tipo de detección</value>
@@ -1346,7 +1346,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Todos los elementos</value>
   </data>
   <data name="URIs" xml:space="preserve">
-    <value>URIs</value>
+    <value>Enlaces</value>
     <comment>Plural form of a URI</comment>
   </data>
   <data name="CheckingPassword" xml:space="preserve">
@@ -1536,11 +1536,11 @@ El escaneo se realizará automáticamente.</value>
     <comment>Clipboard is the operating system thing where you copy/paste data to on your device.</comment>
   </data>
   <data name="DefaultUriMatchDetection" xml:space="preserve">
-    <value>Detección por defecto de coincidencia de URI</value>
+    <value>Detección por defecto de coincidencia de enlace</value>
     <comment>Default URI match detection for auto-fill.</comment>
   </data>
   <data name="DefaultUriMatchDetectionDescription" xml:space="preserve">
-    <value>Elija el método de detección por defecto de coincidencia de URI que se utilizará para acciones de inicio de sesión como autorrellenado.</value>
+    <value>Elija el método de detección por defecto de coincidencia de enlace que se utilizará para acciones de inicio de sesión como autorrellenado.</value>
   </data>
   <data name="Theme" xml:space="preserve">
     <value>Tema</value>
@@ -1583,7 +1583,7 @@ El escaneo se realizará automáticamente.</value>
     <comment>'Solarized Dark' is the name of a specific color scheme. It should not be translated.</comment>
   </data>
   <data name="AutofillBlockedUris" xml:space="preserve">
-    <value>Autorellenar URIs bloqueadas</value>
+    <value>Autorellenar enlaces bloqueados</value>
   </data>
   <data name="AskToAddLogin" xml:space="preserve">
     <value>Pedir que se añada el inicio de sesión</value>
@@ -2495,10 +2495,10 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Iniciando sesión como {0} en {1}</value>
   </data>
   <data name="NotYou" xml:space="preserve">
-    <value>¿No eres tú?</value>
+    <value>¿No eres tú? Pulsa aquí para volver atrás</value>
   </data>
   <data name="LogInWithMasterPassword" xml:space="preserve">
-    <value>Iniciar sesión con contraseña maestra</value>
+    <value>Iniciar sesión</value>
   </data>
   <data name="LogInWithAnotherDevice" xml:space="preserve">
     <value>Iniciar sesión con otro dispositivo</value>
@@ -2709,44 +2709,44 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Block auto-fill</value>
   </data>
   <data name="AutoFillWillNotBeOfferedForTheseURIs" xml:space="preserve">
-    <value>Auto-fill will not be offered for these URIs.</value>
+    <value>Autocompletado no disponible para estos enlaces</value>
   </data>
   <data name="NewBlockedURI" xml:space="preserve">
-    <value>New blocked URI</value>
+    <value>Nuevo enlace bloqueado</value>
   </data>
   <data name="URISaved" xml:space="preserve">
-    <value>URI saved</value>
+    <value>Enlace guardado</value>
   </data>
   <data name="InvalidFormatUseHttpsHttpOrAndroidApp" xml:space="preserve">
     <value>Invalid format. Use https://, http://, or androidapp://</value>
     <comment>https://, http://, androidapp:// should not be translated</comment>
   </data>
   <data name="EditURI" xml:space="preserve">
-    <value>Edit URI</value>
+    <value>Editar enlace</value>
   </data>
   <data name="EnterURI" xml:space="preserve">
-    <value>Enter URI</value>
+    <value>Introducir enlace</value>
   </data>
   <data name="FormatXSeparateMultipleURIsWithAComma" xml:space="preserve">
-    <value>Format: {0}. Separate multiple URIs with a comma.</value>
+    <value>Formato: {0}. Separar multiples enlaces con una coma.</value>
   </data>
   <data name="FormatX" xml:space="preserve">
-    <value>Format: {0}</value>
+    <value>Formato: {0}</value>
   </data>
   <data name="InvalidURI" xml:space="preserve">
-    <value>Invalid URI</value>
+    <value>Enlace inválido</value>
   </data>
   <data name="URIRemoved" xml:space="preserve">
-    <value>URI removed</value>
+    <value>Enlace eliminado</value>
   </data>
   <data name="ThereAreNoBlockedURIs" xml:space="preserve">
-    <value>There are no blocked URIs</value>
+    <value>No hay enlaces bloqueados</value>
   </data>
   <data name="TheURIXIsAlreadyBlocked" xml:space="preserve">
-    <value>The URI {0} is already blocked</value>
+    <value>El enlace {0} ya está bloqueado</value>
   </data>
   <data name="CannotEditMultipleURIsAtOnce" xml:space="preserve">
-    <value>Cannot edit multiple URIs at once</value>
+    <value>No se pueden editar múltiples enlaces a la vez</value>
   </data>
   <data name="LoginApproved" xml:space="preserve">
     <value>Login approved</value>
