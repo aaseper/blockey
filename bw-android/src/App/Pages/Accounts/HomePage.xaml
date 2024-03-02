@@ -130,7 +130,7 @@
                         Text="¿Tiene problemas para iniciar sesión?"
                         StyleClass="box-label" />
                     <Button Text="Ayuda"
-                            StyleClass="btn-primary"
+                            StyleClass="btn-secondary"
                             IsEnabled="{Binding CanContinue}"
                             Command="{Binding ShowHelpCommand}"
                             AutomationId="ShowHelpButton"

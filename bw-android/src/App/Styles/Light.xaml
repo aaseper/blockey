@@ -41,7 +41,7 @@
     <Color x:Key="SliderTrackMaxColor">#d6dbf8</Color>
     
     <Color x:Key="SwitchOnColor">#000a4a</Color>
-    <Color x:Key="SwitchThumbColor">#ECECEC</Color>
+    <Color x:Key="SwitchThumbColor">#c7c7cd</Color>
 
     <Color x:Key="StepperBackgroundColor">#E8EBFE</Color>
     <Color x:Key="StepperForegroundColor">#0A0A0A</Color>
@@ -58,7 +58,7 @@
     <Color x:Key="ButtonBorderColor">#A8B0F8</Color>
     <Color x:Key="ButtonTextColor">#0A0A0A</Color>
     <Color x:Key="ButtonTextColorDisabled">#A8B0F8</Color>
-    <Color x:Key="ButtonTextColorOpacity">#990000</Color>
+    <Color x:Key="ButtonTextColorOpacity">#000a4a</Color>
 
     <Color x:Key="FabColor">#000a4a</Color>
     <Color x:Key="FabPressedColor">#178bdc</Color>

@@ -221,6 +221,9 @@ namespace Bit.App.Pages
         {
             try
             {
+                var a = await _platformUtilsService.ShowDialogAsync("Introduce debajo de \"Correo electrónico\" el correo de tu cuenta, y pulsa \"Continuar\". " +
+                    "\nSi no tienes una cuenta todavía, ¡pulsa \"Crear una cuenta\"!",
+                    "Cómo iniciar sesión", "Aceptar");
             }
             catch (Exception ex)
             {
