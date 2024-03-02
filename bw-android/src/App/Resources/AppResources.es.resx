@@ -132,7 +132,7 @@
     <comment>The title for the add item page.</comment>
   </data>
   <data name="AnErrorHasOccurred" xml:space="preserve">
-    <value>Ha ocurrido un error.</value>
+    <value>Ha ocurrido un error</value>
     <comment>Alert title when something goes wrong.</comment>
   </data>
   <data name="Back" xml:space="preserve">
@@ -251,7 +251,7 @@
     <comment>Title for the alert when internet connection is required to continue.</comment>
   </data>
   <data name="InvalidMasterPassword" xml:space="preserve">
-    <value>Contraseña maestra no válida. Inténtelo de nuevo.</value>
+    <value>La contraseña maestra es incorrecta. Inténtelo de nuevo.</value>
   </data>
   <data name="InvalidPIN" xml:space="preserve">
     <value>PIN no válido. Prueba de nuevo.</value>
@@ -1328,7 +1328,7 @@ El escaneo se realizará automáticamente.</value>
     <value>La forma más fácil de añadir nuevas entradas a su caja fuerte es utilizando la extensión de Autorellenado de contraseñas de Bitwarden. Aprenda más sobre cómo utilizar la extensión de Autorellenado de contraseñas de Bitwarden en la sección de "Ajustes".</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
-    <value>Dirección de correo electrónico inválida.</value>
+    <value>Dirección de correo electrónico incorrecta. Revisa que contenga el arroba (@).</value>
   </data>
   <data name="Cards" xml:space="preserve">
     <value>Tarjetas</value>
@@ -2450,7 +2450,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Sitio web (requerido)</value>
   </data>
   <data name="UnknownXErrorMessage" xml:space="preserve">
-    <value>Ha ocurrido un error desconocido {0}.</value>
+    <value>Ha ocurrido un error desconocido {0}</value>
   </data>
   <data name="PlusAddressedEmailDescription" xml:space="preserve">
     <value>Utilice las opciones de alias de su proveedor de correo electrónico</value>

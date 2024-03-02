@@ -277,7 +277,9 @@ namespace Bit.App.Pages
                 await _deviceActionService.HideLoadingAsync();
                 if (e?.Error != null)
                 {
-                    await _platformUtilsService.ShowDialogAsync(e.Error.GetSingleMessage(),
+                    await _platformUtilsService.ShowDialogAsync(e.Error.GetFullMessage().Contains("not a valid e-mail") ? "El campo correo electrónico es incorrecto. Revisa la ortografía, y que contenga el arroba (@) y algo después." :
+                        "Correo electrónico o contraseña mestra incorrecta. \nRevisa el correo electrónico y su ortografía por favor. Si está bien escrito, la contraseña es incorrecta. " +
+                        "\nSi no recuerdas la contraseña, pulsa en \"Si no recuerdas tu contraseña, pulsa aquí\" debajo del campo Contraseña maestra para pedir una pista de la contraseña.",
                         AppResources.AnErrorHasOccurred, AppResources.Ok);
                 }
             }
