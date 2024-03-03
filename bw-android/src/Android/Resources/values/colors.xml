@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <!-- Light System -->
-  <color name="colorPrimary">#d6dbf8</color>
+  <color name="colorPrimary">#738182</color>
   <color name="colorPrimaryDark">#000a4a</color>
-  <color name="primary">#d6dbf8</color>
+  <color name="primary">#738182</color>
   <color name="notificationBar">#000a4a</color>
-  <color name="border">#d6dbf8</color>
+  <color name="border">#738182</color>
 
   <!-- Dark System -->
   <color name="dark_primary">#d6dbf8</color>
