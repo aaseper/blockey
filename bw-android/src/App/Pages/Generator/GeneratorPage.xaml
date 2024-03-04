@@ -389,27 +389,24 @@
                         </StackLayout>
                     </StackLayout>
                     <StackLayout Spacing="0" Padding="0" IsVisible="{Binding IsPassword}">
-                        <StackLayout StyleClass="box-row, box-row-slider">
+                        <StackLayout StyleClass="box-row, box-row-stepper">
                             <Label
                                 Text="{u:I18n Length}"
-                                StyleClass="box-label-regular"
-                                VerticalOptions="CenterAndExpand" />
+                                VerticalOptions="FillAndExpand"
+                                VerticalTextAlignment="Center" />
                             <Label
                                 Text="{Binding Length}"
                                 StyleClass="box-sub-label"
-                                VerticalOptions="CenterAndExpand"
-                                HorizontalTextAlignment="End"
-                                WidthRequest="50"
-                                AutomationId="PasswordLengthLabel" />
-                            <controls:ExtendedSlider
-                                DragCompleted="LengthSlider_DragCompleted"
-                                Value="{Binding Length}"
-                                AutomationProperties.HelpText="{Binding Length}"
-                                StyleClass="box-value"
-                                VerticalOptions="CenterAndExpand"
                                 HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="End"
+                                VerticalOptions="FillAndExpand"
+                                VerticalTextAlignment="Center"
+                                AutomationId="PasswordLengthLabel" />
+                            <controls:ExtendedStepper
+                                Value="{Binding Length}"
                                 Maximum="128"
                                 Minimum="5"
+                                Increment="1"
                                 AutomationId="PasswordLengthSlider" />
                         </StackLayout>
                         <BoxView StyleClass="box-row-separator" />

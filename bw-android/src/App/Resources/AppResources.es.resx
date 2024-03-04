@@ -1334,10 +1334,10 @@ El escaneo se realizará automáticamente.</value>
     <value>Tarjetas</value>
   </data>
   <data name="Identities" xml:space="preserve">
-    <value>Identidades</value>
+    <value>DNIs</value>
   </data>
   <data name="Logins" xml:space="preserve">
-    <value>Inicios de sesión</value>
+    <value>Sitios web</value>
   </data>
   <data name="SecureNotes" xml:space="preserve">
     <value>Notas seguras</value>
