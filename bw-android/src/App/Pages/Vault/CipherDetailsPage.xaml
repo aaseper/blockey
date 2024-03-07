@@ -111,7 +111,8 @@
                                     AutomationId="ItemValue" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    ImageSource="copy.png"
+                                    Text=""
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="LoginUsername"
                                     Grid.Row="0"
@@ -182,7 +183,8 @@
                                     AutomationId="ShowValueButton" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    ImageSource="copy.png"
+                                    Text=""
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="LoginPassword"
                                     Grid.Row="0"
@@ -254,7 +256,8 @@
                                     VerticalOptions="FillAndExpand" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    ImageSource="copy.png"
+                                    Text=""
                                     Command="{Binding CopyCommand}"
                                     IsVisible="{Binding CanAccessPremium}"
                                     CommandParameter="LoginTotp"
@@ -335,7 +338,8 @@
                                     AutomationId="ShowValueButton" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    ImageSource="copy.png"
+                                    Text=""
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="CardNumber"
                                     Grid.Row="0"
@@ -419,7 +423,8 @@
                                     AutomationId="ShowValueButton" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    ImageSource="copy.png"
+                                    Text=""
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="CardCode"
                                     Grid.Row="0"
@@ -623,7 +628,8 @@
                                     AutomationProperties.Name="{u:I18n Launch}" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                    ImageSource="copy.png"
+                                    Text=""
                                     Command="{Binding CopyCommand}"
                                     CommandParameter="Fido2KeyApplication"
                                     Grid.Column="2"
@@ -689,7 +695,8 @@
                                                 AutomationId="LaunchUriButton" />
                                             <controls:IconButton
                                                 StyleClass="box-row-button, box-row-button-platform"
-                                                Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                                                ImageSource="copy.png"
+                                                Text=""
                                                 Command="{Binding BindingContext.CopyUriCommand, Source={x:Reference _page}}"
                                                 CommandParameter="{Binding .}"
                                                 Grid.Row="0"
@@ -809,7 +816,7 @@
             Clicked="EditButton_Clicked"
             Style="{StaticResource btn-fab}"
             AbsoluteLayout.LayoutFlags="PositionProportional"
-            AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+            AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize"
             AutomationProperties.IsInAccessibleTree="True"
             AutomationProperties.Name="{u:I18n EditItem}"
             AutomationId="CipherEditButton"

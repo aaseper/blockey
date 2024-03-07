@@ -113,7 +113,8 @@
 
     <controls:IconButton
         StyleClass="box-row-button, box-row-button-platform"
-        Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+        ImageSource="copy.png"
+        Text=""
         Command="{Binding CopyCommand}"
         CommandParameter="LoginTotp"
         Grid.Row="0"

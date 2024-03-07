@@ -149,7 +149,8 @@
                             AutomationId="LoginUsernameEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Generate}}"
+                            ImageSource="random.png"
+                            Text=""
                             Command="{Binding GenerateUsernameCommand}"
                             Grid.Column="1"
                             Grid.RowSpan="2"
@@ -212,7 +213,8 @@
                             AutomationId="ViewPasswordButton" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Generate}}"
+                            ImageSource="random.png"
+                            Text=""
                             Command="{Binding GeneratePasswordCommand}"
                             Grid.Row="0"
                             Grid.Column="3"
@@ -287,7 +289,8 @@
                             AutomationId="LoginTotpEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                            ImageSource="copy.png"
+                            Text=""
                             Command="{Binding CopyCommand}"
                             IsVisible="{Binding HasTotpValue}"
                             Grid.Row="0"

@@ -87,20 +87,32 @@
                         AutomationId="GeneratedPasswordLabel" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
-                        Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                        ImageSource="copy.png"
+                        Text=""
                         Command="{Binding CopyCommand}"
                         Grid.Column="1"
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n CopyPassword}"
                         AutomationId="CopyValueButton" />
+                    <Label
+                        Text="Copiar"
+                        StyleClass="box-sub-label"
+                        Grid.Column="1"
+                        HorizontalTextAlignment="Center" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
-                        Text="{Binding Source={x:Static core:BitwardenIcons.Generate}}"
+                        ImageSource="random.png"
+                        Text=""
                         Command="{Binding RegenerateCommand}"
                         Grid.Column="2"
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n GeneratePassword}"
                         AutomationId="RegenerateValueButton" />
+                    <Label
+                        Text="Nuevo"
+                        StyleClass="box-sub-label"
+                        Grid.Column="2"
+                        HorizontalTextAlignment="Center" />
                 </Grid>
                 <Grid IsVisible="{Binding IsUsername}"
                         StyleClass="box-row"                  
@@ -115,20 +127,32 @@
                         AutomationId="GeneratedPasswordLabel" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
-                        Text="{Binding Source={x:Static core:BitwardenIcons.Clone}}"
+                        ImageSource="copy.png"
+                        Text=""
                         Command="{Binding CopyCommand}"
                         Grid.Column="1"
                         AutomationProperties.IsInAccessibleTree="True"
-                        AutomationProperties.Name="{u:I18n CopyUsername}"
+                        AutomationProperties.Name="{u:I18n CopyPassword}"
                         AutomationId="CopyValueButton" />
+                    <Label
+                        Text="Copiar"
+                        StyleClass="box-sub-label"
+                        Grid.Column="1"
+                        HorizontalTextAlignment="Center" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
-                        Text="{Binding Source={x:Static core:BitwardenIcons.Generate}}"
-                        Command="{Binding RegenerateUsernameCommand}"
+                        ImageSource="random.png"
+                        Text=""
+                        Command="{Binding RegenerateCommand}"
                         Grid.Column="2"
                         AutomationProperties.IsInAccessibleTree="True"
-                        AutomationProperties.Name="{u:I18n GenerateUsername}"
+                        AutomationProperties.Name="{u:I18n GeneratePassword}"
                         AutomationId="RegenerateValueButton" />
+                    <Label
+                        Text="Nuevo"
+                        StyleClass="box-sub-label"
+                        Grid.Column="2"
+                        HorizontalTextAlignment="Center" />
                 </Grid>
                 <BoxView StyleClass="box-row-separator"/>
                 <StackLayout StyleClass="box"
