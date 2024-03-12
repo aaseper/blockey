@@ -127,9 +127,9 @@
                 <StackLayout
                     StyleClass="box-row">
                     <Label
-                        Text="¿Tiene problemas para iniciar sesión?"
+                        Text="{u:I18n AnyProblem}"
                         StyleClass="box-label" />
-                    <Button Text="Ayuda"
+                    <Button Text="{u:I18n Help}"
                             StyleClass="btn-secondary"
                             IsEnabled="{Binding CanContinue}"
                             Command="{Binding ShowHelpCommand}"

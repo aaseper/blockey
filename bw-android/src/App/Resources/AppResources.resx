@@ -120,6 +120,9 @@
   <data name="About" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
   <data name="Add" xml:space="preserve">
     <value>Add</value>
     <comment>Add/create a new entity (verb).</comment>
@@ -135,6 +138,9 @@
     <value>An error has occurred.</value>
     <comment>Alert title when something goes wrong.</comment>
   </data>
+  <data name="AnyProblem" xml:space="preserve">
+    <value>AnyProblem</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Back</value>
     <comment>Navigate back to the previous screen.</comment>
@@ -146,6 +152,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
     <comment>Cancel an operation.</comment>
+  </data>
+  <data name="ConfusingLetters" xml:space="preserve">
+    <value>ConfusingLetters</value>
   </data>
   <data name="Copy" xml:space="preserve">
     <value>Copy</value>
@@ -235,12 +244,21 @@
     <value>Go to website</value>
     <comment>The button text that allows user to launch the website to their web browser.</comment>
   </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
   <data name="HelpAndFeedback" xml:space="preserve">
     <value>Help and feedback</value>
   </data>
   <data name="Hide" xml:space="preserve">
     <value>Hide</value>
     <comment>Hide a secret value that is currently shown (password).</comment>
+  </data>
+  <data name="HowToLogin" xml:space="preserve">
+    <value>HowToLogin</value>
+  </data>
+  <data name="HowToLoginInstructions" xml:space="preserve">
+    <value>HowToLoginInstructions</value>
   </data>
   <data name="InternetConnectionRequiredMessage" xml:space="preserve">
     <value>Please connect to the internet before continuing.</value>
@@ -475,6 +493,15 @@
   </data>
   <data name="EnterEmailForHint" xml:space="preserve">
     <value>Enter your account email address to receive your master password hint.</value>
+  </data>
+  <data name="ErrorBadRequestByEmail" xml:space="preserve">
+    <value>ErrorBadRequestByEmail</value>
+  </data>
+  <data name="ErrorBadRequestByEmailAndPass" xml:space="preserve">
+    <value>ErrorBadRequestByEmailAndPass</value>
+  </data>
+  <data name="ErrorUnhandled" xml:space="preserve">
+    <value>ErrorUnhandled</value>
   </data>
   <data name="ExntesionReenable" xml:space="preserve">
     <value>Reactivate app extension</value>

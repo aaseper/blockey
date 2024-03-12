@@ -142,7 +142,7 @@
             Style="{StaticResource btn-fab}"
             IsVisible="{OnPlatform iOS=false, Android=true}"
             AbsoluteLayout.LayoutFlags="PositionProportional"
-            AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize">
+            AbsoluteLayout.LayoutBounds="0.5, 1, AutoSize, AutoSize">
             <Button.Effects>
                 <effects:FabShadowEffect />
             </Button.Effects>

@@ -74,7 +74,7 @@
             Clicked="AddButton_Clicked"
             Style="{StaticResource btn-fab}"
             AbsoluteLayout.LayoutFlags="PositionProportional"
-            AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+            AbsoluteLayout.LayoutBounds="0.5, 1, AutoSize, AutoSize"
             AutomationProperties.IsInAccessibleTree="True"
             AutomationProperties.Name="{u:I18n AddFolder}">
             <Button.Effects>

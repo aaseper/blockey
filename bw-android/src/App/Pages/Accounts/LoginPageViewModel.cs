@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Bit.App.Abstractions;
@@ -144,6 +145,12 @@ namespace Bit.App.Pages
         public Action CloseAction { get; set; }
 
         public bool EmailIsInSavedAccounts => _stateService.AccountViews != null && _stateService.AccountViews.Any(e => e.Email == Email);
+        public string ErrorTraceInfo(string Message)
+        {
+            if (Message.Contains("not a valid e-mail")) return AppResources.ErrorBadRequestByEmail;
+            if (Message.Contains("Username or password is incorrect")) return Regex.Replace(AppResources.ErrorBadRequestByEmailAndPass, @"\\e0A", "\n", RegexOptions.CultureInvariant);
+            else return AppResources.ErrorUnhandled;
+        }
 
         protected override II18nService i18nService => _i18nService;
         protected override IEnvironmentService environmentService => _environmentService;
@@ -277,9 +284,7 @@ namespace Bit.App.Pages
                 await _deviceActionService.HideLoadingAsync();
                 if (e?.Error != null)
                 {
-                    await _platformUtilsService.ShowDialogAsync(e.Error.GetFullMessage().Contains("not a valid e-mail") ? "El campo correo electrónico es incorrecto. Revisa la ortografía, y que contenga el arroba (@) y algo después." :
-                        "Correo electrónico o contraseña mestra incorrecta. \nRevisa el correo electrónico y su ortografía por favor. Si está bien escrito, la contraseña es incorrecta. " +
-                        "\nSi no recuerdas la contraseña, pulsa en \"Si no recuerdas tu contraseña, pulsa aquí\" debajo del campo Contraseña maestra para pedir una pista de la contraseña.",
+                    await _platformUtilsService.ShowDialogAsync(ErrorTraceInfo(e.Error.GetFullMessage()),
                         AppResources.AnErrorHasOccurred, AppResources.Ok);
                 }
             }

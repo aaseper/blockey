@@ -120,6 +120,9 @@
   <data name="About" xml:space="preserve">
     <value>Acerca de</value>
   </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
   <data name="Add" xml:space="preserve">
     <value>Añadir</value>
     <comment>Add/create a new entity (verb).</comment>
@@ -135,6 +138,9 @@
     <value>Ha ocurrido un error</value>
     <comment>Alert title when something goes wrong.</comment>
   </data>
+  <data name="AnyProblem" xml:space="preserve">
+    <value>¿Tiene problemas para iniciar sesión?</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Atrás</value>
     <comment>Navigate back to the previous screen.</comment>
@@ -146,6 +152,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
     <comment>Cancel an operation.</comment>
+  </data>
+  <data name="ConfusingLetters" xml:space="preserve">
+    <value>Caracteres que se pueden confundir, como la 'l' y la 'i' mayúscula</value>
   </data>
   <data name="Copy" xml:space="preserve">
     <value>Copiar</value>
@@ -235,12 +244,21 @@
     <value>Ir a la web</value>
     <comment>The button text that allows user to launch the website to their web browser.</comment>
   </data>
+  <data name="Help" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
   <data name="HelpAndFeedback" xml:space="preserve">
     <value>Ayuda y comentarios</value>
   </data>
   <data name="Hide" xml:space="preserve">
     <value>Ocultar</value>
     <comment>Hide a secret value that is currently shown (password).</comment>
+  </data>
+  <data name="HowToLogin" xml:space="preserve">
+    <value>Cómo iniciar sesión</value>
+  </data>
+  <data name="HowToLoginInstructions" xml:space="preserve">
+    <value>Introduce debajo de "Correo electrónico" el correo de tu cuenta, y pulsa "Continuar".\e0ASi no tienes una cuenta todavía, ¡pulsa "Crear una cuenta"!</value>
   </data>
   <data name="InternetConnectionRequiredMessage" xml:space="preserve">
     <value>Por favor, conéctate a Internet antes de continuar.</value>
@@ -476,6 +494,15 @@
   <data name="EnterEmailForHint" xml:space="preserve">
     <value>Introduce el correo electrónico de tu cuenta para recibir la pista de tu contraseña maestra.</value>
   </data>
+  <data name="ErrorBadRequestByEmail" xml:space="preserve">
+    <value>El campo correo electrónico es incorrecto. Revisa la ortografía, y que contenga el arroba (@) y algo después.</value>
+  </data>
+  <data name="ErrorBadRequestByEmailAndPass" xml:space="preserve">
+    <value>Correo electrónico o contraseña mestra incorrecta.\e0ARevisa el correo electrónico y su ortografía por favor. Si está bien escrito, la contraseña es incorrecta.\e0ASi no recuerdas la contraseña, pulsa en "Si no recuerdas tu contraseña, pulsa aquí" debajo del campo Contraseña maestra para pedir una pista de la contraseña.</value>
+  </data>
+  <data name="ErrorUnhandled" xml:space="preserve">
+    <value>Ha ocurrido un error inesperado. Contacta con el soporte o la organización para resolver este problema</value>
+  </data>
   <data name="ExntesionReenable" xml:space="preserve">
     <value>Re-activar Extension de Aplicación</value>
   </data>
@@ -553,7 +580,7 @@
     <value>Inmediatamente</value>
   </data>
   <data name="VaultTimeout" xml:space="preserve">
-    <value>Tiempo de espera de la caja fuerte</value>
+    <value>Tiempo de espera de la caja fuerte: inactividad o tiempo antes de bloquear o cerrar la sesión</value>
   </data>
   <data name="VaultTimeoutAction" xml:space="preserve">
     <value>Acción de tiempo de espera de la caja fuerte</value>
@@ -887,10 +914,10 @@
     <comment>The placeholder will show the file size of the attachment. Ex "25 MB"</comment>
   </data>
   <data name="AuthenticatorKey" xml:space="preserve">
-    <value>Clave de autenticación (TOTP)</value>
+    <value>Clave de autenticación (Contraseña de una sola vez)</value>
   </data>
   <data name="VerificationCodeTotp" xml:space="preserve">
-    <value>Código de verificación (TOTP)</value>
+    <value>Código de verificación (Contraseña de una sola vez)</value>
     <comment>Totp code label</comment>
   </data>
   <data name="AuthenticatorKeyAdded" xml:space="preserve">
@@ -913,13 +940,13 @@ El escaneo se realizará automáticamente.</value>
     <value>Fotos</value>
   </data>
   <data name="CopyTotp" xml:space="preserve">
-    <value>Copiar código TOTP</value>
+    <value>Copiar código de clave de autenticación</value>
   </data>
   <data name="CopyTotpAutomaticallyDescription" xml:space="preserve">
-    <value>Si un inicio de sesión tiene una clave de autenticador, copie el código de verificación TOTP a su portapapeles cuando autorrellene el inicio de sesión.</value>
+    <value>Si un inicio de sesión tiene una clave de autenticador, copie el código de clave de autenticación a su portapapeles cuando autorrellene el inicio de sesión.</value>
   </data>
   <data name="CopyTotpAutomatically" xml:space="preserve">
-    <value>Copiar automáticamente TOTP</value>
+    <value>Copiar automáticamente clave de autenticación</value>
   </data>
   <data name="PremiumRequired" xml:space="preserve">
     <value>Se quiere membrasía Premium para poder utilizar esta característica.</value>
@@ -1011,7 +1038,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Tarjeta</value>
   </data>
   <data name="TypeIdentity" xml:space="preserve">
-    <value>DNI</value>
+    <value>Formulario de información</value>
   </data>
   <data name="TypeLogin" xml:space="preserve">
     <value>Sitio web</value>
@@ -1334,7 +1361,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Tarjetas</value>
   </data>
   <data name="Identities" xml:space="preserve">
-    <value>DNIs</value>
+    <value>Formularios de información</value>
   </data>
   <data name="Logins" xml:space="preserve">
     <value>Sitios web</value>
@@ -2273,7 +2300,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Todo</value>
   </data>
   <data name="Totp" xml:space="preserve">
-    <value>TOTP</value>
+    <value>Contraseña de una sola vez</value>
   </data>
   <data name="VerificationCodes" xml:space="preserve">
     <value>Códigos de verificación</value>
@@ -2297,14 +2324,14 @@ El escaneo se realizará automáticamente.</value>
     <value>Introducir Clave manualmente</value>
   </data>
   <data name="AddTotp" xml:space="preserve">
-    <value>Añadir TOTP</value>
+    <value>Añadir clave de autenticación</value>
   </data>
   <data name="SetupTotp" xml:space="preserve">
-    <value>Configurar TOTP</value>
+    <value>Configurar clave de autenticación</value>
   </data>
   <data name="OnceTheKeyIsSuccessfullyEntered" xml:space="preserve">
     <value>Una vez que la clave haya sido ingresada con éxito,
-seleccione Agregar TOTP para almacenar la clave de forma segura</value>
+seleccione Agregar clave de autenticación para almacenar la clave de forma segura</value>
   </data>
   <data name="NeverLockWarning" xml:space="preserve">
     <value>Configurar las opciones de bloqueo a "Nunca" mantiene la caja fuerte disponible para cualquier persona con acceso a su dispositivo. Si utiliza esta opción, debe asegurarse de que mantiene su dispositivo debidamente protegido.</value>
@@ -2456,7 +2483,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Utilice las opciones de alias de su proveedor de correo electrónico</value>
   </data>
   <data name="CatchAllEmailDescription" xml:space="preserve">
-    <value>Utilice la bandeja de entrada catch-all configurada por su dominio.</value>
+    <value>Utilice la bandeja de entrada que captura todos los correos configurada por su dominio.</value>
   </data>
   <data name="ForwardedEmailDescription" xml:space="preserve">
     <value>Generar un alias de correo electrónico con un servicio de reenvío externo.</value>
@@ -2633,16 +2660,16 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Aprobar con mi otro dispositivo</value>
   </data>
   <data name="RequestAdminApproval" xml:space="preserve">
-    <value>Request admin approval</value>
+    <value>Solicitar aprobación del administrador</value>
   </data>
   <data name="ApproveWithMasterPassword" xml:space="preserve">
     <value>Approve with master password</value>
   </data>
   <data name="TurnOffUsingPublicDevice" xml:space="preserve">
-    <value>Turn off using a public device</value>
+    <value>Desactivar el uso de dispositivo público</value>
   </data>
   <data name="RememberThisDevice" xml:space="preserve">
-    <value>Remember this device</value>
+    <value>Recordar este dispositivo</value>
   </data>
   <data name="Passkey" xml:space="preserve">
     <value>Passkey</value>
@@ -2651,14 +2678,14 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Passkeys</value>
   </data>
   <data name="CreatedX" xml:space="preserve">
-    <value>Created {0}</value>
+    <value>Creado {0}</value>
     <comment>To state the date in which the cipher was created: Created 03/21/2023</comment>
   </data>
   <data name="Application" xml:space="preserve">
     <value>Application</value>
   </data>
   <data name="YouCannotEditPasskeyApplicationBecauseItWouldInvalidateThePasskey" xml:space="preserve">
-    <value>You cannot edit passkey application because it would invalidate the passkey</value>
+    <value>No puede editar la aplicación de clave de acceso porque invalidaría la clave de acceso</value>
   </data>
   <data name="PasskeyWillNotBeCopied" xml:space="preserve">
     <value>Passkey will not be copied</value>
@@ -2676,7 +2703,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Ayuda de volver a pedir contraseña maestra</value>
   </data>
   <data name="UnlockingMayFailDueToInsufficientMemoryDecreaseYourKDFMemorySettingsToResolve" xml:space="preserve">
-    <value>Unlocking may fail due to insufficient memory. Decrease your KDF memory settings or set up biometric unlock to resolve.</value>
+    <value>Desbloqueo fallido por falta de memoria. Reduzca los ajustes memoria KDF o utilize el desbloqueo biométrico para solucionar el problema.</value>
   </data>
   <data name="InvalidAPIKey" xml:space="preserve">
     <value>Clave API no válida</value>
@@ -2685,28 +2712,28 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Token de API no válido</value>
   </data>
   <data name="AdminApprovalRequested" xml:space="preserve">
-    <value>Admin approval requested</value>
+    <value>Enviada petición de aprobación al administrador</value>
   </data>
   <data name="YourRequestHasBeenSentToYourAdmin" xml:space="preserve">
-    <value>Your request has been sent to your admin.</value>
+    <value>Su petición se ha enviado al administrador.</value>
   </data>
   <data name="YouWillBeNotifiedOnceApproved" xml:space="preserve">
-    <value>You will be notified once approved. </value>
+    <value>Se le notificará una vez aprobada.</value>
   </data>
   <data name="TroubleLoggingIn" xml:space="preserve">
-    <value>Trouble logging in?</value>
+    <value>¿Problemas iniciando sesión?</value>
   </data>
   <data name="LoggingInAsX" xml:space="preserve">
     <value>Logging in as {0}</value>
   </data>
   <data name="VaultTimeoutActionChangedToLogOut" xml:space="preserve">
-    <value>Vault timeout action changed to log out</value>
+    <value>Acción de tiempo de espera de la caja fuerte cambiado a cerrar sesión</value>
   </data>
   <data name="ThisItemCannotBeSharedWithTheOrganizationBecauseThereIsOneAlreadyWithTheSamePasskey" xml:space="preserve">
-    <value>This item cannot be shared with the organization because there is one already with the same passkey.</value>
+    <value>Este elemento no puede compartirse con la organización porque ya hay uno con la misma contraseña de acceso.</value>
   </data>
   <data name="BlockAutoFill" xml:space="preserve">
-    <value>Block auto-fill</value>
+    <value>Bloquear autorellenado</value>
   </data>
   <data name="AutoFillWillNotBeOfferedForTheseURIs" xml:space="preserve">
     <value>Autocompletado no disponible para estos enlaces</value>
@@ -2718,7 +2745,7 @@ seleccione Agregar TOTP para almacenar la clave de forma segura</value>
     <value>Enlace guardado</value>
   </data>
   <data name="InvalidFormatUseHttpsHttpOrAndroidApp" xml:space="preserve">
-    <value>Invalid format. Use https://, http://, or androidapp://</value>
+    <value>Formato incorrecto. Usa https://, http://, o androidapp://</value>
     <comment>https://, http://, androidapp:// should not be translated</comment>
   </data>
   <data name="EditURI" xml:space="preserve">

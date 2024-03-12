@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Bit.App.Abstractions;
 using Bit.App.Controls;
@@ -221,9 +222,7 @@ namespace Bit.App.Pages
         {
             try
             {
-                var a = await _platformUtilsService.ShowDialogAsync("Introduce debajo de \"Correo electrónico\" el correo de tu cuenta, y pulsa \"Continuar\". " +
-                    "\nSi no tienes una cuenta todavía, ¡pulsa \"Crear una cuenta\"!",
-                    "Cómo iniciar sesión", "Aceptar");
+                var a = await _platformUtilsService.ShowDialogAsync(Regex.Replace(AppResources.HowToLoginInstructions, @"\\e0A", "\n", RegexOptions.CultureInvariant), AppResources.HowToLogin,AppResources.Accept);
             }
             catch (Exception ex)
             {
