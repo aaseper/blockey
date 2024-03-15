@@ -59,12 +59,12 @@ namespace Bit.Droid.Utilities
         {
             if (string.IsNullOrWhiteSpace(theme) && osDarkModeEnabled)
             {
-                theme = ThemeManager.Dark;
+                theme = ThemeManager.Light; // light theme is mandatory
             }
 
             if (theme == ThemeManager.Dark || theme == ThemeManager.Black || theme == ThemeManager.Nord || theme == ThemeManager.SolarizedDark)
             {
-                LightTheme = false;
+                LightTheme = true; // light theme is mandatory
             }
             else
             {

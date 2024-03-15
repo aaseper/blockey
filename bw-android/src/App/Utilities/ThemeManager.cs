@@ -96,28 +96,28 @@ namespace Bit.App.Utilities
             switch (themeName)
             {
                 case Dark:
-                    return CheckAndGetThemeForMergedDictionaries(typeof(Dark), resources);
+                    return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                 case Black:
-                    return CheckAndGetThemeForMergedDictionaries(typeof(Black), resources);
+                    return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                 case Nord:
-                    return CheckAndGetThemeForMergedDictionaries(typeof(Nord), resources);
+                    return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                 case Light:
                     return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources);
                 case SolarizedDark:
-                    return CheckAndGetThemeForMergedDictionaries(typeof(SolarizedDark), resources);
+                    return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                 default:
                     if (OsDarkModeEnabled())
                     {
                         switch (autoDarkThemeName)
                         {
                             case Black:
-                                return CheckAndGetThemeForMergedDictionaries(typeof(Black), resources);
+                                return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                             case Nord:
-                                return CheckAndGetThemeForMergedDictionaries(typeof(Nord), resources);
+                                return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                             case SolarizedDark:
-                                return CheckAndGetThemeForMergedDictionaries(typeof(SolarizedDark), resources);
+                                return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                             default:
-                                return CheckAndGetThemeForMergedDictionaries(typeof(Dark), resources);
+                                return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources); // Light theme is mandatory
                         }
                     }
                     return CheckAndGetThemeForMergedDictionaries(typeof(Light), resources);
@@ -147,7 +147,7 @@ namespace Bit.App.Utilities
             {
                 // called from iOS extension
                 var app = new App(new AppOptions { IosExtension = true });
-                return app.RequestedTheme == OSAppTheme.Dark;
+                return app.RequestedTheme == OSAppTheme.Light; // Light theme is mandatory
             }
             return Application.Current.RequestedTheme == OSAppTheme.Dark;
         }
