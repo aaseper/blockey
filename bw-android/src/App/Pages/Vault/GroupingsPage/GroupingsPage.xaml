@@ -146,21 +146,6 @@
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n Filter}" />
                 </StackLayout>
-                <StackLayout
-                    VerticalOptions="CenterAndExpand"
-                    Padding="20, 0"
-                    Spacing="20"
-                    IsVisible="{Binding ShowNoData}">
-                    <Label
-                        Text="{Binding NoDataText}"
-                        HorizontalTextAlignment="Center"
-                        AutomationId="NoDataDisplayed"></Label>
-                    <Button
-                        Text="{u:I18n AddAnItem}"
-                        Clicked="AddButton_Clicked"
-                        IsVisible="{Binding ShowAddCipherButton}"></Button>
-                </StackLayout>
-
                 <RefreshView
                     IsVisible="{Binding ShowList}"
                     IsRefreshing="{Binding Refreshing}"

@@ -1131,7 +1131,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Srta</value>
   </data>
   <data name="Mx" xml:space="preserve">
-    <value>"Mx" = "Sr./Sra</value>
+    <value>Mx</value>
   </data>
   <data name="November" xml:space="preserve">
     <value>Noviembre</value>
