@@ -22,6 +22,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{u:I18n Cancel}" Clicked="Close_Clicked" Order="Primary" Priority="-1" />
         <ToolbarItem Text="{u:I18n Submit}" Clicked="Submit_Clicked" />
+        <ToolbarItem IconImageSource="tbi_send.png" Clicked="Submit_Clicked" />
     </ContentPage.ToolbarItems>
 
     <ScrollView>

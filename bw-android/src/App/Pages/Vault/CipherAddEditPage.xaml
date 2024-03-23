@@ -21,6 +21,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{u:I18n Save}" Clicked="Save_Clicked" Order="Primary" />
+        <ToolbarItem IconImageSource="tbi_save.png" Clicked="Save_Clicked" Order="Primary" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Resources>

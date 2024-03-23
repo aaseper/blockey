@@ -18,6 +18,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{u:I18n Close}" Clicked="Close_Clicked" Order="Primary" Priority="-1" />
         <ToolbarItem Text="{u:I18n Save}" Command="{Binding SubmitAsyncCommand}" />
+        <ToolbarItem IconImageSource="tbi_save.png" Command="{Binding SubmitAsyncCommand}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Resources>

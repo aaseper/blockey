@@ -29,6 +29,11 @@
                      Order="Primary"
                      x:Name="_selectItem"
                      x:Key="selectItem" />
+            <ToolbarItem IconImageSource="tbi_continue.png"
+                     Clicked="Select_Clicked" 
+                     Order="Primary"
+                     x:Name="_selectItemIcon"
+                     x:Key="selectItemIcon" />
             <ToolbarItem Text="{u:I18n PasswordHistory}"
                      Clicked="History_Clicked"
                      Order="Secondary"

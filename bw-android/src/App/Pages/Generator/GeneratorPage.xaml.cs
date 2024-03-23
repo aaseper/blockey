@@ -41,6 +41,7 @@ namespace Bit.App.Pages
                     ToolbarItems.Add(_closeItem);
                 }
                 ToolbarItems.Add(_selectItem);
+                ToolbarItems.Add(_selectItemIcon);
             }
             else
             {

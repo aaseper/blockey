@@ -400,7 +400,7 @@
     <value>Verificar huella dactilar</value>
   </data>
   <data name="VerifyMasterPassword" xml:space="preserve">
-    <value>Verificar contraseña de BlocKey</value>
+    <value>Verificar contraseña</value>
   </data>
   <data name="VerifyPIN" xml:space="preserve">
     <value>Verificar PIN</value>
@@ -2588,7 +2588,7 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Importante</value>
   </data>
   <data name="YourMasterPasswordCannotBeRecoveredIfYouForgetItXCharactersMinimum" xml:space="preserve">
-    <value>Tu contraseña de BlocKey no se puede recuperar si la olvidas! {0} caracteres como mínimo.</value>
+    <value>¡Tu contraseña de BlocKey no se puede recuperar si la olvidas! {0} caracteres como mínimo.</value>
   </data>
   <data name="WeakMasterPassword" xml:space="preserve">
     <value>Contraseña de BlocKey débil</value>

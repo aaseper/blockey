@@ -16,6 +16,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{u:I18n Cancel}" Clicked="Close_Clicked" Order="Primary" Priority="-1" />
         <ToolbarItem Text="{u:I18n Save}" Clicked="Save_Clicked" />
+        <ToolbarItem IconImageSource="tbi_save.png" Clicked="Save_Clicked" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Resources>
