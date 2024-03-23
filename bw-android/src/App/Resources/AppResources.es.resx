@@ -385,7 +385,7 @@
     <value>Usar huella dactilar para desbloquear</value>
   </data>
   <data name="Username" xml:space="preserve">
-    <value>Usuario</value>
+    <value>Nombre de usuario</value>
     <comment>Label for a username.</comment>
   </data>
   <data name="ValidationFieldRequired" xml:space="preserve">
@@ -1470,7 +1470,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Número de palabras</value>
   </data>
   <data name="Passphrase" xml:space="preserve">
-    <value>Frase de contraseña</value>
+    <value>Contraseña de palabras</value>
   </data>
   <data name="WordSeparator" xml:space="preserve">
     <value>Separador de palabras</value>
