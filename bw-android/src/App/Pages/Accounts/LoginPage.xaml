@@ -119,16 +119,17 @@
                             Margin="0,40,0,0"
                             AutomationId="LoggingInAsLabel"
                             />
-                        <Label
-                            Text="{u:I18n NotYou}"
-                            StyleClass="text-md"
-                            HorizontalOptions="Start"
-                            TextColor="{DynamicResource HyperlinkColor}"
-                            AutomationId="NotYouLabel">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="Cancel_Clicked" />
-                            </Label.GestureRecognizers>
-                        </Label>
+                        <StackLayout
+                            StyleClass="box-row">
+                            <Label
+                                Text="{u:I18n NotYou}"
+                                StyleClass="box-label" />
+                            <Button 
+                                Text="{u:I18n NotYouDescription}"
+                                StyleClass="btn-primary"
+                                AutomationId="NotYouLabel" 
+                                Clicked="Cancel_Clicked" />
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </ScrollView>

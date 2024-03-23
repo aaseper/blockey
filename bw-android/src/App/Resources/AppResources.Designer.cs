@@ -4753,6 +4753,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to NotYouDescription.
+        /// </summary>
+        public static string NotYouDescription {
+            get {
+                return ResourceManager.GetString("NotYouDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This login does not have a username or password configured..
         /// </summary>
         public static string NoUsernamePasswordConfigured {

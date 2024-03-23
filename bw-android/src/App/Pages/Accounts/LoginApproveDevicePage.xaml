@@ -59,16 +59,18 @@
                 Margin="0,40,0,0"
                 AutomationId="LoggingInAsLabel"
                 />
-            <Label
-                Text="{u:I18n NotYou}"
-                StyleClass="text-md"
-                HorizontalOptions="Start"
-                TextColor="{DynamicResource HyperlinkColor}"
-                AutomationId="NotYouLabel">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding LogoutCommand}" />
-                </Label.GestureRecognizers>
-            </Label>
+            
+             <StackLayout
+                    StyleClass="box-row">
+                    <Label
+                        Text="{u:I18n NotYou}"
+                        StyleClass="box-label" />
+                    <Button 
+                        Text="{u:I18n NotYouDescription}"
+                        StyleClass="btn-primary"
+                        Command="{Binding LogoutCommand}"
+                        AutomationId="NotYouLabel" />
+            </StackLayout>
         </StackLayout>
     </StackLayout>
 </pages:BaseContentPage>

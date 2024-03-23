@@ -2529,6 +2529,9 @@ Do you want to switch to this account?</value>
   <data name="NotYou" xml:space="preserve">
     <value>Not you?</value>
   </data>
+  <data name="NotYouDescription" xml:space="preserve">
+    <value>NotYouDescription</value>
+  </data>
   <data name="LogInWithMasterPassword" xml:space="preserve">
     <value>Log in with master password</value>
   </data>

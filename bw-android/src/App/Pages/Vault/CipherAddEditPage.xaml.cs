@@ -105,7 +105,6 @@ namespace Bit.App.Pages
             _loginUsernameEntry.ReturnType = ReturnType.Next;
             _loginUsernameEntry.ReturnCommand = new Command(() => _loginPasswordEntry.Focus());
             _loginPasswordEntry.ReturnType = ReturnType.Next;
-            _loginPasswordEntry.ReturnCommand = new Command(() => _loginTotpEntry.Focus());
 
             _cardholderNameEntry.ReturnType = ReturnType.Next;
             _cardholderNameEntry.ReturnCommand = new Command(() => _cardNumberEntry.Focus());
@@ -125,19 +124,13 @@ namespace Bit.App.Pages
             _identitySsnEntry.ReturnType = ReturnType.Next;
             _identitySsnEntry.ReturnCommand = new Command(() => _identityPassportNumberEntry.Focus());
             _identityPassportNumberEntry.ReturnType = ReturnType.Next;
-            _identityPassportNumberEntry.ReturnCommand = new Command(() => _identityLicenseNumberEntry.Focus());
-            _identityLicenseNumberEntry.ReturnType = ReturnType.Next;
-            _identityLicenseNumberEntry.ReturnCommand = new Command(() => _identityEmailEntry.Focus());
+            _identityPassportNumberEntry.ReturnCommand = new Command(() => _identityEmailEntry.Focus());
             _identityEmailEntry.ReturnType = ReturnType.Next;
             _identityEmailEntry.ReturnCommand = new Command(() => _identityPhoneEntry.Focus());
             _identityPhoneEntry.ReturnType = ReturnType.Next;
             _identityPhoneEntry.ReturnCommand = new Command(() => _identityAddress1Entry.Focus());
             _identityAddress1Entry.ReturnType = ReturnType.Next;
-            _identityAddress1Entry.ReturnCommand = new Command(() => _identityAddress2Entry.Focus());
-            _identityAddress2Entry.ReturnType = ReturnType.Next;
-            _identityAddress2Entry.ReturnCommand = new Command(() => _identityAddress3Entry.Focus());
-            _identityAddress3Entry.ReturnType = ReturnType.Next;
-            _identityAddress3Entry.ReturnCommand = new Command(() => _identityCityEntry.Focus());
+            _identityAddress1Entry.ReturnCommand = new Command(() => _identityCityEntry.Focus());
             _identityCityEntry.ReturnType = ReturnType.Next;
             _identityCityEntry.ReturnCommand = new Command(() => _identityStateEntry.Focus());
             _identityStateEntry.ReturnType = ReturnType.Next;
