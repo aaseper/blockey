@@ -433,6 +433,9 @@
   <data name="AddAnItem" xml:space="preserve">
     <value>Add an Item</value>
   </data>
+  <data name="AmbiguousCharactersText" xml:space="preserve">
+    <value>AmbiguousCharactersText</value>
+  </data>
   <data name="AppExtension" xml:space="preserve">
     <value>App extension</value>
   </data>

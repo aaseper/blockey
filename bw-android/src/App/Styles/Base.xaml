@@ -46,7 +46,7 @@
     <Style TargetType="Label"
            Class="text-sm">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
     </Style>
     <Style TargetType="Label"
            Class="text-lg"
@@ -70,7 +70,7 @@
     <Style TargetType="Label"
            Class="text-body">
         <Setter Property="FontSize"
-                Value="Body" />
+                Value="Medium" />
         <Setter Property="TextColor"
                 Value="{DynamicResource TextColor}" />
     </Style>
@@ -193,7 +193,7 @@
     <Style TargetType="Label"
            Class="list-header-sub">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="HorizontalTextAlignment"
                 Value="End" />
         <Setter Property="VerticalTextAlignment"
@@ -246,7 +246,7 @@
     <Style TargetType="Label"
            Class="list-sub">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="TextColor"
                 Value="{DynamicResource MutedColor}" />
     </Style>
@@ -262,14 +262,14 @@
            ApplyToDerivedTypes="True"
            Class="list-title-icon">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="TextColor"
                 Value="{DynamicResource MutedColor}" />
     </Style>
     <Style TargetType="Label"
            Class="list-subtitle">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="TextColor"
                 Value="{DynamicResource MutedColor}" />
     </Style>
@@ -477,7 +477,7 @@
     <Style TargetType="Label"
            Class="box-label">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="FontAttributes"
                 Value="Bold" />
         <Setter Property="TextColor"
@@ -503,14 +503,14 @@
     <Style TargetType="Label"
            Class="box-sub-label">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="TextColor"
                 Value="{DynamicResource MutedColor}" />
     </Style>
     <Style TargetType="Label"
            Class="box-footer-label">
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="TextColor"
                 Value="{DynamicResource MutedColor}" />
     </Style>

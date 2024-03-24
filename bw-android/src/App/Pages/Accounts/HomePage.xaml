@@ -72,13 +72,13 @@
                         </StackLayout.GestureRecognizers>
                         <Label
                             Text="{Binding RegionText}"
-                            FontSize="13"
+                            FontSize="Medium"
                             TextColor="{DynamicResource MutedColor}"
                             VerticalOptions="Center"
                             VerticalTextAlignment="Center"/>
                         <controls:IconLabel
                             Text="{Binding SelectedEnvironmentName}"
-                            FontSize="13"
+                            FontSize="Medium"
                             TextColor="{DynamicResource TextColor}"
                             VerticalOptions="Center"
                             VerticalTextAlignment="Center"

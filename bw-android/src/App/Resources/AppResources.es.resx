@@ -433,6 +433,9 @@
   <data name="AddAnItem" xml:space="preserve">
     <value>Añadir un elemento</value>
   </data>
+  <data name="AmbiguousCharactersText" xml:space="preserve">
+    <value>Caracteres que se pueden confundir, como la 'l' y la 'i' mayúscula</value>
+  </data>
   <data name="AppExtension" xml:space="preserve">
     <value>Extensión de Aplicación</value>
   </data>

@@ -99,11 +99,6 @@
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n CopyPassword}"
                         AutomationId="CopyValueButton" />
-                    <Label
-                        Text="Copiar"
-                        StyleClass="box-sub-label"
-                        Grid.Column="1"
-                        HorizontalTextAlignment="Center" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
                         ImageSource="random.png"
@@ -113,11 +108,6 @@
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n GeneratePassword}"
                         AutomationId="RegenerateValueButton" />
-                    <Label
-                        Text="Nuevo"
-                        StyleClass="box-sub-label"
-                        Grid.Column="2"
-                        HorizontalTextAlignment="Center" />
                 </Grid>
                 <Grid IsVisible="{Binding IsUsername}"
                         StyleClass="box-row"                  
@@ -561,7 +551,8 @@
                                 StyleClass="box-label-regular"
                                 HorizontalOptions="StartAndExpand" />
                             <Label
-                                Text="Caracteres que se pueden confundir, como la 'l' y la 'i' mayúscula"
+                                Text="{u:I18n AmbiguousCharactersText}"
+                                FontSize="Small"
                                 StyleClass="box-sub-label"
                                 HorizontalOptions="FillAndExpand"
                                 HorizontalTextAlignment="End"

@@ -76,7 +76,7 @@
                                 PropertyChanged="OnTimePickerPropertyChanged"
                                 HorizontalOptions="End"
                                 VerticalOptions="Center"
-                                FontSize="Small"
+                                FontSize="Medium"
                                 TextColor="{Binding SubLabelColor}"
                                 StyleClass="list-sub" Margin="-5"
                                 AutomationId="SettingCustomVaultTimeoutPicker" />

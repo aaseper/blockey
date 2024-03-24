@@ -449,7 +449,8 @@ namespace Bit.Droid
             try
             {
                 //As we are using NamedSizes the xamarin will change the font size. So we are disabling the Android scaling.
-                Resources.Configuration.FontScale = 1f;
+                //This will make the medium font size (Enum) meet the 18 point size.
+                Resources.Configuration.FontScale = 1.059f;
                 BaseContext.Resources.DisplayMetrics.ScaledDensity = Resources.Configuration.FontScale * (float)DeviceDisplay.MainDisplayInfo.Density;
             }
             catch (Exception e)

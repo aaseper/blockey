@@ -503,6 +503,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AmbiguousCharactersText.
+        /// </summary>
+        public static string AmbiguousCharactersText {
+            get {
+                return ResourceManager.GetString("AmbiguousCharactersText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An error has occurred..
         /// </summary>
         public static string AnErrorHasOccurred {

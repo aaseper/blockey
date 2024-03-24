@@ -248,7 +248,7 @@
         <Setter Property="WidthRequest"
                 Value="37" />
         <Setter Property="FontSize"
-                Value="25" />
+                Value="Title" />
     </Style>
     
     <!-- Title -->
@@ -259,7 +259,7 @@
         <Setter Property="WidthRequest"
                 Value="28" />
         <Setter Property="FontSize"
-                Value="24" />
+                Value="Title" />
     </Style>
 
     <!-- List -->
@@ -282,7 +282,7 @@
         <Setter Property="TextColor"
                 Value="{DynamicResource ListHeaderTextColor}" />
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="FontAttributes"
                 Value="Bold" />
     </Style>
@@ -314,7 +314,7 @@
            Class="list-icon-platform"
            ApplyToDerivedTypes="True">
         <Setter Property="FontSize"
-                Value="23" />
+                Value="Title" />
     </Style>
     <Style TargetType="Button"
            ApplyToDerivedTypes="True"
@@ -322,19 +322,19 @@
         <Setter Property="WidthRequest"
                 Value="37" />
         <Setter Property="FontSize"
-                Value="25" />
+                Value="Title" />
     </Style>
     <Style TargetType="Label"
            Class="accountlist-title-platform"
            ApplyToDerivedTypes="True">
         <Setter Property="FontSize"
-                Value="Body" />
+                Value="Medium" />
     </Style>
     <Style TargetType="Label"
            Class="accountlist-sub-platform"
            ApplyToDerivedTypes="True">
         <Setter Property="FontSize"
-                Value="Caption" />
+                Value="Medium" />
     </Style>
     
     <!-- Box -->
@@ -344,7 +344,7 @@
         <Setter Property="TextColor"
                 Value="{DynamicResource BoxHeaderTextColor}" />
         <Setter Property="FontSize"
-                Value="Small" />
+                Value="Medium" />
         <Setter Property="FontAttributes"
                 Value="Bold" />
     </Style>
@@ -356,7 +356,7 @@
         <Setter Property="HeightRequest"
                 Value="45" />
         <Setter Property="FontSize"
-                Value="25" />
+                Value="Title" />
     </Style>
 
     <Style TargetType="Label"
