@@ -299,9 +299,9 @@ namespace Bit.App.Pages
         public bool IsFido2Key => Cipher?.Type == CipherType.Fido2Key;
         public bool ShowUris => IsLogin && Cipher.Login.HasUris;
         public bool ShowAttachments => Cipher.HasAttachments;
-        public string ShowPasswordIcon => ShowPassword ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
-        public string ShowCardNumberIcon => ShowCardNumber ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
-        public string ShowCardCodeIcon => ShowCardCode ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
+        public string ShowPasswordIcon => ShowPassword ? "eye_slash.png" : "eye_noslash.png";
+        public string ShowCardNumberIcon => ShowCardNumber ? "eye_slash.png" : "eye_noslash.png";
+        public string ShowCardCodeIcon => ShowCardCode ? "eye_slash.png" : "eye_noslash.png";
         public int PasswordFieldColSpan => Cipher.ViewPassword ? 1 : 4;
         public int TotpColumnSpan => Cipher.ViewPassword ? 1 : 2;
         public bool AllowPersonal { get; set; }

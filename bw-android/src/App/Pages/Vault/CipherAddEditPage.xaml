@@ -191,7 +191,8 @@
                             AutomationId="LoginPasswordEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding Source={x:Static core:BitwardenIcons.CheckCircle}}"
+                            ImageSource="check.png"
+                            Text=""
                             Command="{Binding CheckPasswordCommand}"
                             Grid.Row="0"
                             Grid.Column="1"
@@ -202,7 +203,8 @@
                             AutomationId="CheckPasswordButton" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding ShowPasswordIcon}"
+                            ImageSource="{Binding ShowPasswordIcon}"
+                            Text=""
                             Command="{Binding TogglePasswordCommand}"
                             Grid.Row="0"
                             Grid.Column="2"
@@ -276,7 +278,8 @@
                             AutomationId="CardNumberEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding ShowCardNumberIcon}"
+                            ImageSource="{Binding ShowCardNumberIcon}"
+                            Text=""
                             Command="{Binding ToggleCardNumberCommand}"
                             Grid.Row="0"
                             Grid.Column="1"
@@ -349,7 +352,8 @@
                             AutomationId="CardSecurityCodeEntry" />
                         <controls:IconButton 
                             StyleClass="box-row-button, box-row-button-platform"
-                            Text="{Binding ShowCardCodeIcon}"
+                            ImageSource="{Binding ShowCardCodeIcon}"
+                            Text=""
                             Command="{Binding ToggleCardCodeCommand}"
                             Grid.Row="0"
                             Grid.Column="1"
@@ -608,7 +612,8 @@
                                     AutomationId="LoginUriEntry" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.Cog}}"
+                                    ImageSource="cog.png"
+                                    Text=""
                                     Command="{Binding BindingContext.UriOptionsCommand, Source={x:Reference _page}}"
                                     CommandParameter="{Binding .}"
                                     Grid.Row="0"

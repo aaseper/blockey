@@ -100,7 +100,8 @@
                         ReturnCommand="{Binding ExportVaultCommand}" />
                     <controls:IconButton
                         StyleClass="box-row-button, box-row-button-platform"
-                        Text="{Binding ShowPasswordIcon}"
+                        ImageSource="{Binding ShowPasswordIcon}"
+                        Text=""
                         Command="{Binding TogglePasswordCommand}"
                         Grid.Row="1"
                         Grid.Column="1"

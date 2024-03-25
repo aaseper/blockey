@@ -73,7 +73,7 @@ namespace Bit.App.Pages
 
         public ICommand RequestOTPCommand { get; }
 
-        public string ShowPasswordIcon => ShowPassword ? BitwardenIcons.EyeSlash : BitwardenIcons.Eye;
+        public string ShowPasswordIcon => ShowPassword ? "eye_slash.png" : "eye_noslash.png";
 
         public void TogglePassword() => ShowPassword = !ShowPassword;
 

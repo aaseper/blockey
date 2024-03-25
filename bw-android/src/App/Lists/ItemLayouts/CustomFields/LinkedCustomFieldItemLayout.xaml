@@ -51,7 +51,8 @@
         </StackLayout>
         <controls:IconButton 
             StyleClass="box-row-button, box-row-button-platform"
-            Text="{Binding Source={x:Static core:BitwardenIcons.Cog}}"
+            ImageSource="cog.png"
+            Text=""
             Command="{Binding FieldOptionsCommand}"
             IsVisible="{Binding IsEditing}"
             Grid.Row="0"
