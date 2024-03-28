@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <!-- Light System -->
-  <color name="colorPrimary">#738182</color>
-  <color name="colorPrimaryDark">#000a4a</color>
-  <color name="primary">#738182</color>
-  <color name="notificationBar">#000a4a</color>
-  <color name="border">#738182</color>
+  <color name="colorPrimary">#555555</color>
+  <color name="colorPrimaryDark">#000032</color>
+  <color name="primary">#555555</color>
+  <color name="notificationBar">#000032</color>
+  <color name="border">#555555</color>
 
   <!-- Dark System -->
-  <color name="dark_primary">#d6dbf8</color>
-  <color name="dark_notificationBar">#000a4a</color>
-  <color name="dark_border">#d6dbf8</color>
-  <color name="dark_navigationBarBackground">#000a4a</color>
+  <color name="dark_primary">#7682E0</color>
+  <color name="dark_notificationBar">#000032</color>
+  <color name="dark_border">#7682E0</color>
+  <color name="dark_navigationBarBackground">#000032</color>
 
   <!-- Other -->
   <color name="white">#FFFFFF</color>
   <color name="black">#0A0A0A</color>
   <color name="darkgray">#333333</color>
-  <color name="gray">#738182</color>
+  <color name="gray">#555555</color>
   <color name="lightgray">#efeff4</color>
 </resources>

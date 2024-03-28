@@ -5,7 +5,7 @@
     android:viewportWidth="1024"
     android:viewportHeight="1024">
         <path
-        android:fillColor="#d6dbf8"
+        android:fillColor="#7682E0"
         android:pathData="M1024,864c0,88.4 -71.6,160 -160,160H160C71.6,1024 0,952.4 0,864V160C0,71.6 71.6,0 160,0h704c88.4,0 160,71.6 160,160V864z" />
     <path android:pathData="M803.2,195.8l668.8,668.8l-376,694.4l-792,-792l208,120l280,-280z">
         <aapt:attr name="android:fillColor">
@@ -16,7 +16,7 @@
                 android:startY="389.33688"
                 android:type="linear">
                 <item
-                    android:color="#000a4a"
+                    android:color="#000032"
                     android:offset="0" />
                 <item
                     android:color="#070808"

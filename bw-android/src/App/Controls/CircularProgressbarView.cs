@@ -24,7 +24,7 @@ namespace Bit.App.Controls
             nameof(ProgressColor), typeof(Color), typeof(CircularProgressbarView), Color.FromHex("175DDC"));
 
         public static readonly BindableProperty EndingProgressColorProperty = BindableProperty.Create(
-            nameof(EndingProgressColor), typeof(Color), typeof(CircularProgressbarView), Color.FromHex("dd4b39"));
+            nameof(EndingProgressColor), typeof(Color), typeof(CircularProgressbarView), Color.FromHex("AD0000"));
 
         public static readonly BindableProperty BackgroundProgressColorProperty = BindableProperty.Create(
             nameof(BackgroundProgressColor), typeof(Color), typeof(CircularProgressbarView), Color.White);
