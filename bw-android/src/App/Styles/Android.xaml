@@ -334,7 +334,7 @@
            Class="accountlist-sub-platform"
            ApplyToDerivedTypes="True">
         <Setter Property="FontSize"
-                Value="Medium" />
+                Value="Small" />
     </Style>
     
     <!-- Box -->

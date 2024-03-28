@@ -158,6 +158,7 @@ namespace Bit.App.Pages
                 fs.Spans.Add(new Span
                 {
                     Text = string.Format("{0}:", AppResources.DateUpdated),
+                    FontSize = 18,
                     FontAttributes = FontAttributes.Bold
                 });
                 fs.Spans.Add(new Span

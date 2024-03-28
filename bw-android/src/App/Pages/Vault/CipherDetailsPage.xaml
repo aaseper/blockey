@@ -621,7 +621,8 @@
                                     StyleClass="box-value" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
-                                    Text="{Binding Source={x:Static core:BitwardenIcons.ShareSquare}}"
+                                    ImageSource="redirect.png"
+                                    Text=""
                                     Command="{Binding LaunchUriCommand}"
                                     CommandParameter="{Binding Cipher.Fido2Key}"
                                     Grid.Column="1"
@@ -687,7 +688,8 @@
                                                 AutomationId="UriValue" />
                                             <controls:IconButton
                                                 StyleClass="box-row-button, box-row-button-platform"
-                                                Text="{Binding Source={x:Static core:BitwardenIcons.ShareSquare}}"
+                                                ImageSource="redirect.png"
+                                                Text=""
                                                 Command="{Binding BindingContext.LaunchUriCommand, Source={x:Reference _page}}"
                                                 CommandParameter="{Binding .}"
                                                 Grid.Row="0"
