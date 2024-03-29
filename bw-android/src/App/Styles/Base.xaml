@@ -46,7 +46,7 @@
     <Style TargetType="Label"
            Class="text-sm">
         <Setter Property="FontSize"
-                Value="Medium" />
+                Value="Small" />
     </Style>
     <Style TargetType="Label"
            Class="text-lg"

@@ -139,7 +139,7 @@
                                 StyleClass="box-footer-label" />
                             <Label
                                 Text="{Binding LoggedInAsText}"
-                                StyleClass="box-footer-label"
+                                StyleClass="text-sm"
                                 Margin="0, 10, 0, 0" />
                         </StackLayout>
                     </StackLayout>
