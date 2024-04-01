@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Bit.App.Controls;
+using Bit.Core.Abstractions;
+using Bit.Core.Utilities;
 using Xamarin.Forms;
 
 namespace Bit.App.Pages
@@ -10,6 +12,7 @@ namespace Bit.App.Pages
     public partial class SettingsPage : BaseContentPage
     {
         private readonly TabsPage _tabsPage;
+        private readonly IVaultTimeoutService _vaultTimeoutService;
         private SettingsPageViewModel _vm;
 
         public SettingsPage(TabsPage tabsPage)
@@ -18,6 +21,9 @@ namespace Bit.App.Pages
             InitializeComponent();
             _vm = BindingContext as SettingsPageViewModel;
             _vm.Page = this;
+            _vaultTimeoutService = ServiceContainer.Resolve<IVaultTimeoutService>("vaultTimeoutService");
+            ToolbarItems.Add(_lockItem);
+            ToolbarItems.Add(_exitItem);
         }
 
         public async Task InitAsync()
@@ -68,6 +74,16 @@ namespace Bit.App.Pages
             {
                 _vm?.ExecuteSettingItemCommand.Execute(item);
             }
+        }
+
+        private async void Lock_Clicked(object sender, EventArgs e)
+        {
+            await _vaultTimeoutService.LockAsync(true, true);
+        }
+
+        private void Exit_Clicked(object sender, EventArgs e)
+        {
+            _vm.Exit();
         }
     }
 }

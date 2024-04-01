@@ -107,6 +107,11 @@ namespace Bit.App.Pages
 
         public IAsyncCommand<SettingsPageListItem> ExecuteSettingItemCommand { get; }
 
+        public void Exit()
+        {
+            _messagingService.Send("exit");
+        }
+
         public async Task InitAsync()
         {
             var decryptionOptions = await _stateService.GetAccountDecryptionOptions();
