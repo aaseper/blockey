@@ -1610,15 +1610,6 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ConfusingLetters.
-        /// </summary>
-        public static string ConfusingLetters {
-            get {
-                return ResourceManager.GetString("ConfusingLetters", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Connect to Watch.
         /// </summary>
         public static string ConnectToWatch {
@@ -2470,6 +2461,15 @@ namespace Bit.App.Resources {
         public static string EnvironmentSaved {
             get {
                 return ResourceManager.GetString("EnvironmentSaved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ErrorBadEmailFormat.
+        /// </summary>
+        public static string ErrorBadEmailFormat {
+            get {
+                return ResourceManager.GetString("ErrorBadEmailFormat", resourceCulture);
             }
         }
         
@@ -4488,6 +4488,15 @@ namespace Bit.App.Resources {
         public static string NeverLockWarning {
             get {
                 return ResourceManager.GetString("NeverLockWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New.
+        /// </summary>
+        public static string New {
+            get {
+                return ResourceManager.GetString("New", resourceCulture);
             }
         }
         

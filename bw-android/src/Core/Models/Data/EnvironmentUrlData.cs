@@ -2,8 +2,8 @@
 {
     public class EnvironmentUrlData
     {
-        public static EnvironmentUrlData DefaultUS = new EnvironmentUrlData { Base = "https://vault.bitwarden.com" };
-        public static EnvironmentUrlData DefaultEU = new EnvironmentUrlData { Base = "https://vault.bitwarden.eu" };
+        public static EnvironmentUrlData DefaultUS = new EnvironmentUrlData { Base = "https://blockey.alejandroasensio.site" };
+        public static EnvironmentUrlData DefaultEU = new EnvironmentUrlData { Base = "https://blockey2.alejandroasensio.site" };
 
         public string Base { get; set; }
         public string Api { get; set; }

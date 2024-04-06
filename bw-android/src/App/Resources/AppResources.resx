@@ -153,9 +153,6 @@
     <value>Cancel</value>
     <comment>Cancel an operation.</comment>
   </data>
-  <data name="ConfusingLetters" xml:space="preserve">
-    <value>ConfusingLetters</value>
-  </data>
   <data name="Copy" xml:space="preserve">
     <value>Copy</value>
     <comment>Copy some value to your clipboard.</comment>
@@ -503,6 +500,9 @@
   <data name="ErrorBadRequestByEmailAndPass" xml:space="preserve">
     <value>ErrorBadRequestByEmailAndPass</value>
   </data>
+  <data name="ErrorBadEmailFormat" xml:space="preserve">
+    <value>ErrorBadEmailFormat</value>
+  </data>
   <data name="ErrorUnhandled" xml:space="preserve">
     <value>ErrorUnhandled</value>
   </data>
@@ -632,6 +632,9 @@
   </data>
   <data name="Never" xml:space="preserve">
     <value>Never</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
   </data>
   <data name="NewItemCreated" xml:space="preserve">
     <value>Item added</value>

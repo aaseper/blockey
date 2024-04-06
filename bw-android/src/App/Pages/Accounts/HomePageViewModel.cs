@@ -16,8 +16,8 @@ namespace Bit.App.Pages
 {
     public class HomeViewModel : BaseViewModel
     {
-        private const string LOGGING_IN_ON_US = "bitwarden.com";
-        private const string LOGGING_IN_ON_EU = "bitwarden.eu";
+        private const string LOGGING_IN_ON_US = "BlocKey";
+        private const string LOGGING_IN_ON_EU = "Respaldo de BlocKey";
 
         private readonly IStateService _stateService;
         private readonly IMessagingService _messagingService;
@@ -168,8 +168,8 @@ namespace Bit.App.Pages
         {
             _displayEuEnvironment = await _configService.GetFeatureFlagBoolAsync(Constants.DisplayEuEnvironmentFlag);
             var options = _displayEuEnvironment
-                    ? new string[] { LOGGING_IN_ON_US, LOGGING_IN_ON_EU, AppResources.SelfHosted }
-                    : new string[] { LOGGING_IN_ON_US, AppResources.SelfHosted };
+                    ? new string[] { LOGGING_IN_ON_US, LOGGING_IN_ON_EU }
+                    : new string[] { LOGGING_IN_ON_US, LOGGING_IN_ON_EU };
 
             await Device.InvokeOnMainThreadAsync(async () =>
             {

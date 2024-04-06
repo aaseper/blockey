@@ -339,13 +339,6 @@ namespace Bit.App.Pages
                                 AppResources.BitwardenAutofillAlert2, AppResources.Ok);
                         }
                     }
-                    else if (Device.RuntimePlatform == Device.Android &&
-                        !_autofillHandler.AutofillAccessibilityServiceRunning() &&
-                        !_autofillHandler.AutofillServiceEnabled())
-                    {
-                        await DisplayAlert(AppResources.BitwardenAutofillService,
-                            AppResources.BitwardenAutofillServiceAlert2, AppResources.Ok);
-                    }
                 }
             }
         }

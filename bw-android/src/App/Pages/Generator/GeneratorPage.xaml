@@ -99,6 +99,12 @@
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n CopyPassword}"
                         AutomationId="CopyValueButton" />
+                    <Label
+                        Text="{u:I18n Copy}"
+                        FontSize="Small"
+                        StyleClass="box-sub-label"
+                        Grid.Column="1"
+                        HorizontalTextAlignment="Center" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
                         ImageSource="random.png"
@@ -108,6 +114,12 @@
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n GeneratePassword}"
                         AutomationId="RegenerateValueButton" />
+                    <Label
+                        Text="{u:I18n New}"
+                        FontSize="Small"
+                        StyleClass="box-sub-label"
+                        Grid.Column="2"
+                        HorizontalTextAlignment="Center" />
                 </Grid>
                 <Grid IsVisible="{Binding IsUsername}"
                         StyleClass="box-row"                  
@@ -130,7 +142,8 @@
                         AutomationProperties.Name="{u:I18n CopyPassword}"
                         AutomationId="CopyValueButton" />
                     <Label
-                        Text="Copiar"
+                        Text="{u:I18n Copy}"
+                        FontSize="Small"
                         StyleClass="box-sub-label"
                         Grid.Column="1"
                         HorizontalTextAlignment="Center" />
@@ -144,7 +157,8 @@
                         AutomationProperties.Name="{u:I18n GeneratePassword}"
                         AutomationId="RegenerateValueButton" />
                     <Label
-                        Text="Nuevo"
+                        Text="{u:I18n New}"
+                        FontSize="Small"
                         StyleClass="box-sub-label"
                         Grid.Column="2"
                         HorizontalTextAlignment="Center" />

@@ -153,9 +153,6 @@
     <value>Cancelar</value>
     <comment>Cancel an operation.</comment>
   </data>
-  <data name="ConfusingLetters" xml:space="preserve">
-    <value>Caracteres que se pueden confundir, como la 'l' y la 'i' mayúscula</value>
-  </data>
   <data name="Copy" xml:space="preserve">
     <value>Copiar</value>
     <comment>Copy some value to your clipboard.</comment>
@@ -503,6 +500,9 @@
   <data name="ErrorBadRequestByEmailAndPass" xml:space="preserve">
     <value>Correo electrónico o contraseña de BlocKey incorrecta.\e0ARevise el correo electrónico y su ortografía, por favor. Si está bien escrita, la contraseña es incorrecta.\e0ASi no recuerda la contraseña, pulse en "Si no recuerda su contraseña, pulse aquí" debajo del campo Contraseña de BlocKey para pedir una pista de la contraseña.</value>
   </data>
+  <data name="ErrorBadEmailFormat" xml:space="preserve">
+    <value>"La dirección de correo electrónico es errónea.\e0Revise que después del arroba (@) haya dominio válido, como "gmail.com". Si no, pruebe otro correo, por favor."</value>
+  </data>
   <data name="ErrorUnhandled" xml:space="preserve">
     <value>Ha ocurrido un error inesperado. Contacte con el soporte o la organización para resolver este problema</value>
   </data>
@@ -633,6 +633,9 @@
   <data name="Never" xml:space="preserve">
     <value>Nunca</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
   <data name="NewItemCreated" xml:space="preserve">
     <value>Nuevo elemento creado.</value>
   </data>
@@ -640,7 +643,7 @@
     <value>No hay favoritos en su caja fuerte.</value>
   </data>
   <data name="NoItems" xml:space="preserve">
-    <value>No hay elementos en su caja fuerte.</value>
+    <value>¡Bienvenido a BlocKey!\e0A\e0APuede crear su primer elemento pulsando el botón "+" de abajo.</value>
   </data>
   <data name="NoItemsTap" xml:space="preserve">
     <value>No hay elementos en su caja fuerte para este sitio web o aplicación. Pulse para añadir uno.</value>

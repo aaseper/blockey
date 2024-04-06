@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -524,7 +525,7 @@ namespace Bit.App.Pages
         private async Task LoadDataAsync()
         {
             var canAccessPremium = await _stateService.CanAccessPremiumAsync();
-            NoDataText = AppResources.NoItems;
+            NoDataText = Regex.Replace(AppResources.NoItems, @"\\e0A", "\n", RegexOptions.CultureInvariant);
             _allCiphers = await GetAllCiphersAsync();
             HasCiphers = _allCiphers.Any();
             TOTPCiphers = _allCiphers.Where(c => c.IsDeleted == Deleted && c.Type == CipherType.Login && !string.IsNullOrEmpty(c.Login?.Totp) && (c.OrganizationUseTotp || canAccessPremium)).ToList();

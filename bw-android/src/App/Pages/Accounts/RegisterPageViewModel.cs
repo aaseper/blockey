@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Bit.App.Abstractions;
@@ -230,14 +231,19 @@ namespace Bit.App.Pages
                 await _deviceActionService.HideLoadingAsync();
                 if (e?.Error != null)
                 {
+                    string errorMessage = e.Error.GetSingleMessage();
+                    
                     // Temporary fix for the unhandled server error (500) because of the email verification issue
                     if (e.Error.GetSingleMessage().Contains("unhandled server error")) 
                     {
                         RegistrationSuccess?.Invoke();
                         return;
                     }
-                    await _platformUtilsService.ShowDialogAsync(e.Error.GetSingleMessage(),
-                        AppResources.AnErrorHasOccurred, AppResources.Ok);
+                    if (errorMessage.Contains("not a supported e-mail address format"))
+                        errorMessage = Regex.Replace(AppResources.ErrorBadEmailFormat, @"\\e0A", "\n", RegexOptions.CultureInvariant);
+
+                    await _platformUtilsService.ShowDialogAsync(errorMessage, AppResources.AnErrorHasOccurred,
+                        AppResources.Ok);
                 }
             }
         }

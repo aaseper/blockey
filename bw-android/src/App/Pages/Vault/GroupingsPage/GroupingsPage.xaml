@@ -146,6 +146,19 @@
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.Name="{u:I18n Filter}" />
                 </StackLayout>
+                <StackLayout
+                    VerticalOptions="CenterAndExpand"
+                    Padding="20, 0"
+                    Spacing="20"
+                    IsVisible="{Binding ShowNoData}">
+                    <Label
+                        Text="{Binding NoDataText}"
+                        HorizontalTextAlignment="Center"
+                        StyleClass="text-lg, text-muted"
+                        AutomationId="NoDataDisplayed">
+                    </Label>
+                </StackLayout>
+                
                 <RefreshView
                     IsVisible="{Binding ShowList}"
                     IsRefreshing="{Binding Refreshing}"
