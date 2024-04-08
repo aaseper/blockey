@@ -1258,7 +1258,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Eliminar</value>
   </data>
   <data name="NewUri" xml:space="preserve">
-    <value>Nuevo enlace</value>
+    <value>Añadir otro enlace</value>
   </data>
   <data name="URIPosition" xml:space="preserve">
     <value>Enlace {0}</value>

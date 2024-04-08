@@ -236,7 +236,7 @@ namespace Bit.App.Pages
                 {
                     AddTotpGroupItem(groupedItems, uppercaseGroupNames);
 
-                    var types = new CipherType[] { CipherType.Login, CipherType.Card, CipherType.Identity, CipherType.SecureNote };
+                    var types = new CipherType[] { CipherType.Login, CipherType.Identity };
                     var typesGroup = new GroupingsPageListGroup(AppResources.Types, types.Length, uppercaseGroupNames, !hasFavorites);
                     foreach (CipherType t in types)
                     {
@@ -455,9 +455,6 @@ namespace Bit.App.Pages
             {
                 case CipherType.Login:
                     title = AppResources.Logins;
-                    break;
-                case CipherType.Card:
-                    title = AppResources.Cards;
                     break;
                 case CipherType.Identity:
                     title = AppResources.Identities;

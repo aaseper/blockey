@@ -51,12 +51,6 @@ namespace Bit.App.Pages
                         case CipherType.Login:
                             _name = AppResources.TypeLogin;
                             break;
-                        case CipherType.SecureNote:
-                            _name = AppResources.TypeSecureNote;
-                            break;
-                        case CipherType.Card:
-                            _name = AppResources.TypeCard;
-                            break;
                         case CipherType.Identity:
                             _name = AppResources.TypeIdentity;
                             break;
@@ -101,12 +95,6 @@ namespace Bit.App.Pages
                     {
                         case CipherType.Login:
                             _icon = BitwardenIcons.Globe;
-                            break;
-                        case CipherType.SecureNote:
-                            _icon = BitwardenIcons.StickyNote;
-                            break;
-                        case CipherType.Card:
-                            _icon = BitwardenIcons.CreditCard;
                             break;
                         case CipherType.Identity:
                             _icon = BitwardenIcons.IdCard;
