@@ -37,6 +37,7 @@ namespace Bit.App.Pages
         private readonly IAccountsManager _accountManager;
         private bool _showPassword;
         private bool _showCancelButton;
+        private bool _verifiedEmailCouldNotBeSent;
         private string _email;
         private string _masterPassword;
         private bool _isEmailEnabled;
@@ -81,6 +82,12 @@ namespace Bit.App.Pages
                     nameof(ShowPasswordIcon),
                     nameof(PasswordVisibilityAccessibilityText)
                 });
+        }
+
+        public bool VerifiedEmailCouldNotBeSent
+        {
+            get => _verifiedEmailCouldNotBeSent;
+            set => SetProperty(ref _verifiedEmailCouldNotBeSent, value);
         }
 
         public bool ShowCancelButton
@@ -216,6 +223,7 @@ namespace Bit.App.Pages
             }
 
             ShowPassword = false;
+            VerifiedEmailCouldNotBeSent = false;
             try
             {
                 _isExecutingLogin = true;
@@ -279,6 +287,13 @@ namespace Bit.App.Pages
             }
             catch (ApiException e)
             {
+                // Retry login if 500 (verification email could not be sent).
+                if (e?.Error != null && e.Error.GetFullMessage().Contains("500 InternalServerError"))
+                {
+                    VerifiedEmailCouldNotBeSent = true;
+                    await LogInAsync();
+                    return;
+                }
                 _captchaToken = null;
                 MasterPassword = string.Empty;
                 await _deviceActionService.HideLoadingAsync();
@@ -290,7 +305,10 @@ namespace Bit.App.Pages
             }
             finally
             {
-                _isExecutingLogin = false;
+                if (!VerifiedEmailCouldNotBeSent) 
+                {
+                    _isExecutingLogin = false;
+                }
             }
         }
 
