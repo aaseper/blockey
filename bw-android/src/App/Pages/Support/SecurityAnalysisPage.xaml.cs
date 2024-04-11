@@ -12,21 +12,20 @@ using Xamarin.Forms;
 
 namespace Bit.App.Pages
 {
-    public partial class SupportPage : BaseContentPage, IThemeDirtablePage
+    public partial class SecurityAnalysisPage : BaseContentPage, IThemeDirtablePage
     {
         private readonly IVaultTimeoutService _vaultTimeoutService;
         private readonly IBroadcasterService _broadcasterService;
         private readonly TabsPage _tabsPage;
-        private SupportPageViewModel _vm;
-        
+        private SecurityAnalysisPageViewModel _vm;
 
-        public SupportPage(bool fromTabPage, Action<string> selectAction = null, TabsPage tabsPage = null, bool isUsernameGenerator = false, string emailWebsite = null, bool editMode = false, AppOptions appOptions = null)
+
+        public SecurityAnalysisPage()
         {
-            _tabsPage = tabsPage;
             InitializeComponent();
-            _vm = BindingContext as SupportPageViewModel;
+            _vm = BindingContext as SecurityAnalysisPageViewModel;
             _vaultTimeoutService = ServiceContainer.Resolve<IVaultTimeoutService>("vaultTimeoutService");
-            _vm.StartRegisterAction = () => Device.BeginInvokeOnMainThread(async () => await StartRegisterAsync());
+            
             ToolbarItems.Add(_lockItem);
             ToolbarItems.Add(_exitItem);
         }
@@ -34,21 +33,6 @@ namespace Bit.App.Pages
         public async Task InitAsync()
         {
             await _vm.InitAsync();
-        }
-
-        protected override bool OnBackButtonPressed()
-        {
-            if (Device.RuntimePlatform == Device.Android && _tabsPage != null)
-            {
-                _tabsPage.ResetToVaultPage();
-                return true;
-            }
-            return base.OnBackButtonPressed();
-        }
-
-        private async Task StartRegisterAsync()
-        {
-            await Navigation.PushModalAsync(new NavigationPage(new SecurityAnalysisPage()));
         }
 
         private void RowSelected(object sender, SelectionChangedEventArgs e)
@@ -68,6 +52,11 @@ namespace Bit.App.Pages
         private void Exit_Clicked(object sender, EventArgs e)
         {
             _vm.Exit();
+        }
+
+        private void Close_Clicked(object sender, EventArgs e)
+        {
+            _vm.CloseAction();
         }
     }
 }
