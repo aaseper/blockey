@@ -2793,4 +2793,13 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
   <data name="LoggingInOn" xml:space="preserve">
     <value>Iniciar sesión en</value>
   </data>
+  <data name="SupportPageTitle" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="SupportFAQ" xml:space="preserve">
+    <value>Preguntas frecuentes</value>
+  </data>
+  <data name="SupportHowToLogOut" xml:space="preserve">
+    <value>¿Cómo puedo cerrar sesión?</value>
+  </data>
 </root>

@@ -6321,6 +6321,33 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SupportFAQ.
+        /// </summary>
+        public static string SupportFAQ {
+            get {
+                return ResourceManager.GetString("SupportFAQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportHowToLogOut.
+        /// </summary>
+        public static string SupportHowToLogOut {
+            get {
+                return ResourceManager.GetString("SupportHowToLogOut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportPageTitle.
+        /// </summary>
+        public static string SupportPageTitle {
+            get {
+                return ResourceManager.GetString("SupportPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Would you like to switch to it now?.
         /// </summary>
         public static string SwitchToAlreadyAddedAccountConfirmation {

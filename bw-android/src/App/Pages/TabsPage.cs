@@ -22,6 +22,7 @@ namespace Bit.App.Pages
         private NavigationPage _groupingsPage;
         private NavigationPage _sendGroupingsPage;
         private NavigationPage _generatorPage;
+        private NavigationPage _supportPage;
 
         public TabsPage(AppOptions appOptions = null, PreviousPageInfo previousPage = null)
         {
@@ -43,6 +44,13 @@ namespace Bit.App.Pages
                 IconImageSource = "generate.png"
             };
             Children.Add(_generatorPage);
+
+            _supportPage = new NavigationPage(new SupportPage(true, null, this, false, null, false, appOptions))
+            {
+                Title = AppResources.SupportPageTitle,
+                IconImageSource = "help.png"
+            };
+            Children.Add(_supportPage);
 
             var settingsPage = new NavigationPage(new SettingsPage(this))
             {
@@ -116,6 +124,11 @@ namespace Bit.App.Pages
             CurrentPage = _generatorPage;
         }
 
+        public void ResetToSupportPage()
+        {
+            CurrentPage = _supportPage;
+        }
+
         public void ResetToSendPage()
         {
             CurrentPage = _sendGroupingsPage;
@@ -138,6 +151,10 @@ namespace Bit.App.Pages
                 else if (navPage.RootPage is GeneratorPage genPage)
                 {
                     await genPage.InitAsync();
+                }
+                else if (navPage.RootPage is SupportPage supportPage)
+                {
+                    await supportPage.InitAsync();
                 }
                 else if (navPage.RootPage is SettingsPage settingsPage)
                 {
