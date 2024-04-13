@@ -6321,6 +6321,51 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SupportAboutBlocKey.
+        /// </summary>
+        public static string SupportAboutBlocKey {
+            get {
+                return ResourceManager.GetString("SupportAboutBlocKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportAboutBlocKeyContactUs.
+        /// </summary>
+        public static string SupportAboutBlocKeyContactUs {
+            get {
+                return ResourceManager.GetString("SupportAboutBlocKeyContactUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportAboutBlocKeyContactUsText.
+        /// </summary>
+        public static string SupportAboutBlocKeyContactUsText {
+            get {
+                return ResourceManager.GetString("SupportAboutBlocKeyContactUsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportAboutBlocKeyWhy.
+        /// </summary>
+        public static string SupportAboutBlocKeyWhy {
+            get {
+                return ResourceManager.GetString("SupportAboutBlocKeyWhy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportAboutBlocKeyWhyText.
+        /// </summary>
+        public static string SupportAboutBlocKeyWhyText {
+            get {
+                return ResourceManager.GetString("SupportAboutBlocKeyWhyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SupportFAQ.
         /// </summary>
         public static string SupportFAQ {
@@ -6330,11 +6375,38 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SupportHowToLogOut.
+        ///   Looks up a localized string similar to SupportFAQForget.
         /// </summary>
-        public static string SupportHowToLogOut {
+        public static string SupportFAQForget {
             get {
-                return ResourceManager.GetString("SupportHowToLogOut", resourceCulture);
+                return ResourceManager.GetString("SupportFAQForget", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportFAQForgetText.
+        /// </summary>
+        public static string SupportFAQForgetText {
+            get {
+                return ResourceManager.GetString("SupportFAQForgetText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportFAQMissingPassword.
+        /// </summary>
+        public static string SupportFAQMissingPassword {
+            get {
+                return ResourceManager.GetString("SupportFAQMissingPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportFAQMissingPasswordText.
+        /// </summary>
+        public static string SupportFAQMissingPasswordText {
+            get {
+                return ResourceManager.GetString("SupportFAQMissingPasswordText", resourceCulture);
             }
         }
         
@@ -6344,6 +6416,231 @@ namespace Bit.App.Resources {
         public static string SupportPageTitle {
             get {
                 return ResourceManager.GetString("SupportPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysis.
+        /// </summary>
+        public static string SupportSecurityAnalysis {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisProblemSolveAndSupport.
+        /// </summary>
+        public static string SupportSecurityAnalysisProblemSolveAndSupport {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisProblemSolveAndSupport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisProblemSolveAndSupportText.
+        /// </summary>
+        public static string SupportSecurityAnalysisProblemSolveAndSupportText {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisProblemSolveAndSupportText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccount.
+        /// </summary>
+        public static string SupportYourAccount {
+            get {
+                return ResourceManager.GetString("SupportYourAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountCreateAccount.
+        /// </summary>
+        public static string SupportYourAccountCreateAccount {
+            get {
+                return ResourceManager.GetString("SupportYourAccountCreateAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountCreateAccountText.
+        /// </summary>
+        public static string SupportYourAccountCreateAccountText {
+            get {
+                return ResourceManager.GetString("SupportYourAccountCreateAccountText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountDeleteAccount.
+        /// </summary>
+        public static string SupportYourAccountDeleteAccount {
+            get {
+                return ResourceManager.GetString("SupportYourAccountDeleteAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountDeleteAccountText.
+        /// </summary>
+        public static string SupportYourAccountDeleteAccountText {
+            get {
+                return ResourceManager.GetString("SupportYourAccountDeleteAccountText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountLogIn.
+        /// </summary>
+        public static string SupportYourAccountLogIn {
+            get {
+                return ResourceManager.GetString("SupportYourAccountLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountLogInText.
+        /// </summary>
+        public static string SupportYourAccountLogInText {
+            get {
+                return ResourceManager.GetString("SupportYourAccountLogInText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountManageAccount.
+        /// </summary>
+        public static string SupportYourAccountManageAccount {
+            get {
+                return ResourceManager.GetString("SupportYourAccountManageAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourAccountManageAccountText.
+        /// </summary>
+        public static string SupportYourAccountManageAccountText {
+            get {
+                return ResourceManager.GetString("SupportYourAccountManageAccountText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswords.
+        /// </summary>
+        public static string SupportYourSavedPasswords {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswords", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsDeletePassword.
+        /// </summary>
+        public static string SupportYourSavedPasswordsDeletePassword {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsDeletePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsDeletePasswordText.
+        /// </summary>
+        public static string SupportYourSavedPasswordsDeletePasswordText {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsDeletePasswordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsEditPassword.
+        /// </summary>
+        public static string SupportYourSavedPasswordsEditPassword {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsEditPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsEditPasswordText.
+        /// </summary>
+        public static string SupportYourSavedPasswordsEditPasswordText {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsEditPasswordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsGenerateSecurePassword.
+        /// </summary>
+        public static string SupportYourSavedPasswordsGenerateSecurePassword {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsGenerateSecurePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsGenerateSecurePasswordText.
+        /// </summary>
+        public static string SupportYourSavedPasswordsGenerateSecurePasswordText {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsGenerateSecurePasswordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsPasswordProblemSolve.
+        /// </summary>
+        public static string SupportYourSavedPasswordsPasswordProblemSolve {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsPasswordProblemSolve", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsPasswordProblemSolveText.
+        /// </summary>
+        public static string SupportYourSavedPasswordsPasswordProblemSolveText {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsPasswordProblemSolveText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsSavePassword.
+        /// </summary>
+        public static string SupportYourSavedPasswordsSavePassword {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsSavePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsSavePasswordText.
+        /// </summary>
+        public static string SupportYourSavedPasswordsSavePasswordText {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsSavePasswordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsWhatIs.
+        /// </summary>
+        public static string SupportYourSavedPasswordsWhatIs {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsWhatIs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportYourSavedPasswordsWhatIsText.
+        /// </summary>
+        public static string SupportYourSavedPasswordsWhatIsText {
+            get {
+                return ResourceManager.GetString("SupportYourSavedPasswordsWhatIsText", resourceCulture);
             }
         }
         

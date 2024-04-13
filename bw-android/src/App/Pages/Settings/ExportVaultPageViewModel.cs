@@ -56,7 +56,7 @@ namespace Bit.App.Pages
             {
                 new KeyValuePair<string, string>("json", ".json"),
                 new KeyValuePair<string, string>("csv", ".csv"),
-                new KeyValuePair<string, string>("encrypted_json", ".json (Encrypted)")
+                new KeyValuePair<string, string>("encrypted_json", ".json (Cifrado)")
             };
         }
 

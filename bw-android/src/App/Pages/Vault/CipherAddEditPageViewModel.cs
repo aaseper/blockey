@@ -584,13 +584,6 @@ namespace Bit.App.Pages
                     AppResources.InternetConnectionRequiredTitle);
                 return false;
             }
-            var confirmed = await _platformUtilsService.ShowDialogAsync(
-                AppResources.DoYouReallyWantToSoftDeleteCipher,
-                null, AppResources.Yes, AppResources.Cancel);
-            if (!confirmed)
-            {
-                return false;
-            }
             try
             {
                 await _deviceActionService.ShowLoadingAsync(AppResources.SoftDeleting);

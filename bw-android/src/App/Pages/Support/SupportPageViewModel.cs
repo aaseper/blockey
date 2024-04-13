@@ -66,49 +66,116 @@ namespace Bit.App.Pages
         public void BuildList()
         {
             var securityAnalysisItems = new List<SettingsPageListItem>();
+            var yourAccountItems = new List<SettingsPageListItem>();
+            var yourPasswordsItems = new List<SettingsPageListItem>();
             var faqItems = new List<SettingsPageListItem>();
+            var aboutUsItems = new List<SettingsPageListItem>();
 
-            Dictionary<string, string> reusedPasswords = new Dictionary<string, string>();  // pair id-password
-            List<string> weakPasswords = new List<string>();  // id list
+            IList<SecurityAnalysisStatistics> securityAnalysisStatistics = new List<SecurityAnalysisStatistics>();
+            ISet<string> uniquePasswords = new HashSet<string>();
+
             
             foreach (var cipher in _loginCiphers)
             {
                 var passwordStrengthResult = _passwordGenerationService.PasswordStrength(cipher.Login.Password, new List<string>{ cipher.Login.Username });
 
                 string passwordStrengthLevel = PasswordStrengthProjection(passwordStrengthResult);
-                
-                Dictionary<string, string[]> cipherKeyValues = new Dictionary<string, string[]>();
 
-                cipherKeyValues.Add(cipher.Id, new string[3]{ cipher.Name, cipher.Login.Password, passwordStrengthLevel });
-                
-                securityAnalysisItems.Add(new SettingsPageListItem
-                {
-                    Name = cipher.Name,
-                    ExecuteAsync = () => OpenExplanationPopUp(cipher.Name, passwordStrengthLevel.ToString())
-                });
+                securityAnalysisStatistics.Add(new SecurityAnalysisStatistics(cipher, passwordStrengthLevel, new List<string>()));
             }
 
+            /* Security Analysis */
             securityAnalysisItems.Add(new SettingsPageListItem
             {
-                Name = "Constraseñas débiles",
-                ExecuteAsync = () => OpenExplanationPopUp("Constraseñas débiles", "Body")
+                Name = AppResources.SupportSecurityAnalysisProblemSolveAndSupport,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportSecurityAnalysisProblemSolveAndSupport, AppResources.SupportSecurityAnalysisProblemSolveAndSupportText)
             });
 
+            /* Your Account */
+            yourAccountItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourAccountCreateAccount,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourAccountCreateAccount, AppResources.SupportYourAccountCreateAccountText)
+            });
+            yourAccountItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourAccountManageAccount,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourAccountManageAccount, AppResources.SupportYourAccountManageAccountText)
+            });
+            yourAccountItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourAccountLogIn,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourAccountLogIn, AppResources.SupportYourAccountLogInText)
+            });
+            yourAccountItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourAccountDeleteAccount,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourAccountDeleteAccount, AppResources.SupportYourAccountDeleteAccountText)
+            });
+
+            /* Your Passwords */
+            yourPasswordsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourSavedPasswordsWhatIs,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourSavedPasswordsWhatIs, AppResources.SupportYourSavedPasswordsWhatIsText)
+            });
+            yourPasswordsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourSavedPasswordsSavePassword,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourSavedPasswordsSavePassword, AppResources.SupportYourSavedPasswordsSavePasswordText)
+            });
+            yourPasswordsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourSavedPasswordsEditPassword,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourSavedPasswordsEditPassword, AppResources.SupportYourSavedPasswordsEditPasswordText)
+            });
+            yourPasswordsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourSavedPasswordsGenerateSecurePassword,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourSavedPasswordsGenerateSecurePassword, AppResources.SupportYourSavedPasswordsGenerateSecurePasswordText)
+            });
+            yourPasswordsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourSavedPasswordsDeletePassword,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourSavedPasswordsDeletePassword, AppResources.SupportYourSavedPasswordsDeletePasswordText)
+            });
+            yourPasswordsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportYourSavedPasswordsPasswordProblemSolve,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportYourSavedPasswordsPasswordProblemSolve, AppResources.SupportYourSavedPasswordsPasswordProblemSolveText)
+            });
+
+            /* FAQ */
             faqItems.Add(new SettingsPageListItem
             {
-                Name = AppResources.SupportHowToLogOut,
-                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportHowToLogOut, "Body")
+                Name = AppResources.SupportFAQForget,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportFAQForget, AppResources.SupportFAQForgetText)
             });
             faqItems.Add(new SettingsPageListItem
             {
-                Name = "Subpágina de Análisis de Seguridad (WIP)",
-                ExecuteAsync = async () => await Device.InvokeOnMainThreadAsync(StartRegisterAction)
-            });  
+                Name = AppResources.SupportFAQMissingPassword,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportFAQMissingPassword, AppResources.SupportFAQMissingPasswordText)
+            });
+
+            /* About Us */
+            aboutUsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportAboutBlocKeyWhy,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportAboutBlocKeyWhy, AppResources.SupportAboutBlocKeyWhyText)
+            });
+            aboutUsItems.Add(new SettingsPageListItem
+            {
+                Name = AppResources.SupportAboutBlocKeyContactUs,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportAboutBlocKeyContactUs, AppResources.SupportAboutBlocKeyContactUsText)
+            });
 
             var supportListGroupItems = new List<SettingsPageListGroup>()
             {
-                new SettingsPageListGroup(securityAnalysisItems, "Análisis de Seguridad", false, true),
-                new SettingsPageListGroup(faqItems, AppResources.SupportFAQ, false, false)
+                new SettingsPageListGroup(securityAnalysisItems, AppResources.SupportSecurityAnalysis, false, true),
+                new SettingsPageListGroup(yourAccountItems, AppResources.SupportYourAccount, false, false),
+                new SettingsPageListGroup(yourPasswordsItems, AppResources.SupportYourSavedPasswords, false, false),
+                new SettingsPageListGroup(faqItems, AppResources.SupportFAQ, false, false),
+                new SettingsPageListGroup(aboutUsItems, AppResources.SupportAboutBlocKey, false, false)
             };
 
             var items = new List<ISettingsPageListItem>();
@@ -129,10 +196,9 @@ namespace Bit.App.Pages
 
         public async Task OpenExplanationPopUp(string title, string body)
         {
-            var text = body;
+            var text = Regex.Replace(body, @"\\e0A", "\n", RegexOptions.CultureInvariant);
             var acceptTriggered = await _platformUtilsService.ShowDialogAsync(text, title,
                 AppResources.ThankYou);
-            // if (acceptTriggered) { _platformUtilsService.LaunchUri("https://bitwarden.com/es-la/help/getting-started-mobile/"); }
         }
 
         public async Task SelectCipherAsync(CipherView cipher)
@@ -157,6 +223,19 @@ namespace Bit.App.Pages
         public void Exit()
         {
             _messagingService.Send("exit");
+        }
+    }
+
+    public class SecurityAnalysisStatistics
+    {
+        CipherView Cipher { get; set; }
+        string PasswordStrengthLevel { get; set; }
+        IList<string> ReusedPasswords { get; set; }
+        public SecurityAnalysisStatistics(CipherView cipher, string passwordStrengthLevel, IList<string> reusedPasswords)
+        {
+            Cipher = cipher;
+            PasswordStrengthLevel = passwordStrengthLevel;
+            ReusedPasswords = reusedPasswords;
         }
     }
 }

@@ -49,8 +49,8 @@ namespace Bit.App.Pages
 
             exampleItem.Add(new SettingsPageListItem
             {
-                Name = "Constraseñas débiles",
-                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportHowToLogOut)
+                Name = "Example",
+                ExecuteAsync = () => OpenExplanationPopUp("Example")
             });
 
             var supportListGroupItems = new List<SettingsPageListGroup>()

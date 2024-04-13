@@ -2804,10 +2804,114 @@ Do you want to switch to this account?</value>
   <data name="SupportPageTitle" xml:space="preserve">
     <value>SupportPageTitle</value>
   </data>
+  
+  <data name="SupportSecurityAnalysis" xml:space="preserve">
+    <value>SupportSecurityAnalysis</value>
+  </data>
+  <data name="SupportSecurityAnalysisProblemSolveAndSupport" xml:space="preserve">
+    <value>SupportSecurityAnalysisProblemSolveAndSupport</value>
+  </data>
+  <data name="SupportSecurityAnalysisProblemSolveAndSupportText" xml:space="preserve">
+    <value>SupportSecurityAnalysisProblemSolveAndSupportText</value>
+  </data>
+  
+  <data name="SupportYourAccount" xml:space="preserve">
+    <value>SupportYourAccount</value>
+  </data>
+  <data name="SupportYourAccountCreateAccount" xml:space="preserve">
+    <value>SupportYourAccountCreateAccount</value>
+  </data>
+  <data name="SupportYourAccountCreateAccountText" xml:space="preserve">
+    <value>SupportYourAccountCreateAccountText</value>
+  </data>
+  <data name="SupportYourAccountManageAccount" xml:space="preserve">
+    <value>SupportYourAccountManageAccount</value>
+  </data>
+  <data name="SupportYourAccountManageAccountText" xml:space="preserve">
+    <value>SupportYourAccountManageAccountText</value>
+  </data>
+  <data name="SupportYourAccountLogIn" xml:space="preserve">
+    <value>SupportYourAccountLogIn</value>
+  </data>
+  <data name="SupportYourAccountLogInText" xml:space="preserve">
+    <value>SupportYourAccountLogInText</value>
+  </data>
+  <data name="SupportYourAccountDeleteAccount" xml:space="preserve">
+    <value>SupportYourAccountDeleteAccount</value>
+  </data>
+  <data name="SupportYourAccountDeleteAccountText" xml:space="preserve">
+    <value>SupportYourAccountDeleteAccountText</value>
+  </data>
+  
+  <data name="SupportYourSavedPasswords" xml:space="preserve">
+    <value>SupportYourSavedPasswords</value>
+  </data>
+  <data name="SupportYourSavedPasswordsWhatIs" xml:space="preserve">
+    <value>SupportYourSavedPasswordsWhatIs</value>
+  </data>
+  <data name="SupportYourSavedPasswordsWhatIsText" xml:space="preserve">
+    <value>SupportYourSavedPasswordsWhatIsText</value>
+  </data>
+  <data name="SupportYourSavedPasswordsSavePassword" xml:space="preserve">
+    <value>SupportYourSavedPasswordsSavePassword</value>
+  </data>
+  <data name="SupportYourSavedPasswordsSavePasswordText" xml:space="preserve">
+    <value>SupportYourSavedPasswordsSavePasswordText</value>
+  </data>
+  <data name="SupportYourSavedPasswordsEditPassword" xml:space="preserve">
+    <value>SupportYourSavedPasswordsEditPassword</value>
+  </data>
+  <data name="SupportYourSavedPasswordsEditPasswordText" xml:space="preserve">
+    <value>SupportYourSavedPasswordsEditPasswordText</value>
+  </data>
+  <data name="SupportYourSavedPasswordsGenerateSecurePassword" xml:space="preserve">
+    <value>SupportYourSavedPasswordsGenerateSecurePassword</value>
+  </data>
+  <data name="SupportYourSavedPasswordsGenerateSecurePasswordText" xml:space="preserve">
+    <value>SupportYourSavedPasswordsGenerateSecurePasswordText</value>
+  </data>
+  <data name="SupportYourSavedPasswordsDeletePassword" xml:space="preserve">
+    <value>SupportYourSavedPasswordsDeletePassword</value>
+  </data>
+  <data name="SupportYourSavedPasswordsDeletePasswordText" xml:space="preserve">
+    <value>SupportYourSavedPasswordsDeletePasswordText</value>
+  </data>
+  <data name="SupportYourSavedPasswordsPasswordProblemSolve" xml:space="preserve">
+    <value>SupportYourSavedPasswordsPasswordProblemSolve</value>
+  </data>
+  <data name="SupportYourSavedPasswordsPasswordProblemSolveText" xml:space="preserve">
+    <value>SupportYourSavedPasswordsPasswordProblemSolveText</value>
+  </data>
+  
   <data name="SupportFAQ" xml:space="preserve">
     <value>SupportFAQ</value>
   </data>
-  <data name="SupportHowToLogOut" xml:space="preserve">
-    <value>SupportHowToLogOut</value>
+  <data name="SupportFAQForget" xml:space="preserve">
+    <value>SupportFAQForget</value>
+  </data>
+  <data name="SupportFAQForgetText" xml:space="preserve">
+    <value>SupportFAQForgetText</value>
+  </data>
+  <data name="SupportFAQMissingPassword" xml:space="preserve">
+    <value>SupportFAQMissingPassword</value>
+  </data>
+  <data name="SupportFAQMissingPasswordText" xml:space="preserve">
+    <value>SupportFAQMissingPasswordText</value>
+  </data>
+  
+  <data name="SupportAboutBlocKey" xml:space="preserve">
+    <value>SupportAboutBlocKey</value>
+  </data>
+  <data name="SupportAboutBlocKeyWhy" xml:space="preserve">
+    <value>SupportAboutBlocKeyWhy</value>
+  </data>
+  <data name="SupportAboutBlocKeyWhyText" xml:space="preserve">
+    <value>SupportAboutBlocKeyWhyText</value>
+  </data>
+  <data name="SupportAboutBlocKeyContactUs" xml:space="preserve">
+    <value>SupportAboutBlocKeyContactUs</value>
+  </data>
+  <data name="SupportAboutBlocKeyContactUsText" xml:space="preserve">
+    <value>SupportAboutBlocKeyContactUsText</value>
   </data>
 </root>
