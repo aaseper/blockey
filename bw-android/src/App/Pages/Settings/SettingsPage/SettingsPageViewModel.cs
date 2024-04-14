@@ -220,7 +220,7 @@ namespace Bit.App.Pages
                 AppResources.LearnMore, AppResources.Close);
             if (learnMore)
             {
-                _platformUtilsService.LaunchUri("https://bitwarden.com/help/fingerprint-phrase/");
+                _platformUtilsService.LaunchUri("https://bitwarden.com/es-la/help/fingerprint-phrase/");
             }
         }
 
@@ -231,7 +231,7 @@ namespace Bit.App.Pages
 
         public void Import()
         {
-            _platformUtilsService.LaunchUri("https://bitwarden.com/help/import-data/");
+            _platformUtilsService.LaunchUri("https://bitwarden.com/es-la/help/import-data/");
         }
 
         public void WebVault()
@@ -245,7 +245,7 @@ namespace Bit.App.Pages
                AppResources.LearnOrg, AppResources.Yes, AppResources.Cancel);
             if (confirmed)
             {
-                _platformUtilsService.LaunchUri("https://bitwarden.com/help/about-organizations/");
+                _platformUtilsService.LaunchUri("https://bitwarden.com/es-la/help/about-organizations/");
             }
         }
 
@@ -544,11 +544,6 @@ namespace Bit.App.Pages
             }
             var manageItems = new List<SettingsPageListItem>
             {
-                new SettingsPageListItem
-                {
-                    Name = AppResources.Folders,
-                    ExecuteAsync = () => Page.Navigation.PushModalAsync(new NavigationPage(new FoldersPage()))
-                },
                 new SettingsPageListItem
                 {
                     Name = AppResources.Sync,

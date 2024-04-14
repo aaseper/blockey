@@ -87,7 +87,7 @@ namespace Bit.App.Pages
                     AppResources.FeatureUnavailable, AppResources.LearnMore, AppResources.Cancel);
                 if (confirmed)
                 {
-                    _platformUtilsService.LaunchUri("https://bitwarden.com/help/account-encryption-key/#rotate-your-encryption-key");
+                    _platformUtilsService.LaunchUri("https://bitwarden.com/es-la/help/account-encryption-key/");
                 }
             }
         }

@@ -626,25 +626,11 @@
                         </DataTemplate>
                     </controls:RepeaterView.ItemTemplate>
                 </controls:RepeaterView>
-                <Button Text="{u:I18n NewUri}" StyleClass="box-button-row"
-                        Clicked="NewUri_Clicked"
-                        AutomationId="LoginAddNewUriButton"></Button>
             </StackLayout>
             <StackLayout StyleClass="box">
                 <StackLayout StyleClass="box-row-header">
                     <Label Text="{u:I18n Miscellaneous, Header=True}"
                            StyleClass="box-header, box-header-platform" />
-                </StackLayout>
-                <StackLayout StyleClass="box-row, box-row-input">
-                    <Label
-                        Text="{u:I18n Folder}"
-                        StyleClass="box-label" />
-                    <Picker
-                        x:Name="_folderPicker"
-                        ItemsSource="{Binding FolderOptions, Mode=OneTime}"
-                        SelectedIndex="{Binding FolderSelectedIndex}"
-                        StyleClass="box-value"
-                        AutomationId="FolderPicker" />
                 </StackLayout>
                 <StackLayout StyleClass="box-row, box-row-switch">
                     <Label
@@ -661,14 +647,6 @@
                     <Label
                         Text="{u:I18n PasswordPrompt}"
                         StyleClass="box-label-regular" />
-                    <controls:IconButton 
-                        StyleClass="box-row-button, box-row-button-platform"
-                        Text="{Binding Source={x:Static core:BitwardenIcons.QuestionCircle}}"
-                        Command="{Binding PasswordPromptHelpCommand}"
-                        TextColor="{DynamicResource MutedColor}"
-                        AutomationProperties.IsInAccessibleTree="True"
-                        AutomationProperties.Name="{u:I18n MasterPasswordRePromptHelp}"
-                        HorizontalOptions="StartAndExpand" />
                     <Switch
                         IsToggled="{Binding PasswordPrompt}"
                         Toggled="PasswordPrompt_Toggled"
@@ -677,62 +655,6 @@
                         AutomationId="MasterPasswordRepromptToggle" />
                 </StackLayout>
                 <BoxView StyleClass="box-row-separator" />
-            </StackLayout>
-            <StackLayout StyleClass="box">
-                <StackLayout StyleClass="box-row-header">
-                    <Label Text="{u:I18n Notes, Header=True}"
-                           StyleClass="box-header, box-header-platform" />
-                </StackLayout>
-                <StackLayout StyleClass="box-row, box-row-input">
-                    <Editor
-                        x:Name="_notesEditor"
-                        AutoSize="TextChanges"
-                        StyleClass="box-value"
-                        effects:ScrollEnabledEffect.IsScrollEnabled="false"
-                        Text="{Binding Cipher.Notes}"
-                        AutomationProperties.IsInAccessibleTree="True"
-                        AutomationProperties.Name="{u:I18n Notes}"
-                        AutomationId="ItemNotesEntry">
-                        <Editor.Behaviors>
-                            <behaviors:EditorPreventAutoBottomScrollingOnFocusedBehavior ParentScrollView="{x:Reference _scrollView}" />
-                        </Editor.Behaviors>
-                        <Editor.Effects>
-                            <effects:ScrollEnabledEffect />
-                        </Editor.Effects>
-                    </Editor>
-                </StackLayout>
-                <BoxView StyleClass="box-row-separator" IsVisible="{Binding ShowNotesSeparator}" />
-            </StackLayout>
-            <StackLayout StyleClass="box">
-                <StackLayout StyleClass="box-row-header">
-                    <Label Text="{u:I18n CustomFields, Header=True}"
-                           StyleClass="box-header, box-header-platform" />
-                </StackLayout>
-                <StackLayout
-                    Spacing="0"
-                    BindableLayout.ItemsSource="{Binding Fields}"
-                    BindableLayout.ItemTemplateSelector="{StaticResource CustomFieldItemTemplateSelector}"
-                    AutomationId="CustomFieldsList" />
-                <Button Text="{u:I18n NewCustomField}" StyleClass="box-button-row"
-                        Clicked="NewField_Clicked"
-                        AutomationId="NewCustomFieldButton"></Button>
-            </StackLayout>
-            <StackLayout StyleClass="box" IsVisible="{Binding ShowOwnershipOptions}">
-                <StackLayout StyleClass="box-row-header">
-                    <Label Text="{u:I18n Ownership, Header=True}"
-                           StyleClass="box-header, box-header-platform" />
-                </StackLayout>
-                <StackLayout StyleClass="box-row, box-row-input">
-                    <Label
-                        Text="{u:I18n WhoOwnsThisItem}"
-                        StyleClass="box-label" />
-                    <Picker
-                        x:Name="_ownershipPicker"
-                        ItemsSource="{Binding OwnershipOptions, Mode=OneTime}"
-                        SelectedIndex="{Binding OwnershipSelectedIndex}"
-                        StyleClass="box-value"
-                        AutomationId="ItemOwnershipPicker" />
-                </StackLayout>
             </StackLayout>
             <StackLayout StyleClass="box" IsVisible="{Binding ShowCollections}">
                 <StackLayout StyleClass="box-row-header">

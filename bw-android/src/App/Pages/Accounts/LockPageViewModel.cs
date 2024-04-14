@@ -209,7 +209,7 @@ namespace Bit.App.Pages
             var webVault = _environmentService.GetWebVaultUrl(true);
             if (string.IsNullOrWhiteSpace(webVault))
             {
-                webVault = "https://bitwarden.com";
+                webVault = "https://bitwarden.com/es-la/";
             }
             var webVaultHostname = CoreHelpers.GetHostname(webVault);
             LoggedInAsText = string.Format(AppResources.LoggedInAsOn, _email, webVaultHostname);

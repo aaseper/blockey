@@ -607,15 +607,6 @@ namespace Bit.App.Pages
 
         public async void GeneratePassword()
         {
-            if (!string.IsNullOrWhiteSpace(Cipher?.Login?.Password))
-            {
-                var confirmed = await _platformUtilsService.ShowDialogAsync(AppResources.PasswordOverrideAlert,
-                    null, AppResources.Yes, AppResources.No);
-                if (!confirmed)
-                {
-                    return;
-                }
-            }
             var page = new GeneratorPage(false, async (password) =>
             {
                 Cipher.Login.Password = password;
@@ -810,7 +801,7 @@ namespace Bit.App.Pages
 
         public void PasswordPromptHelp()
         {
-            _platformUtilsService.LaunchUri("https://bitwarden.com/help/managing-items/#protect-individual-items");
+            _platformUtilsService.LaunchUri("https://bitwarden.com/es-la/help/managing-items/");
         }
 
         private void TypeChanged()

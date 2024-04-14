@@ -203,7 +203,7 @@ namespace Bit.App.Pages
                 });
                 fs.Spans.Add(new Span
                 {
-                    Text = string.Format(" {0}, pulse aquí para ver", Cipher.PasswordHistory.Count.ToString()),
+                    Text = string.Format(" {0}, pulse aquí para ver anteriores contraseñas", Cipher.PasswordHistory.Count.ToString()),
                     TextColor = ThemeManager.GetResourceColor("PrimaryColor")
                 });
                 return fs;

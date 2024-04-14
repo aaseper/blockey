@@ -163,7 +163,7 @@
                                       TextColor="{DynamicResource HyperlinkColor}">
                                     <Span.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding PoliciesClickCommand}"
-                                                              CommandParameter="https://bitwarden.com/terms/" />
+                                                              CommandParameter="https://bitwarden.com/es-la/terms/" />
                                     </Span.GestureRecognizers>
                                 </Span>
                                 <Span Text=", " />
@@ -171,7 +171,7 @@
                                       TextColor="{DynamicResource HyperlinkColor}">
                                     <Span.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding PoliciesClickCommand}"
-                                                              CommandParameter="https://bitwarden.com/privacy/" />
+                                                              CommandParameter="https://bitwarden.com/es-la/privacy/" />
                                     </Span.GestureRecognizers>
                                 </Span>
                             </FormattedString>

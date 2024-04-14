@@ -7,15 +7,15 @@
 
         public static PasswordGenerationOptions CreateDefault => new PasswordGenerationOptions
         {
-            Length = 14,
-            AllowAmbiguousChar = true,
+            Length = 20,
+            AllowAmbiguousChar = false,
             Number = true,
             MinNumber = 1,
             Uppercase = true,
             MinUppercase = 0,
             Lowercase = true,
             MinLowercase = 0,
-            Special = false,
+            Special = true,
             MinSpecial = 1,
             Type = TYPE_PASSWORD,
             NumWords = 3,

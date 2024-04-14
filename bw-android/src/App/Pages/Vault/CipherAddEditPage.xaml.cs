@@ -77,15 +77,12 @@ namespace Bit.App.Pages
                 _vm.ShowNotesSeparator = true;
 
                 _typePicker.On<iOS>().SetUpdateMode(UpdateMode.WhenFinished);
-                _ownershipPicker.On<iOS>().SetUpdateMode(UpdateMode.WhenFinished);
             }
 
             _typePicker.ItemDisplayBinding = new Binding("Key");
             _cardBrandPicker.ItemDisplayBinding = new Binding("Key");
             _cardExpMonthPicker.ItemDisplayBinding = new Binding("Key");
             _identityTitlePicker.ItemDisplayBinding = new Binding("Key");
-            _folderPicker.ItemDisplayBinding = new Binding("Key");
-            _ownershipPicker.ItemDisplayBinding = new Binding("Key");
 
             _loginPasswordEntry.Keyboard = Keyboard.Create(KeyboardFlags.None);
 

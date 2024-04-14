@@ -746,7 +746,7 @@ namespace Bit.App.Pages
         {
             try
             {
-                _platformUtilsService.LaunchUri("https://bitwarden.com/help/generator/#username-types");
+                _platformUtilsService.LaunchUri("https://bitwarden.com/es-la/help/generator/#username-types");
             }
             catch (Exception ex)
             {

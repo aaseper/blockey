@@ -228,7 +228,7 @@
     <value>Carpeta eliminada.</value>
   </data>
   <data name="FolderNone" xml:space="preserve">
-    <value>Sin carpeta</value>
+    <value>Mis elementos</value>
     <comment>Items that have no folder specified go in this special "catch-all" folder.</comment>
   </data>
   <data name="Folders" xml:space="preserve">
@@ -255,7 +255,7 @@
     <value>Cómo iniciar sesión</value>
   </data>
   <data name="HowToLoginInstructions" xml:space="preserve">
-    <value>Introduzca debajo de "Correo electrónico" el correo de su cuenta, y pulse "Continuar".\e0ASi no tiene una cuenta todavía, ¡pulse "Crear una cuenta"!</value>
+    <value>Introduzca debajo de "Correo electrónico" el correo de su cuenta, y pulse "Continuar".\e0A\e0ASi no tiene una cuenta todavía, ¡pulse "Crear una cuenta"!</value>
   </data>
   <data name="InternetConnectionRequiredMessage" xml:space="preserve">
     <value>Por favor, conéctese a Internet antes de continuar.</value>
@@ -375,7 +375,7 @@
     <comment>The title for the tools page.</comment>
   </data>
   <data name="URI" xml:space="preserve">
-    <value>Enlace</value>
+    <value>Enlace al sitio web (p. ej., www.google.com)</value>
     <comment>Label for a uri/url.</comment>
   </data>
   <data name="UseFingerprintToUnlock" xml:space="preserve">
@@ -498,10 +498,10 @@
     <value>El campo correo electrónico es incorrecto. Revise la ortografía, y que contenga el arroba (@) y algo después.</value>
   </data>
   <data name="ErrorBadRequestByEmailAndPass" xml:space="preserve">
-    <value>Correo electrónico o contraseña de BlocKey incorrecta.\e0ARevise el correo electrónico y su ortografía, por favor. Si está bien escrita, la contraseña es incorrecta.\e0ASi no recuerda la contraseña, pulse en "Si no recuerda su contraseña, pulse aquí" debajo del campo Contraseña de BlocKey para pedir una pista de la contraseña.</value>
+    <value>Correo electrónico o contraseña de BlocKey incorrecta.\e0A\e0ARevise el correo electrónico y su ortografía, por favor. Si está bien escrita, la contraseña es incorrecta.\e0A\e0ASi no recuerda la contraseña, pulse en "Si no recuerda su contraseña, pulse aquí" debajo del campo Contraseña de BlocKey para pedir una pista de la contraseña.</value>
   </data>
   <data name="ErrorBadEmailFormat" xml:space="preserve">
-    <value>"La dirección de correo electrónico es errónea.\e0Revise que después del arroba (@) haya dominio válido, como "gmail.com". Si no, pruebe otro correo, por favor."</value>
+    <value>"La dirección de correo electrónico es errónea.\e0A\e0ARevise que después del arroba (@) haya dominio válido, como "gmail.com". Si no, pruebe otro correo, por favor."</value>
   </data>
   <data name="ErrorUnhandled" xml:space="preserve">
     <value>Ha ocurrido un error inesperado. Contacte con el soporte o la organización para resolver este problema</value>
@@ -599,7 +599,7 @@
     <value>Iniciar sesión</value>
   </data>
   <data name="Manage" xml:space="preserve">
-    <value>Gestionar</value>
+    <value>Sincronización</value>
   </data>
   <data name="MasterPasswordConfirmationValMessage" xml:space="preserve">
     <value>La confirmación de la contraseña no es correcta.</value>
@@ -1843,7 +1843,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Cargando</value>
   </data>
   <data name="AcceptPolicies" xml:space="preserve">
-    <value>Al activar esta casilla, acepta lo siguiente:</value>
+    <value>Al activar esta casilla, acepta lo siguiente: </value>
   </data>
   <data name="AcceptPoliciesError" xml:space="preserve">
     <value>Todavía no ha aceptado los términos del servicio y la política de privacidad.</value>
