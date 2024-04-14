@@ -49,6 +49,7 @@ namespace Bit.App.Pages
         private async Task StartRegisterAsync()
         {
             await Navigation.PushModalAsync(new NavigationPage(new SecurityAnalysisPage()));
+
         }
 
         private void RowSelected(object sender, SelectionChangedEventArgs e)

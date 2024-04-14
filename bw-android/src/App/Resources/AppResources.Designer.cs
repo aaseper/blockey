@@ -6429,6 +6429,24 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisAlert.
+        /// </summary>
+        public static string SupportSecurityAnalysisAlert {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisCongratulation.
+        /// </summary>
+        public static string SupportSecurityAnalysisCongratulation {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisCongratulation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SupportSecurityAnalysisProblemSolveAndSupport.
         /// </summary>
         public static string SupportSecurityAnalysisProblemSolveAndSupport {
@@ -6443,6 +6461,60 @@ namespace Bit.App.Resources {
         public static string SupportSecurityAnalysisProblemSolveAndSupportText {
             get {
                 return ResourceManager.GetString("SupportSecurityAnalysisProblemSolveAndSupportText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisReusedPassword.
+        /// </summary>
+        public static string SupportSecurityAnalysisReusedPassword {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisReusedPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisReusedPasswordText.
+        /// </summary>
+        public static string SupportSecurityAnalysisReusedPasswordText {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisReusedPasswordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisVeryWeakPassword.
+        /// </summary>
+        public static string SupportSecurityAnalysisVeryWeakPassword {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisVeryWeakPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisVeryWeakPasswordText.
+        /// </summary>
+        public static string SupportSecurityAnalysisVeryWeakPasswordText {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisVeryWeakPasswordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisWeakPassword.
+        /// </summary>
+        public static string SupportSecurityAnalysisWeakPassword {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisWeakPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportSecurityAnalysisWeakPasswordText.
+        /// </summary>
+        public static string SupportSecurityAnalysisWeakPasswordText {
+            get {
+                return ResourceManager.GetString("SupportSecurityAnalysisWeakPasswordText", resourceCulture);
             }
         }
         

@@ -2804,9 +2804,32 @@ Do you want to switch to this account?</value>
   <data name="SupportPageTitle" xml:space="preserve">
     <value>SupportPageTitle</value>
   </data>
-  
   <data name="SupportSecurityAnalysis" xml:space="preserve">
     <value>SupportSecurityAnalysis</value>
+  </data>
+  <data name="SupportSecurityAnalysisCongratulation" xml:space="preserve">
+    <value>SupportSecurityAnalysisCongratulation</value>
+  </data>
+  <data name="SupportSecurityAnalysisAlert" xml:space="preserve">
+    <value>SupportSecurityAnalysisAlert</value>
+  </data>
+  <data name="SupportSecurityAnalysisVeryWeakPassword" xml:space="preserve">
+    <value>SupportSecurityAnalysisVeryWeakPassword</value>
+  </data>
+  <data name="SupportSecurityAnalysisVeryWeakPasswordText" xml:space="preserve">
+    <value>SupportSecurityAnalysisVeryWeakPasswordText</value>
+  </data>
+  <data name="SupportSecurityAnalysisWeakPassword" xml:space="preserve">
+    <value>SupportSecurityAnalysisWeakPassword</value>
+  </data>
+  <data name="SupportSecurityAnalysisWeakPasswordText" xml:space="preserve">
+    <value>SupportSecurityAnalysisWeakPasswordText</value>
+  </data>
+  <data name="SupportSecurityAnalysisReusedPassword" xml:space="preserve">
+    <value>SupportSecurityAnalysisReusedPassword</value>
+  </data>
+  <data name="SupportSecurityAnalysisReusedPasswordText" xml:space="preserve">
+    <value>SupportSecurityAnalysisReusedPasswordText</value>
   </data>
   <data name="SupportSecurityAnalysisProblemSolveAndSupport" xml:space="preserve">
     <value>SupportSecurityAnalysisProblemSolveAndSupport</value>
@@ -2814,7 +2837,6 @@ Do you want to switch to this account?</value>
   <data name="SupportSecurityAnalysisProblemSolveAndSupportText" xml:space="preserve">
     <value>SupportSecurityAnalysisProblemSolveAndSupportText</value>
   </data>
-  
   <data name="SupportYourAccount" xml:space="preserve">
     <value>SupportYourAccount</value>
   </data>
@@ -2842,7 +2864,6 @@ Do you want to switch to this account?</value>
   <data name="SupportYourAccountDeleteAccountText" xml:space="preserve">
     <value>SupportYourAccountDeleteAccountText</value>
   </data>
-  
   <data name="SupportYourSavedPasswords" xml:space="preserve">
     <value>SupportYourSavedPasswords</value>
   </data>
@@ -2882,7 +2903,6 @@ Do you want to switch to this account?</value>
   <data name="SupportYourSavedPasswordsPasswordProblemSolveText" xml:space="preserve">
     <value>SupportYourSavedPasswordsPasswordProblemSolveText</value>
   </data>
-  
   <data name="SupportFAQ" xml:space="preserve">
     <value>SupportFAQ</value>
   </data>
@@ -2898,7 +2918,6 @@ Do you want to switch to this account?</value>
   <data name="SupportFAQMissingPasswordText" xml:space="preserve">
     <value>SupportFAQMissingPasswordText</value>
   </data>
-  
   <data name="SupportAboutBlocKey" xml:space="preserve">
     <value>SupportAboutBlocKey</value>
   </data>

@@ -178,6 +178,7 @@ namespace Bit.App.Pages
                 fs.Spans.Add(new Span
                 {
                     Text = string.Format("{0}:", AppResources.DatePasswordUpdated),
+                    FontSize = 18,
                     FontAttributes = FontAttributes.Bold
                 });
                 fs.Spans.Add(new Span
@@ -197,11 +198,12 @@ namespace Bit.App.Pages
                 fs.Spans.Add(new Span
                 {
                     Text = string.Format("{0}:", AppResources.PasswordHistory),
+                    FontSize = 18,
                     FontAttributes = FontAttributes.Bold
                 });
                 fs.Spans.Add(new Span
                 {
-                    Text = string.Format(" {0}", Cipher.PasswordHistory.Count.ToString()),
+                    Text = string.Format(" {0}, pulse aquí para ver", Cipher.PasswordHistory.Count.ToString()),
                     TextColor = ThemeManager.GetResourceColor("PrimaryColor")
                 });
                 return fs;
@@ -357,13 +359,6 @@ namespace Bit.App.Pages
             {
                 await _platformUtilsService.ShowDialogAsync(AppResources.InternetConnectionRequiredMessage,
                     AppResources.InternetConnectionRequiredTitle);
-                return false;
-            }
-            var confirmed = await _platformUtilsService.ShowDialogAsync(
-                Cipher.IsDeleted ? AppResources.DoYouReallyWantToPermanentlyDeleteCipher : AppResources.DoYouReallyWantToSoftDeleteCipher,
-                null, AppResources.Yes, AppResources.Cancel);
-            if (!confirmed)
-            {
                 return false;
             }
             try

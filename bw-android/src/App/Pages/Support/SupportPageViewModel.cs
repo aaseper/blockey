@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -31,7 +32,7 @@ namespace Bit.App.Pages
         private readonly IPasswordGenerationService _passwordGenerationService;
         protected ICipherService _cipherService { get; }
         public IPasswordStrengthable _passwordStrengthable { get; set; }
-        private List<CipherView> _loginCiphers;
+        private IList<CipherView> _loginCiphers;
 
         public SupportPageViewModel()
         {
@@ -70,18 +71,64 @@ namespace Bit.App.Pages
             var yourPasswordsItems = new List<SettingsPageListItem>();
             var faqItems = new List<SettingsPageListItem>();
             var aboutUsItems = new List<SettingsPageListItem>();
-
-            IList<SecurityAnalysisStatistics> securityAnalysisStatistics = new List<SecurityAnalysisStatistics>();
+            
+            IList<CipherView> veryWeakCiphers = new List<CipherView>();
+            IList<CipherView> weakCiphers = new List<CipherView>();
+            IList<CipherView> reusedCiphers = new List<CipherView>();
             ISet<string> uniquePasswords = new HashSet<string>();
-
             
             foreach (var cipher in _loginCiphers)
             {
                 var passwordStrengthResult = _passwordGenerationService.PasswordStrength(cipher.Login.Password, new List<string>{ cipher.Login.Username });
-
                 string passwordStrengthLevel = PasswordStrengthProjection(passwordStrengthResult);
+                bool isReusedPassword = !uniquePasswords.Add(cipher.Login.Password);
+                
+                if (passwordStrengthLevel.Equals("VeryWeak")) veryWeakCiphers.Add(cipher);
+                else if (passwordStrengthLevel.Equals("Weak")) weakCiphers.Add(cipher);
 
-                securityAnalysisStatistics.Add(new SecurityAnalysisStatistics(cipher, passwordStrengthLevel, new List<string>()));
+                if (isReusedPassword) reusedCiphers.Add(cipher);
+            }
+
+            if (!HasCiphers || 
+                (veryWeakCiphers.Count == 0 && weakCiphers.Count == 0 && reusedCiphers.Count == 0))
+            { 
+                securityAnalysisItems.Add(new SettingsPageListItem
+                {
+                    Name = AppResources.SupportSecurityAnalysisCongratulation
+                });
+            }
+
+            foreach (var cipher in veryWeakCiphers)
+            {
+                securityAnalysisItems.Add(new SettingsPageListItem
+                {
+                    Name = string.Format(AppResources.SupportSecurityAnalysisVeryWeakPassword ,cipher.Name),
+                    ExecuteAsync = () => OpenExplanationPopUp(Regex.Replace(AppResources.SupportSecurityAnalysisVeryWeakPassword, @": \{0}", "", RegexOptions.CultureInvariant), 
+                        string.Format(AppResources.SupportSecurityAnalysisVeryWeakPasswordText, cipher.Name)),
+                    SubLabel = AppResources.SupportSecurityAnalysisAlert
+                });
+            }
+            
+            foreach (var cipher in weakCiphers)
+            {
+                securityAnalysisItems.Add(new SettingsPageListItem
+                {
+                    Name = string.Format(AppResources.SupportSecurityAnalysisWeakPassword ,cipher.Name),
+                    ExecuteAsync = () => OpenExplanationPopUp(Regex.Replace(AppResources.SupportSecurityAnalysisWeakPassword, @": \{0}", "", RegexOptions.CultureInvariant), 
+                        string.Format(AppResources.SupportSecurityAnalysisWeakPasswordText, cipher.Name)),
+                    SubLabel = AppResources.SupportSecurityAnalysisAlert
+                });
+            }
+
+            foreach (var cipher in reusedCiphers)
+            {
+                securityAnalysisItems.Add(new SettingsPageListItem
+                {
+                    Name = string.Format(AppResources.SupportSecurityAnalysisReusedPassword, cipher.Name),
+                    ExecuteAsync = () => OpenExplanationPopUp(Regex.Replace(AppResources.SupportSecurityAnalysisReusedPassword, @": \{0}", "", RegexOptions.CultureInvariant), 
+                        string.Format(AppResources.SupportSecurityAnalysisReusedPasswordText, cipher.Name)),
+                    SubLabel = AppResources.SupportSecurityAnalysisAlert
+                });
             }
 
             /* Security Analysis */
@@ -190,7 +237,7 @@ namespace Bit.App.Pages
 
         private async Task LoadDataAsync()
         {
-            _loginCiphers = (await _cipherService.GetAllDecryptedAsync()).Where(c => c.OrganizationId == null && c.Type == CipherType.Login).ToList();
+            _loginCiphers = (await _cipherService.GetAllDecryptedAsync()).Where(c => c.OrganizationId == null && c.Type == CipherType.Login && !c.IsDeleted).ToList();
             HasCiphers = _loginCiphers.Any();
         }
 
@@ -201,17 +248,15 @@ namespace Bit.App.Pages
                 AppResources.ThankYou);
         }
 
-        public async Task SelectCipherAsync(CipherView cipher)
-        {
-            var page = new CipherDetailsPage(cipher.Id);
-            await Page.Navigation.PushModalAsync(new NavigationPage(page));
-        }
-
         public async Task InitAsync()
         {
             try
             {
+                await Device.InvokeOnMainThreadAsync(() => _loginCiphers = new List<CipherView>());
+                await Device.InvokeOnMainThreadAsync(() => GroupedItems.ReplaceRange(new List<ISettingsPageListItem>()));
+                
                 await LoadDataAsync();
+
                 BuildList();
             }
             catch (Exception ex)
@@ -223,19 +268,6 @@ namespace Bit.App.Pages
         public void Exit()
         {
             _messagingService.Send("exit");
-        }
-    }
-
-    public class SecurityAnalysisStatistics
-    {
-        CipherView Cipher { get; set; }
-        string PasswordStrengthLevel { get; set; }
-        IList<string> ReusedPasswords { get; set; }
-        public SecurityAnalysisStatistics(CipherView cipher, string passwordStrengthLevel, IList<string> reusedPasswords)
-        {
-            Cipher = cipher;
-            PasswordStrengthLevel = passwordStrengthLevel;
-            ReusedPasswords = reusedPasswords;
         }
     }
 }

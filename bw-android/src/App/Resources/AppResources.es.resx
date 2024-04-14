@@ -2800,13 +2800,36 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
   <data name="SupportSecurityAnalysis" xml:space="preserve">
     <value>Análisis de Seguridad</value>
   </data>
+  <data name="SupportSecurityAnalysisCongratulation" xml:space="preserve">
+    <value>¡Buen trabajo! ¡Su cuenta es segura!</value>
+  </data>
+  <data name="SupportSecurityAnalysisAlert" xml:space="preserve">
+    <value>¡Alerta!</value>
+  </data>
+  <data name="SupportSecurityAnalysisVeryWeakPassword" xml:space="preserve">
+    <value>Contraseña muy débil: {0}</value>
+  </data>
+  <data name="SupportSecurityAnalysisVeryWeakPasswordText" xml:space="preserve">
+    <value>Su contraseña con “Título” {0} es muy débil, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es muy débil si tiene 7 o menos caracteres, y se puede descifrar en segundos o minutos por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
+  </data>
+  <data name="SupportSecurityAnalysisWeakPassword" xml:space="preserve">
+    <value>Contraseña débil: {0}</value>
+  </data>
+  <data name="SupportSecurityAnalysisWeakPasswordText" xml:space="preserve">
+    <value>Su contraseña con “Título” {0} es débil, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es débil si tiene 10 o menos caracteres, y se puede descifrar en horas o días por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
+  </data>
+  <data name="SupportSecurityAnalysisReusedPassword" xml:space="preserve">
+    <value>Contraseña reutilizada: {0}</value>
+  </data>
+  <data name="SupportSecurityAnalysisReusedPasswordText" xml:space="preserve">
+    <value>Su contraseña con “Título” {0} se repite en más de una contraseña.\e0A\e0AUna contraseña reutilizada en muchas cuentas puede dar acceso no autorizado a sus otras cuentas. Pruebe a generar una contraseña diferente con 14 o más caracteres.</value>
+  </data>
   <data name="SupportSecurityAnalysisProblemSolveAndSupport" xml:space="preserve">
     <value>Solución de problemas y soporte</value>
   </data>
   <data name="SupportSecurityAnalysisProblemSolveAndSupportText" xml:space="preserve">
     <value>Si no tiene ninguna alerta sobre sus contraseñas, es porque no tiene ninguna contraseña guardada o todas sus contraseñas son seguras.\e0A\e0ASi por otro lado hay una alerta de contraseña débil o reutilizada, sería bueno que cambiara la contraseña que indica la alerta, desde abajo a la izquierda en la pestaña “Mi caja fuerte”.\e0A\e0ASi no comprende por qué tiene una alerta sobre su o sus contraseñas, lea a continuación. BlocKey clasifica una contraseña como débil o muy débil si es fácil de adivinar por los atacantes. Además, si usa la misma contraseña en más de una página web, será más fácil de adivinar por los atacantes también.\e0A\e0AEl “Análisis de seguridad” le ayuda a mejorar la seguridad de sus contraseñas.\e0A\e0ASi sigue teniendo dudas, puede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
   </data>
-  
   <data name="SupportYourAccount" xml:space="preserve">
     <value>Su cuenta</value>
   </data>
@@ -2834,7 +2857,6 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
   <data name="SupportYourAccountDeleteAccountText" xml:space="preserve">
     <value>1. Inicie sesión con su cuenta, si no lo ha hecho.\e0A\e0A2. Navegue abajo a la derecha, a la pestaña “Ajustes”.\e0A\e0A3. Desplácese abajo del todo, y pulse “Eliminar cuenta”.\e0A\e0A4. En el centro, pulse el botón rojo “Eliminar cuenta”.\e0A\e0A5. En “Confirmación de contraseña de BlocKey”, escriba la contraseña de su cuenta.\e0A\e0A6. Si coincide la contraseña, al pulsar “Enviar” habrá eliminado su cuenta de BlocKey y todos sus datos asociados.</value>
   </data>
-  
   <data name="SupportYourSavedPasswords" xml:space="preserve">
     <value>Sus contraseñas guardadas</value>
   </data>
@@ -2874,7 +2896,6 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
   <data name="SupportYourSavedPasswordsPasswordProblemSolveText" xml:space="preserve">
     <value>Si alguna contraseña guardada no tiene un enlace a una página real, es probable que cause problemas.\e0A\e0AVerifique que los campos de sus contraseñas estén bien escritos y compruébelos al guardarlas.\e0A\e0ASi no carga alguna contraseña al pulsarle, pruebe a reiniciar la aplicación.\e0A\e0ASi sigue teniendo dudas, puede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
   </data>
-  
   <data name="SupportFAQ" xml:space="preserve">
     <value>Preguntas más frecuentes</value>
   </data>
@@ -2890,7 +2911,6 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
   <data name="SupportFAQMissingPasswordText" xml:space="preserve">
     <value>Normalmente, se debe a que la caja fuerte no está sincronizada. Para sincronizar la caja fuerte, tiene que seguir los pasos a continuación.\e0A\e0A1. Dentro de BlocKey, toque abajo a la izquierda el icono del candado “Mi caja fuerte”.\e0A\e0A2. Arriba a la derecha, toque los tres puntos y verá tres opciones.\e0A\e0A3. Pulse la opción “Sincronizar”, y cuando vea el mensaje “Sincronización completada” habrá sincronizado sus contraseñas.  </value>
   </data>
-  
   <data name="SupportAboutBlocKey" xml:space="preserve">
     <value>Acerca de BlocKey</value>
   </data>
