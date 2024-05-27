@@ -32,7 +32,6 @@ namespace Bit.App.Pages
             _masterPassword.ReturnType = ReturnType.Next;
             _masterPassword.ReturnCommand = new Command(() => _confirmMasterPassword.Focus());
             _confirmMasterPassword.ReturnType = ReturnType.Next;
-            _confirmMasterPassword.ReturnCommand = new Command(() => _hint.Focus());
         }
 
         public Entry MasterPasswordEntry { get; set; }

@@ -37,6 +37,7 @@
                         Text="{Binding Email}"
                         Keyboard="Email"
                         StyleClass="box-value"
+                        AutomationProperties.Name="correo@gmail.com"
                         AutomationId="EmailAddressEntry"/>
                 </StackLayout>
                 <Grid StyleClass="box-row">
@@ -62,19 +63,20 @@
                         IsPassword="{Binding ShowPassword, Converter={StaticResource inverseBool}}"
                         Grid.Row="1"
                         Grid.Column="0"
+                        AutomationProperties.Name="12 caracteres mínimo"
                         AutomationId="MasterPasswordEntry"/>
                     <controls:IconButton
                         StyleClass="box-row-button, box-row-button-platform"
-                        
-						
-                        Command="{Binding TogglePasswordCommand}"
+                        ImageSource="{Binding ShowPasswordIcon}"
+                        Text=""
+                        Command="{Binding ToggleConfirmPasswordCommand}"
                         Grid.Row="0"
                         Grid.Column="1"
                         Grid.RowSpan="2"
                         AutomationProperties.IsInAccessibleTree="True"
-                        AutomationProperties.Name="{u:I18n ToggleVisibility}" 
-                        AutomationProperties.HelpText="{Binding PasswordVisibilityAccessibilityText}"
-                        AutomationId="PasswordVisibilityToggle"/>
+                        AutomationId="ConfirmPasswordVisibilityToggle"
+                        AutomationProperties.Name="{u:I18n ToggleVisibility}"
+                        AutomationProperties.HelpText="{Binding PasswordVisibilityAccessibilityText}" />
                 </Grid>
                 <Label
                     StyleClass="box-sub-label"
@@ -129,21 +131,6 @@
                         AutomationProperties.Name="{u:I18n ToggleVisibility}"
                         AutomationProperties.HelpText="{Binding PasswordVisibilityAccessibilityText}" />
                 </Grid>
-                <StackLayout StyleClass="box-row">
-                    <Label
-                        Text="{u:I18n MasterPasswordHint}"
-                        StyleClass="box-label" />
-                    <Entry
-                        x:Name="_hint"
-                        Text="{Binding Hint}"
-                        StyleClass="box-value"
-                        ReturnType="Go"
-                        ReturnCommand="{Binding SubmitCommand}"
-                        AutomationId="MasterPasswordHintLabel" />
-                </StackLayout>
-                <Label
-                    Text="{u:I18n MasterPasswordHintDescription}"
-                    StyleClass="box-footer-label" />
             </StackLayout>
             <StackLayout StyleClass="box">
                 <StackLayout StyleClass="box-row, box-row-switch"
@@ -189,6 +176,13 @@
                         Text="{u:I18n CheckKnownDataBreachesForThisPassword}"
                         StyleClass="box-footer-label"
                         VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout
+                    StyleClass="box-row">
+                    <Button Text="{u:I18n Submit}"
+                        StyleClass="btn-primary"
+                        Clicked="Submit_Clicked"
+                        AutomationId="SubmitAccountLabel"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

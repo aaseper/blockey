@@ -99,7 +99,7 @@ namespace Bit.App.Pages
         public string Email
         {
             get => _email;
-            set => SetProperty(ref _email, value,
+            set => SetProperty(ref _email, value.ToLowerInvariant(),
                 additionalPropertyNames: new string[]
                 {
                     nameof(LoggingInAsText)

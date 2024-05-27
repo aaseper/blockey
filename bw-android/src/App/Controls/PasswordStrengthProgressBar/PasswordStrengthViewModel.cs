@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.Design;
 using Bit.Core.Abstractions;
 using Bit.Core.Utilities;
 using Xamarin.Forms;
@@ -15,7 +16,7 @@ namespace Bit.App.Controls
 
         public PasswordStrengthViewModel(IPasswordStrengthable passwordStrengthable)
         {
-            _passwordGenerationService = ServiceContainer.Resolve<IPasswordGenerationService>();
+            _passwordGenerationService = Core.Utilities.ServiceContainer.Resolve<IPasswordGenerationService>();
             _passwordStrengthable = passwordStrengthable;
         }
 
@@ -45,7 +46,11 @@ namespace Bit.App.Controls
             var passwordStrength = _passwordGenerationService.PasswordStrength(_passwordStrengthable.Password, _passwordStrengthable.UserInputs);
             // The passwordStrength.Score is 0..4, convertion was made to be used as a progress directly by the control 0..1 
             PasswordStrength = (passwordStrength.Score + 1f) / 5f;
-            if (PasswordStrength <= 0.4f)
+            if (_passwordStrengthable.Password.Length < 12)
+            {
+                PasswordStrengthLevel = Controls.PasswordStrengthLevel.VeryWeak;
+            }
+            else if (PasswordStrength <= 0.4f)
             {
                 PasswordStrengthLevel = Controls.PasswordStrengthLevel.VeryWeak;
             }

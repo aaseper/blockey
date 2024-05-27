@@ -94,17 +94,11 @@
                             <Label
                                 Text="{u:I18n GetMasterPasswordwordHint}"
                                 StyleClass="box-footer-label"
-                                TextColor="{DynamicResource HyperlinkColor}"
                                 Padding="0,5,0,0"
                                 Grid.Row="2"
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
-                                AutomationId="GetMasterPasswordHintLabel"
-                                >
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="Hint_Clicked" />
-                                </Label.GestureRecognizers>
-                            </Label>
+                                AutomationId="GetMasterPasswordHintLabel" />
                         </Grid>
                     </StackLayout>
                     <StackLayout Padding="10, 10">
