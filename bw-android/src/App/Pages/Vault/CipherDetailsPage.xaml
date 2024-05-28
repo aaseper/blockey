@@ -41,8 +41,6 @@
                          x:Name="_moreItem" x:Key="moreItem"
                          AutomationProperties.IsInAccessibleTree="True"
                          AutomationProperties.Name="{u:I18n Options}" />
-            <ToolbarItem Text="{u:I18n Attachments}" Clicked="Attachments_Clicked" Order="Secondary"
-                         x:Name="_attachmentsItem" x:Key="attachmentsItem" />
             <ToolbarItem Text="{u:I18n Delete}" Clicked="Delete_Clicked" Order="Secondary" IsDestructive="True"
                          x:Name="_deleteItem" x:Key="deleteItem" />
             <ToolbarItem Text="{u:I18n Clone}" Command="{Binding CloneCommand}" Order="Secondary"
@@ -743,10 +741,6 @@
                             BindableLayout.ItemTemplateSelector="{StaticResource CustomFieldItemTemplateSelector}" />
                     </StackLayout>
                     <StackLayout StyleClass="box" IsVisible="{Binding ShowAttachments}">
-                        <StackLayout StyleClass="box-row-header">
-                            <Label Text="{u:I18n Attachments, Header=True}"
-                                   StyleClass="box-header, box-header-platform" />
-                        </StackLayout>
                         <controls:RepeaterView ItemsSource="{Binding Cipher.Attachments}" AutomationId="CipherAttachmentsContainer">
                             <controls:RepeaterView.ItemTemplate>
                                 <DataTemplate x:DataType="views:AttachmentView">

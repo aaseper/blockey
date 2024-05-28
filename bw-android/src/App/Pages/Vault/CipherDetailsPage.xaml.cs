@@ -35,7 +35,6 @@ namespace Bit.App.Pages
             else
             {
                 _mainLayout.Padding = new Thickness(0, 0, 0, 75);
-                ToolbarItems.Add(_attachmentsItem);
                 ToolbarItems.Add(_deleteItem);
             }
         }
@@ -148,19 +147,6 @@ namespace Bit.App.Pages
         private void EditButton_Clicked(object sender, System.EventArgs e)
         {
             EditToolbarItem_Clicked(sender, e);
-        }
-
-        private async void Attachments_Clicked(object sender, System.EventArgs e)
-        {
-            if (DoOnce())
-            {
-                if (!await _vm.PromptPasswordAsync())
-                {
-                    return;
-                }
-                var page = new AttachmentsPage(_vm.CipherId);
-                await Navigation.PushModalAsync(new NavigationPage(page));
-            }
         }
 
         private async void Share_Clicked(object sender, System.EventArgs e)

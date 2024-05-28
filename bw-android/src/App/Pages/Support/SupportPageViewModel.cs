@@ -21,6 +21,7 @@ using Bit.Core.Services;
 using Bit.Core.Utilities;
 using Xamarin.CommunityToolkit.ObjectModel;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace Bit.App.Pages
 {
@@ -79,7 +80,7 @@ namespace Bit.App.Pages
             
             foreach (var cipher in _loginCiphers)
             {
-                var passwordStrengthResult = _passwordGenerationService.PasswordStrength(cipher.Login.Password, new List<string>{ cipher.Login.Username });
+                var passwordStrengthResult = _passwordGenerationService.PasswordStrength(cipher.Login.Password, new List<string>{ cipher.Login.Username ?? "" });
                 string passwordStrengthLevel = PasswordStrengthProjection(passwordStrengthResult);
                 bool isReusedPassword = !uniquePasswords.Add(cipher.Login.Password);
                 
@@ -195,6 +196,11 @@ namespace Bit.App.Pages
             /* FAQ */
             faqItems.Add(new SettingsPageListItem
             {
+                Name = AppResources.SupportFAQGenerateRandom,
+                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportFAQGenerateRandom, AppResources.SupportFAQGenerateRandomText)
+            });
+            faqItems.Add(new SettingsPageListItem
+            {
                 Name = AppResources.SupportFAQForget,
                 ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportFAQForget, AppResources.SupportFAQForgetText)
             });
@@ -237,7 +243,7 @@ namespace Bit.App.Pages
 
         private async Task LoadDataAsync()
         {
-            _loginCiphers = (await _cipherService.GetAllDecryptedAsync()).Where(c => c.OrganizationId == null && c.Type == CipherType.Login && !c.IsDeleted).ToList();
+            _loginCiphers = (await _cipherService.GetAllDecryptedAsync()).Where(c => c.OrganizationId == null && c.Type == CipherType.Login && !c.IsDeleted && !string.IsNullOrWhiteSpace(c.Login.Password)).ToList();
             HasCiphers = _loginCiphers.Any();
         }
 

@@ -64,7 +64,6 @@ namespace Bit.App.Pages
             SetActivityIndicator();
             if (_vm.EditMode && !_vm.CloneMode && Device.RuntimePlatform == Device.Android)
             {
-                ToolbarItems.Add(_attachmentsItem);
                 ToolbarItems.Add(_deleteItem);
             }
             if (Device.RuntimePlatform == Device.iOS)
@@ -82,7 +81,6 @@ namespace Bit.App.Pages
             _typePicker.ItemDisplayBinding = new Binding("Key");
             _cardBrandPicker.ItemDisplayBinding = new Binding("Key");
             _cardExpMonthPicker.ItemDisplayBinding = new Binding("Key");
-            _identityTitlePicker.ItemDisplayBinding = new Binding("Key");
 
             _loginPasswordEntry.Keyboard = Keyboard.Create(KeyboardFlags.None);
 
@@ -109,23 +107,13 @@ namespace Bit.App.Pages
             _cardExpYearEntry.ReturnCommand = new Command(() => _cardCodeEntry.Focus());
 
             _identityFirstNameEntry.ReturnType = ReturnType.Next;
-            _identityFirstNameEntry.ReturnCommand = new Command(() => _identityMiddleNameEntry.Focus());
-            _identityMiddleNameEntry.ReturnType = ReturnType.Next;
-            _identityMiddleNameEntry.ReturnCommand = new Command(() => _identityLastNameEntry.Focus());
+            _identityFirstNameEntry.ReturnCommand = new Command(() => _identityLastNameEntry.Focus());
             _identityLastNameEntry.ReturnType = ReturnType.Next;
-            _identityLastNameEntry.ReturnCommand = new Command(() => _identityUsernameEntry.Focus());
-            _identityUsernameEntry.ReturnType = ReturnType.Next;
-            _identityUsernameEntry.ReturnCommand = new Command(() => _identityCompanyEntry.Focus());
-            _identityCompanyEntry.ReturnType = ReturnType.Next;
-            _identityCompanyEntry.ReturnCommand = new Command(() => _identitySsnEntry.Focus());
-            _identitySsnEntry.ReturnType = ReturnType.Next;
-            _identitySsnEntry.ReturnCommand = new Command(() => _identityPassportNumberEntry.Focus());
+            _identityLastNameEntry.ReturnCommand = new Command(() => _identityPassportNumberEntry.Focus());
             _identityPassportNumberEntry.ReturnType = ReturnType.Next;
-            _identityPassportNumberEntry.ReturnCommand = new Command(() => _identityEmailEntry.Focus());
-            _identityEmailEntry.ReturnType = ReturnType.Next;
-            _identityEmailEntry.ReturnCommand = new Command(() => _identityPhoneEntry.Focus());
-            _identityPhoneEntry.ReturnType = ReturnType.Next;
-            _identityPhoneEntry.ReturnCommand = new Command(() => _identityAddress1Entry.Focus());
+            _identityPassportNumberEntry.ReturnCommand = new Command(() => _identitySsnEntry.Focus());
+            _identitySsnEntry.ReturnType = ReturnType.Next;
+            _identitySsnEntry.ReturnCommand = new Command(() => _identityAddress1Entry.Focus());
             _identityAddress1Entry.ReturnType = ReturnType.Next;
             _identityAddress1Entry.ReturnCommand = new Command(() => _identityCityEntry.Focus());
             _identityCityEntry.ReturnType = ReturnType.Next;
@@ -134,6 +122,10 @@ namespace Bit.App.Pages
             _identityStateEntry.ReturnCommand = new Command(() => _identityPostalCodeEntry.Focus());
             _identityPostalCodeEntry.ReturnType = ReturnType.Next;
             _identityPostalCodeEntry.ReturnCommand = new Command(() => _identityCountryEntry.Focus());
+            _identityCountryEntry.ReturnType = ReturnType.Next;
+            _identityCountryEntry.ReturnCommand = new Command(() => _identityPhoneEntry.Focus());
+            _identityPhoneEntry.ReturnType = ReturnType.Next;
+            _identityPhoneEntry.ReturnCommand = new Command(() => _identityEmailEntry.Focus());
         }
 
         public bool FromAutofillFramework { get; set; }
@@ -209,15 +201,6 @@ namespace Bit.App.Pages
         private void NewField_Clicked(object sender, System.EventArgs e)
         {
             _vm.AddField();
-        }
-
-        private async void Attachments_Clicked(object sender, System.EventArgs e)
-        {
-            if (DoOnce())
-            {
-                var page = new AttachmentsPage(_vm.CipherId);
-                await Navigation.PushModalAsync(new Xamarin.Forms.NavigationPage(page));
-            }
         }
 
         private async void Share_Clicked(object sender, System.EventArgs e)

@@ -191,8 +191,11 @@
     <value>Editar carpeta</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>Correo</value>
+    <value>Correo electrónico</value>
     <comment>Short label for an email address.</comment>
+  </data>
+  <data name="EmailOpcional" xml:space="preserve">
+    <value>Correo electrónico (opcional)</value>
   </data>
   <data name="EmailAddress" xml:space="preserve">
     <value>Correo electrónico</value>
@@ -1066,7 +1069,10 @@ El escaneo se realizará automáticamente.</value>
     <value>Nota segura</value>
   </data>
   <data name="Address1" xml:space="preserve">
-    <value>Dirección</value>
+    <value>Calle y número de mi casa</value>
+  </data>
+  <data name="Address1Opcional" xml:space="preserve">
+    <value>Calle y número de mi casa (opcional)</value>
   </data>
   <data name="Address2" xml:space="preserve">
     <value>Dirección 2</value>
@@ -1089,11 +1095,17 @@ El escaneo se realizará automáticamente.</value>
   <data name="CityTown" xml:space="preserve">
     <value>Ciudad / Pueblo</value>
   </data>
+  <data name="CityTownOpcional" xml:space="preserve">
+    <value>Ciudad / Pueblo (opcional)</value>
+  </data>
   <data name="Company" xml:space="preserve">
     <value>Empresa</value>
   </data>
   <data name="Country" xml:space="preserve">
     <value>País</value>
+  </data>
+  <data name="CountryOpcional" xml:space="preserve">
+    <value>País (opcional)</value>
   </data>
   <data name="December" xml:space="preserve">
     <value>Diciembre</value>
@@ -1123,7 +1135,10 @@ El escaneo se realizará automáticamente.</value>
     <value>Junio</value>
   </data>
   <data name="LastName" xml:space="preserve">
-    <value>Apellido</value>
+    <value>Apellidos</value>
+  </data>
+  <data name="LastNameHint" xml:space="preserve">
+    <value>Apellido1 Apellido2</value>
   </data>
   <data name="FullName" xml:space="preserve">
     <value>Nombre completo</value>
@@ -1161,8 +1176,14 @@ El escaneo se realizará automáticamente.</value>
   <data name="PassportNumber" xml:space="preserve">
     <value>Nº de DNI</value>
   </data>
+  <data name="PassportNumberOptional" xml:space="preserve">
+    <value>Nº de DNI (opcional)</value>
+  </data>
   <data name="Phone" xml:space="preserve">
-    <value>Teléfono</value>
+    <value>Número de teléfono (móvil)</value>
+  </data>
+  <data name="PhoneOpcional" xml:space="preserve">
+    <value>Número de teléfono (opcional)</value>
   </data>
   <data name="September" xml:space="preserve">
     <value>Septiembre</value>
@@ -1170,8 +1191,14 @@ El escaneo se realizará automáticamente.</value>
   <data name="SSN" xml:space="preserve">
     <value>Nº de la Seguridad Social</value>
   </data>
+  <data name="SSNOpcional" xml:space="preserve">
+    <value>Nº de la Seguridad Social (opcional)</value>
+  </data>
   <data name="StateProvince" xml:space="preserve">
     <value>CC. AA. / Provincia</value>
+  </data>
+  <data name="StateProvinceOpcional" xml:space="preserve">
+    <value>CC. AA. / Provincia (opcional)</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Título</value>
@@ -1179,8 +1206,11 @@ El escaneo se realizará automáticamente.</value>
   <data name="ZipPostalCode" xml:space="preserve">
     <value>Código postal</value>
   </data>
+  <data name="ZipPostalCodeOpcional" xml:space="preserve">
+    <value>Código postal (opcional)</value>
+  </data>
   <data name="Address" xml:space="preserve">
-    <value>Dirección</value>
+    <value>Calle y número de mi casa</value>
   </data>
   <data name="Expiration" xml:space="preserve">
     <value>Expiración</value>
@@ -2911,6 +2941,12 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
   </data>
   <data name="SupportFAQ" xml:space="preserve">
     <value>Preguntas más frecuentes</value>
+  </data>
+  <data name="SupportFAQGenerateRandom" xml:space="preserve">
+    <value>¿Qué significa generar una contraseña aleatoria?</value>
+  </data>
+  <data name="SupportFAQGenerateRandomText" xml:space="preserve">
+    <value>Para que una contraseña sea segura, tiene que ser bastante larga y tener diferentes caracteres, lo que es difícil de memorizar.\e0A\e0AUn generador es una herramienta que crea una contraseña diferente para sus cuentas.\e0A\e0AAdemás, el generador de BlocKey es aleatorio, lo que significa que creará contraseñas complicadas para que nadie pueda adivinarlas.</value>
   </data>
   <data name="SupportFAQForget" xml:space="preserve">
     <value>¿Qué hago si olvidé mi contraseña de BlocKey? </value>

@@ -45,11 +45,6 @@
                          x:Key="moreItem"
                          AutomationProperties.IsInAccessibleTree="True"
                          AutomationProperties.Name="{u:I18n Options}" />
-            <ToolbarItem Text="{u:I18n Attachments}"
-                         Clicked="Attachments_Clicked"
-                         Order="Secondary"
-                         x:Name="_attachmentsItem"
-                         x:Key="attachmentsItem" />
             <ToolbarItem Text="{u:I18n Delete}"
                          Clicked="Delete_Clicked"
                          Order="Secondary"
@@ -121,15 +116,25 @@
                 </StackLayout>
                 <StackLayout StyleClass="box-row, box-row-input"
                              IsVisible="{Binding EditMode, Converter={StaticResource inverseBool}}">
-                    <Label
-                        Text="{u:I18n Type}"
-                        StyleClass="box-label" />
+                    <Label StyleClass="box-label">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{u:I18n Type}"/>
+                                <Span Text=" ("/><Span Text="*" TextColor="Red"/><Span Text=")"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
                     <Picker
                         x:Name="_typePicker"
+                        Title="Pulse un tipo de elemento"
                         ItemsSource="{Binding TypeOptions, Mode=OneTime}"
                         SelectedIndex="{Binding TypeSelectedIndex}"
                         StyleClass="box-value"
                         AutomationId="ItemTypePicker" />
+                    <Label
+                        Text="Pulse para cambiar el tipo de elemento a Sitio web o Datos personales"
+                        StyleClass="box-footer-label"
+                        AutomationId="PickerFooter" />
                 </StackLayout>
                 <StackLayout StyleClass="box-row, box-row-input">
                     <Label StyleClass="box-label">
@@ -391,20 +396,14 @@
                 </StackLayout>
                 <StackLayout IsVisible="{Binding IsIdentity}" Spacing="0" Padding="0">
                     <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n Title}"
-                            StyleClass="box-label" />
-                        <Picker
-                            x:Name="_identityTitlePicker"
-                            ItemsSource="{Binding IdentityTitleOptions, Mode=OneTime}"
-                            SelectedIndex="{Binding IdentityTitleSelectedIndex}"
-                            StyleClass="box-value"
-                            AutomationId="IdentityTitlePicker" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n FirstName}"
-                            StyleClass="box-label" />
+                        <Label StyleClass="box-label">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{u:I18n FirstName}"/>
+                                    <Span Text=" ("/><Span Text="*" TextColor="Red"/><Span Text=")"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                         <Entry
                             x:Name="_identityFirstNameEntry"
                             Text="{Binding Cipher.Identity.FirstName}"
@@ -414,68 +413,25 @@
                             AutomationId="IdentityFirstNameEntry" />
                     </StackLayout>
                     <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n MiddleName}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identityMiddleNameEntry"
-                            Text="{Binding Cipher.Identity.MiddleName}"
-                            StyleClass="box-value,capitalize-word-input"
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n MiddleName}"
-                            AutomationId="IdentityMiddleNameEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n LastName}"
-                            StyleClass="box-label" />
+                        <Label StyleClass="box-label">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{u:I18n LastName}"/>
+                                    <Span Text=" ("/><Span Text="*" TextColor="Red"/><Span Text=")"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                         <Entry
                             x:Name="_identityLastNameEntry"
                             Text="{Binding Cipher.Identity.LastName}"
                             StyleClass="box-value,capitalize-word-input"
                             AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n LastName}"
+                            AutomationProperties.Name="{u:I18n LastNameHint}"
                             AutomationId="IdentityLastNameEntry" />
                     </StackLayout>
                     <StackLayout StyleClass="box-row, box-row-input">
                         <Label
-                            Text="{u:I18n Username}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identityUsernameEntry"
-                            Text="{Binding Cipher.Identity.Username}"
-                            StyleClass="box-value"
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n Username}"
-                            AutomationId="IdentityUsernameEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n Company}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identityCompanyEntry"
-                            Text="{Binding Cipher.Identity.Company}"
-                            StyleClass="box-value" 
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n Company}"
-                            AutomationId="IdentityCompanyEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n SSN}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identitySsnEntry"
-                            Text="{Binding Cipher.Identity.SSN}"
-                            StyleClass="box-value" 
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n SSN}"
-                            AutomationId="IdentitySsnEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n PassportNumber}"
+                            Text="{u:I18n PassportNumberOptional}"
                             StyleClass="box-label" />
                         <Entry
                             x:Name="_identityPassportNumberEntry"
@@ -487,20 +443,79 @@
                     </StackLayout>
                     <StackLayout StyleClass="box-row, box-row-input">
                         <Label
-                            Text="{u:I18n Email}"
+                            Text="{u:I18n SSNOpcional}"
                             StyleClass="box-label" />
                         <Entry
-                            x:Name="_identityEmailEntry"
-                            Keyboard="Email"
-                            Text="{Binding Cipher.Identity.Email}"
+                            x:Name="_identitySsnEntry"
+                            Text="{Binding Cipher.Identity.SSN}"
                             StyleClass="box-value" 
                             AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n Email}"
-                            AutomationId="IdentityEmailEntry" />
+                            AutomationProperties.Name="{u:I18n SSN}"
+                            AutomationId="IdentitySsnEntry" />
                     </StackLayout>
                     <StackLayout StyleClass="box-row, box-row-input">
                         <Label
-                            Text="{u:I18n Phone}"
+                            Text="{u:I18n Address1Opcional}"
+                            StyleClass="box-label" />
+                        <Entry
+                            x:Name="_identityAddress1Entry"
+                            Text="{Binding Cipher.Identity.Address1}"
+                            StyleClass="box-value" 
+                            AutomationProperties.IsInAccessibleTree="True"
+                            AutomationProperties.Name="{u:I18n Address1}"
+                            AutomationId="IdentityAddressOneEntry" />
+                    </StackLayout>
+                    <StackLayout StyleClass="box-row, box-row-input">
+                        <Label
+                            Text="{u:I18n CityTownOpcional}"
+                            StyleClass="box-label" />
+                        <Entry
+                            x:Name="_identityCityEntry"
+                            Text="{Binding Cipher.Identity.City}"
+                            StyleClass="box-value,capitalize-sentence-input"
+                            AutomationProperties.IsInAccessibleTree="True"
+                            AutomationProperties.Name="{u:I18n CityTown}"
+                            AutomationId="IdentityCityEntry" />
+                    </StackLayout>
+                    <StackLayout StyleClass="box-row, box-row-input">
+                        <Label
+                            Text="{u:I18n StateProvinceOpcional}"
+                            StyleClass="box-label" />
+                        <Entry
+                            x:Name="_identityStateEntry"
+                            Text="{Binding Cipher.Identity.State}"
+                            StyleClass="box-value,capitalize-sentence-input"
+                            AutomationProperties.IsInAccessibleTree="True"
+                            AutomationProperties.Name="{u:I18n StateProvince}"
+                            AutomationId="IdentityStateEntry" />
+                    </StackLayout>
+                    <StackLayout StyleClass="box-row, box-row-input">
+                        <Label
+                            Text="{u:I18n ZipPostalCodeOpcional}"
+                            StyleClass="box-label" />
+                        <Entry
+                            x:Name="_identityPostalCodeEntry"
+                            Text="{Binding Cipher.Identity.PostalCode}"
+                            StyleClass="box-value"
+                            AutomationProperties.IsInAccessibleTree="True"
+                            AutomationProperties.Name="{u:I18n ZipPostalCode}"
+                            AutomationId="IdentityPostalCodeEntry" />
+                    </StackLayout>
+                    <StackLayout StyleClass="box-row, box-row-input">
+                        <Label
+                            Text="{u:I18n CountryOpcional}"
+                            StyleClass="box-label" />
+                        <Entry
+                            x:Name="_identityCountryEntry"
+                            Text="{Binding Cipher.Identity.Country}"
+                            StyleClass="box-value,capitalize-sentence-input"
+                            AutomationProperties.IsInAccessibleTree="True"
+                            AutomationProperties.Name="{u:I18n Country}"
+                            AutomationId="IdentityCountryEntry" />
+                    </StackLayout>
+                    <StackLayout StyleClass="box-row, box-row-input">
+                        <Label
+                            Text="{u:I18n PhoneOpcional}"
                             StyleClass="box-label" />
                         <Entry
                             x:Name="_identityPhoneEntry"
@@ -513,63 +528,16 @@
                     </StackLayout>
                     <StackLayout StyleClass="box-row, box-row-input">
                         <Label
-                            Text="{u:I18n Address1}"
+                            Text="{u:I18n EmailOpcional}"
                             StyleClass="box-label" />
                         <Entry
-                            x:Name="_identityAddress1Entry"
-                            Text="{Binding Cipher.Identity.Address1}"
+                            x:Name="_identityEmailEntry"
+                            Keyboard="Email"
+                            Text="{Binding Cipher.Identity.Email}"
                             StyleClass="box-value" 
                             AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n Address1}"
-                            AutomationId="IdentityAddressOneEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n CityTown}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identityCityEntry"
-                            Text="{Binding Cipher.Identity.City}"
-                            StyleClass="box-value,capitalize-sentence-input"
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n CityTown}"
-                            AutomationId="IdentityCityEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n StateProvince}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identityStateEntry"
-                            Text="{Binding Cipher.Identity.State}"
-                            StyleClass="box-value,capitalize-sentence-input"
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n StateProvince}"
-                            AutomationId="IdentityStateEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n ZipPostalCode}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identityPostalCodeEntry"
-                            Text="{Binding Cipher.Identity.PostalCode}"
-                            StyleClass="box-value"
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n ZipPostalCode}"
-                            AutomationId="IdentityPostalCodeEntry" />
-                    </StackLayout>
-                    <StackLayout StyleClass="box-row, box-row-input">
-                        <Label
-                            Text="{u:I18n Country}"
-                            StyleClass="box-label" />
-                        <Entry
-                            x:Name="_identityCountryEntry"
-                            Text="{Binding Cipher.Identity.Country}"
-                            StyleClass="box-value,capitalize-sentence-input"
-                            AutomationProperties.IsInAccessibleTree="True"
-                            AutomationProperties.Name="{u:I18n Country}"
-                            AutomationId="IdentityCountryEntry" />
+                            AutomationProperties.Name="correo@gmail.com"
+                            AutomationId="IdentityEmailEntry" />
                     </StackLayout>
                 </StackLayout>
 

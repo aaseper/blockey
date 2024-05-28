@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using Android.Content;
 using Android.Content.Res;
+using Android.Graphics;
 using Bit.Droid.Renderers;
 using Bit.Droid.Utilities;
 using Xamarin.Forms;

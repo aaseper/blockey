@@ -386,6 +386,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address1Opcional.
+        /// </summary>
+        public static string Address1Opcional {
+            get {
+                return ResourceManager.GetString("Address1Opcional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address 2.
         /// </summary>
         public static string Address2 {
@@ -1520,6 +1529,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CityTownOpcional.
+        /// </summary>
+        public static string CityTownOpcional {
+            get {
+                return ResourceManager.GetString("CityTownOpcional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clear.
         /// </summary>
         public static string Clear {
@@ -1750,6 +1768,15 @@ namespace Bit.App.Resources {
         public static string Country {
             get {
                 return ResourceManager.GetString("Country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryOpcional.
+        /// </summary>
+        public static string CountryOpcional {
+            get {
+                return ResourceManager.GetString("CountryOpcional", resourceCulture);
             }
         }
         
@@ -2281,6 +2308,15 @@ namespace Bit.App.Resources {
         public static string EmailAddress {
             get {
                 return ResourceManager.GetString("EmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmailOpcional.
+        /// </summary>
+        public static string EmailOpcional {
+            get {
+                return ResourceManager.GetString("EmailOpcional", resourceCulture);
             }
         }
         
@@ -3707,6 +3743,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LastNameHint.
+        /// </summary>
+        public static string LastNameHint {
+            get {
+                return ResourceManager.GetString("LastNameHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last sync:.
         /// </summary>
         public static string LastSync {
@@ -5078,6 +5123,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PassportNumberOptional.
+        /// </summary>
+        public static string PassportNumberOptional {
+            get {
+                return ResourceManager.GetString("PassportNumberOptional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Password {
@@ -5299,6 +5353,15 @@ namespace Bit.App.Resources {
         public static string Phone {
             get {
                 return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneOpcional.
+        /// </summary>
+        public static string PhoneOpcional {
+            get {
+                return ResourceManager.GetString("PhoneOpcional", resourceCulture);
             }
         }
         
@@ -6276,6 +6339,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SSNOpcional.
+        /// </summary>
+        public static string SSNOpcional {
+            get {
+                return ResourceManager.GetString("SSNOpcional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Starts with.
         /// </summary>
         public static string StartsWith {
@@ -6290,6 +6362,15 @@ namespace Bit.App.Resources {
         public static string StateProvince {
             get {
                 return ResourceManager.GetString("StateProvince", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StateProvinceOpcional.
+        /// </summary>
+        public static string StateProvinceOpcional {
+            get {
+                return ResourceManager.GetString("StateProvinceOpcional", resourceCulture);
             }
         }
         
@@ -6416,6 +6497,24 @@ namespace Bit.App.Resources {
         public static string SupportFAQForgetText {
             get {
                 return ResourceManager.GetString("SupportFAQForgetText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportFAQGenerateRandom.
+        /// </summary>
+        public static string SupportFAQGenerateRandom {
+            get {
+                return ResourceManager.GetString("SupportFAQGenerateRandom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SupportFAQGenerateRandomText.
+        /// </summary>
+        public static string SupportFAQGenerateRandomText {
+            get {
+                return ResourceManager.GetString("SupportFAQGenerateRandomText", resourceCulture);
             }
         }
         
@@ -8064,6 +8163,15 @@ namespace Bit.App.Resources {
         public static string ZipPostalCode {
             get {
                 return ResourceManager.GetString("ZipPostalCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ZipPostalCodeOptional.
+        /// </summary>
+        public static string ZipPostalCodeOpcional {
+            get {
+                return ResourceManager.GetString("ZipPostalCodeOpcional", resourceCulture);
             }
         }
     }
