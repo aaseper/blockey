@@ -134,6 +134,9 @@
     <value>Add Item</value>
     <comment>The title for the add item page.</comment>
   </data>
+  <data name="AddItemHelp" xml:space="preserve">
+    <value></value>
+  </data>
   <data name="AnErrorHasOccurred" xml:space="preserve">
     <value>An error has occurred.</value>
     <comment>Alert title when something goes wrong.</comment>
@@ -601,6 +604,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Manage</value>
   </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>Mandatory</value>
+  </data>
   <data name="MasterPasswordConfirmationValMessage" xml:space="preserve">
     <value>Password confirmation is not correct.</value>
   </data>
@@ -669,6 +675,9 @@
   </data>
   <data name="PasswordGenerator" xml:space="preserve">
     <value>Password generator</value>
+  </data>
+  <data name="PasswordGeneratorDesc" xml:space="preserve">
+    <value>PasswordGeneratorDesc</value>
   </data>
   <data name="PasswordHint" xml:space="preserve">
     <value>Password hint</value>

@@ -62,7 +62,7 @@ namespace Bit.App.Pages
             _tokenService = ServiceContainer.Resolve<ITokenService>();
             _deviceActionService = ServiceContainer.Resolve<IDeviceActionService>();
 
-            PageTitle = AppResources.Generator;
+            PageTitle = AppResources.PasswordGenerator;
             GeneratorTypeOptions = new List<GeneratorType> {
                 GeneratorType.Password,
                 GeneratorType.Username

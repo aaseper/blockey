@@ -134,6 +134,9 @@
     <value>Añadir elemento</value>
     <comment>The title for the add item page.</comment>
   </data>
+  <data name="AddItemHelp" xml:space="preserve">
+    <value>Crear elemento</value>
+  </data>
   <data name="AnErrorHasOccurred" xml:space="preserve">
     <value>Ha ocurrido un error</value>
     <comment>Alert title when something goes wrong.</comment>
@@ -375,7 +378,11 @@
     <comment>The title for the tools page.</comment>
   </data>
   <data name="URI" xml:space="preserve">
-    <value>Barra de direcciones (www.sitioweb.com)</value>
+    <value>Barra de direcciones (opcional)</value>
+    <comment>Label for a uri/url.</comment>
+  </data>
+  <data name="URIExample" xml:space="preserve">
+    <value>www.sitioweb.com</value>
     <comment>Label for a uri/url.</comment>
   </data>
   <data name="UseFingerprintToUnlock" xml:space="preserve">
@@ -386,7 +393,7 @@
     <comment>Label for a username.</comment>
   </data>
   <data name="ValidationFieldRequired" xml:space="preserve">
-    <value>Escriba su "{0}" para poder continuar.</value>
+    <value>El campo "{0}" es obligatorio, rellénelo para poder continuar.</value>
     <comment>Validation message for when a form field is left blank and is required to be entered.</comment>
   </data>
   <data name="ValueHasBeenCopied" xml:space="preserve">
@@ -601,6 +608,9 @@
   <data name="Manage" xml:space="preserve">
     <value>Sincronización</value>
   </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>Obligatorio</value>
+  </data>
   <data name="MasterPasswordConfirmationValMessage" xml:space="preserve">
     <value>Repita su contraseña abajo en el formulario para comprobarla.</value>
   </data>
@@ -643,7 +653,7 @@
     <value>No hay favoritos en su caja fuerte.</value>
   </data>
   <data name="NoItems" xml:space="preserve">
-    <value>¡Bienvenido a BlocKey!\e0A\e0APuede crear su primer elemento pulsando el botón "+" de abajo.</value>
+    <value>¡Bienvenido a BlocKey!\e0A\e0APuede crear su primer elemento pulsando el botón "+" de abajo</value>
   </data>
   <data name="NoItemsTap" xml:space="preserve">
     <value>No hay elementos en su caja fuerte para este sitio web o aplicación. Pulse para añadir uno.</value>
@@ -668,7 +678,10 @@
     <value>Contraseña generada.</value>
   </data>
   <data name="PasswordGenerator" xml:space="preserve">
-    <value>Generador de contraseñas</value>
+    <value>Generador de contraseña aleatoria</value>
+  </data>
+  <data name="PasswordGeneratorDesc" xml:space="preserve">
+    <value>Resultado generado aleatoriamente</value>
   </data>
   <data name="PasswordHint" xml:space="preserve">
     <value>Pista de contraseña</value>
@@ -2436,7 +2449,7 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Palabra aleatoria</value>
   </data>
   <data name="EmailRequiredParenthesis" xml:space="preserve">
-    <value>Email (obligatorio)</value>
+    <value>Correo electrónico</value>
   </data>
   <data name="DomainNameRequiredParenthesis" xml:space="preserve">
     <value>Nombre de dominio (requerido)</value>

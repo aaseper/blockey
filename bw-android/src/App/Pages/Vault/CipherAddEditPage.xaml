@@ -109,6 +109,16 @@
                     <Label Text="{u:I18n ItemInformation, Header=True}"
                            StyleClass="box-header, box-header-platform" />
                 </StackLayout>
+                <StackLayout StyleClass="box-row">
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="* " TextColor="Red"/>
+                                <Span Text="{u:I18n Mandatory}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
                 <StackLayout StyleClass="box-row, box-row-input"
                              IsVisible="{Binding EditMode, Converter={StaticResource inverseBool}}">
                     <Label
@@ -122,9 +132,14 @@
                         AutomationId="ItemTypePicker" />
                 </StackLayout>
                 <StackLayout StyleClass="box-row, box-row-input">
-                    <Label
-                        Text="{u:I18n Name}"
-                        StyleClass="box-label" />
+                    <Label StyleClass="box-label">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{u:I18n Name}"/>
+                                <Span Text=" ("/><Span Text="*" TextColor="Red"/><Span Text=")"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
                     <Entry
                         x:Name="_nameEntry"
                         Text="{Binding Cipher.Name}"
@@ -137,9 +152,14 @@
                     <Grid StyleClass="box-row, box-row-input"
                         RowDefinitions="Auto,*"
                         ColumnDefinitions="*,Auto">
-                         <Label
-                            Text="{u:I18n Username}"
-                            StyleClass="box-label"/>
+                        <Label StyleClass="box-label">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{u:I18n Username}"/>
+                                    <Span Text=" ("/><Span Text="*" TextColor="Red"/><Span Text=")"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                         <Entry
                             x:Name="_loginUsernameEntry"
                             Text="{Binding Cipher.Login.Username}"
@@ -170,11 +190,17 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <Label
-                            Text="{u:I18n Password}"
+                        <Label 
                             StyleClass="box-label"
                             Grid.Row="0"
-                            Grid.Column="0" />
+                            Grid.Column="0">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{u:I18n Password}"/>
+                                    <Span Text=" ("/><Span Text="*" TextColor="Red"/><Span Text=")"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                         <controls:MonoEntry
                             x:Name="_loginPasswordEntry"
                             Text="{Binding Cipher.Login.Password}"
@@ -608,7 +634,7 @@
                                     Grid.Row="1"
                                     Grid.Column="0"
                                     AutomationProperties.IsInAccessibleTree="True"
-                                    AutomationProperties.Name="{u:I18n URI}"
+                                    AutomationProperties.Name="{u:I18n URIExample}"
                                     AutomationId="LoginUriEntry" />
                                 <controls:IconButton
                                     StyleClass="box-row-button, box-row-button-platform"
@@ -655,6 +681,13 @@
                         AutomationId="MasterPasswordRepromptToggle" />
                 </StackLayout>
                 <BoxView StyleClass="box-row-separator" />
+                <StackLayout
+                    StyleClass="box-row">
+                    <Button Text="{u:I18n Save}"
+                        StyleClass="btn-primary"
+                        Clicked="Save_Clicked"
+                        AutomationId="SaveElementLabel"/>
+                </StackLayout>
             </StackLayout>
             <StackLayout StyleClass="box" IsVisible="{Binding ShowCollections}">
                 <StackLayout StyleClass="box-row-header">

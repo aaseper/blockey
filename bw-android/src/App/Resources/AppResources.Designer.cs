@@ -350,6 +350,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string AddItemHelp {
+            get {
+                return ResourceManager.GetString("AddItemHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add new attachment.
         /// </summary>
         public static string AddNewAttachment {
@@ -4105,6 +4114,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mandatory.
+        /// </summary>
+        public static string Mandatory {
+            get {
+                return ResourceManager.GetString("Mandatory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to March.
         /// </summary>
         public static string March {
@@ -5128,6 +5146,15 @@ namespace Bit.App.Resources {
         public static string PasswordGenerator {
             get {
                 return ResourceManager.GetString("PasswordGenerator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PasswordGeneratorDesc.
+        /// </summary>
+        public static string PasswordGeneratorDesc {
+            get {
+                return ResourceManager.GetString("PasswordGeneratorDesc", resourceCulture);
             }
         }
         

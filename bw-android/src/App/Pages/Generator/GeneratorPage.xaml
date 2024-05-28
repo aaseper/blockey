@@ -24,12 +24,12 @@
             <xct:EnumToBoolConverter x:Key="enumToBool"/>
             <ToolbarItem Text="{u:I18n Cancel}" Command="{Binding CloseCommand}" Order="Primary" Priority="-1"
                          x:Name="_closeItem" x:Key="closeItem" />
-            <ToolbarItem Text="{u:I18n Select}"
+            <ToolbarItem Text="{u:I18n Save}"
                      Clicked="Select_Clicked"
                      Order="Primary"
                      x:Name="_selectItem"
                      x:Key="selectItem" />
-            <ToolbarItem IconImageSource="tbi_continue.png"
+            <ToolbarItem IconImageSource="tbi_save.png"
                      Clicked="Select_Clicked" 
                      Order="Primary"
                      x:Name="_selectItemIcon"
@@ -80,6 +80,12 @@
                             AutomationId="PasswordGeneratorPolicyInEffectLabel" />
                     </Frame>
                 </Grid>
+                <StackLayout StyleClass="box"
+                    Padding="0,10">
+                    <Label
+                        Text="{u:I18n PasswordGeneratorDesc}"
+                        StyleClass="box-label" />
+                </StackLayout>
                 <Grid IsVisible="{Binding IsUsername, Converter={StaticResource inverseBool}}"
                         StyleClass="box-row"
                         RowDefinitions="Auto"
@@ -90,21 +96,6 @@
                         Text="{Binding ColoredPassword, Mode=OneWay}"
                         Margin="0, 20"
                         AutomationId="GeneratedPasswordLabel" />
-                    <controls:IconButton 
-                        StyleClass="box-row-button, box-row-button-platform"
-                        ImageSource="copy.png"
-                        Text=""
-                        Command="{Binding CopyCommand}"
-                        Grid.Column="1"
-                        AutomationProperties.IsInAccessibleTree="True"
-                        AutomationProperties.Name="{u:I18n CopyPassword}"
-                        AutomationId="CopyValueButton" />
-                    <Label
-                        Text="{u:I18n Copy}"
-                        FontSize="Small"
-                        StyleClass="box-sub-label"
-                        Grid.Column="1"
-                        HorizontalTextAlignment="Center" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
                         ImageSource="random.png"
@@ -132,21 +123,6 @@
                         Margin="0, 20"
                         HorizontalOptions="Start"
                         AutomationId="GeneratedPasswordLabel" />
-                    <controls:IconButton 
-                        StyleClass="box-row-button, box-row-button-platform"
-                        ImageSource="copy.png"
-                        Text=""
-                        Command="{Binding CopyCommand}"
-                        Grid.Column="1"
-                        AutomationProperties.IsInAccessibleTree="True"
-                        AutomationProperties.Name="{u:I18n CopyPassword}"
-                        AutomationId="CopyValueButton" />
-                    <Label
-                        Text="{u:I18n Copy}"
-                        FontSize="Small"
-                        StyleClass="box-sub-label"
-                        Grid.Column="1"
-                        HorizontalTextAlignment="Center" />
                     <controls:IconButton 
                         StyleClass="box-row-button, box-row-button-platform"
                         ImageSource="random.png"
@@ -339,6 +315,13 @@
                     </Grid>
                     <BoxView IsVisible="{Binding UsernameTypeSelected, Converter={StaticResource enumToBool}, ConverterParameter={x:Static enums:UsernameType.RandomWord}}"
                         StyleClass="box-row-separator" />
+                    <StackLayout
+                        StyleClass="box-row">
+                        <Button Text="{u:I18n Save}"
+                            StyleClass="btn-primary"
+                            Clicked="Select_Clicked"
+                            AutomationId="SelectPasswordLabel"/>
+                    </StackLayout>
                 </StackLayout>
                 <!--PASSWORD OPTIONS-->
                 <StackLayout IsVisible="{Binding IsUsername, Converter={StaticResource inverseBool}}">
@@ -580,6 +563,13 @@
                                 AutomationId="AvoidAmbiguousCharsToggle" />
                         </StackLayout>
                         <BoxView StyleClass="box-row-separator" />
+                        <StackLayout
+                            StyleClass="box-row">
+                            <Button Text="{u:I18n Save}"
+                                StyleClass="btn-primary"
+                                Clicked="Select_Clicked"
+                                AutomationId="SelectPasswordLabel"/>
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
