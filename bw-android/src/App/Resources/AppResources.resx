@@ -137,6 +137,9 @@
   <data name="AddItemHelp" xml:space="preserve">
     <value></value>
   </data>
+  <data name="EditItemHelp" xml:space="preserve">
+    <value></value>
+  </data>
   <data name="AnErrorHasOccurred" xml:space="preserve">
     <value>An error has occurred.</value>
     <comment>Alert title when something goes wrong.</comment>
@@ -957,6 +960,15 @@ Scanning will happen automatically.</value>
   <data name="Photos" xml:space="preserve">
     <value>Photos</value>
   </data>
+  <data name="PickerCipherAddTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PickerCipherAddFooter" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Photos" xml:space="preserve">
+    <value>Photos</value>
+  </data>
   <data name="CopyTotp" xml:space="preserve">
     <value>Copy TOTP</value>
   </data>
@@ -1004,6 +1016,9 @@ Scanning will happen automatically.</value>
   </data>
   <data name="LearnMore" xml:space="preserve">
     <value>Learn more</value>
+  </data>
+  <data name="LengthFooter" xml:space="preserve">
+    <value></value>
   </data>
   <data name="ApiUrl" xml:space="preserve">
     <value>API server URL</value>

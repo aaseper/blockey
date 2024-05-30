@@ -126,13 +126,13 @@
                     </Label>
                     <Picker
                         x:Name="_typePicker"
-                        Title="Pulse un tipo de elemento"
+                        Title="{u:I18n PickerCipherAddTitle}"
                         ItemsSource="{Binding TypeOptions, Mode=OneTime}"
                         SelectedIndex="{Binding TypeSelectedIndex}"
                         StyleClass="box-value"
                         AutomationId="ItemTypePicker" />
                     <Label
-                        Text="Pulse para cambiar el tipo de elemento a Sitio web o Datos personales"
+                        Text="{u:I18n PickerCipherAddFooter}"
                         StyleClass="box-footer-label"
                         AutomationId="PickerFooter" />
                 </StackLayout>

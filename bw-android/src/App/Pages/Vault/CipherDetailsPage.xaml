@@ -794,6 +794,22 @@
                                 <TapGestureRecognizer Tapped="PasswordHistory_Tapped" />
                             </Label.GestureRecognizers>
                         </Label>
+                        <StackLayout
+                            StyleClass="box-row">
+                            <Label
+                                Text="{u:I18n EditItemHelp}"
+                                HorizontalTextAlignment="Center"
+                                FontSize="Small"
+                                StyleClass="box-sub-label"
+                                AutomationId="NoDataDisplayed"/>
+                            <Button 
+                                x:Name="_fab"
+                                Text="{u:I18n EditItem}"
+                                StyleClass="btn-primary"
+                                Clicked="EditButton_Clicked"
+                                AutomationProperties.IsInAccessibleTree="True"
+                                AutomationId="EditElementLabel"/>
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
@@ -810,21 +826,6 @@
             AbsoluteLayout.LayoutFlags="All"
             AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
         </ContentView>
-        <Button
-            x:Name="_fab"
-            Image="pencil.png"
-            Clicked="EditButton_Clicked"
-            Style="{StaticResource btn-fab}"
-            AbsoluteLayout.LayoutFlags="PositionProportional"
-            AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize"
-            AutomationProperties.IsInAccessibleTree="True"
-            AutomationProperties.Name="{u:I18n EditItem}"
-            AutomationId="CipherEditButton"
-            IsVisible="{Binding CanEdit}">
-            <Button.Effects>
-                <effects:FabShadowEffect />
-            </Button.Effects>
-        </Button>
     </AbsoluteLayout>
 
 </pages:BaseContentPage>

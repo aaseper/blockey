@@ -23,7 +23,6 @@ namespace Bit.App.Pages
             _vm.Page = this;
             _vaultTimeoutService = ServiceContainer.Resolve<IVaultTimeoutService>("vaultTimeoutService");
             ToolbarItems.Add(_lockItem);
-            ToolbarItems.Add(_exitItem);
         }
 
         public async Task InitAsync()

@@ -28,7 +28,6 @@ namespace Bit.App.Pages
             _vaultTimeoutService = ServiceContainer.Resolve<IVaultTimeoutService>("vaultTimeoutService");
             _vm.StartRegisterAction = () => Device.BeginInvokeOnMainThread(async () => await StartRegisterAsync());
             ToolbarItems.Add(_lockItem);
-            ToolbarItems.Add(_exitItem);
         }
 
         public async Task InitAsync()

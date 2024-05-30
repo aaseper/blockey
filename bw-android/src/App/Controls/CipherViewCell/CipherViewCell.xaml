@@ -111,7 +111,6 @@
             AutomationProperties.Name="{u:I18n Attachments}"
             AutomationId="CipherWithAttachmentsIcon" />
     </Grid>
-
     <controls:MiButton
         Grid.Row="0"
         Grid.Column="2"

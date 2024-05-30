@@ -70,7 +70,6 @@ namespace Bit.App.Pages
             {
                 ToolbarItems.Add(_syncItem);
                 ToolbarItems.Add(_lockItem);
-                ToolbarItems.Add(_exitItem);
             }
             if (deleted || showTotp)
             {

@@ -135,7 +135,10 @@
     <comment>The title for the add item page.</comment>
   </data>
   <data name="AddItemHelp" xml:space="preserve">
-    <value>Crear elemento</value>
+    <value>Pulse para crear un nuevo elemento</value>
+  </data>
+  <data name="EditItemHelp" xml:space="preserve">
+    <value>Pulse para editar este elemento</value>
   </data>
   <data name="AnErrorHasOccurred" xml:space="preserve">
     <value>Ha ocurrido un error</value>
@@ -396,7 +399,7 @@
     <comment>Label for a username.</comment>
   </data>
   <data name="ValidationFieldRequired" xml:space="preserve">
-    <value>El campo "{0}" es obligatorio, rellénelo para poder continuar.</value>
+    <value>No ha puesto nada en el campo "{0}". Si no pone su constraseña, no podrá inciar sesión. Por favor, rellénelo para poder continuar.</value>
     <comment>Validation message for when a form field is left blank and is required to be entered.</comment>
   </data>
   <data name="ValueHasBeenCopied" xml:space="preserve">
@@ -404,13 +407,13 @@
     <comment>Confirmation message after successfully copying a value to the clipboard.</comment>
   </data>
   <data name="VerifyFingerprint" xml:space="preserve">
-    <value>Verificar huella dactilar</value>
+    <value>Comprobar huella dactilar</value>
   </data>
   <data name="VerifyMasterPassword" xml:space="preserve">
-    <value>Verificar contraseña</value>
+    <value>Comprobar contraseña</value>
   </data>
   <data name="VerifyPIN" xml:space="preserve">
-    <value>Verificar PIN</value>
+    <value>Comprobar PIN</value>
   </data>
   <data name="Version" xml:space="preserve">
     <value>Versión</value>
@@ -656,7 +659,7 @@
     <value>No hay favoritos en su caja fuerte.</value>
   </data>
   <data name="NoItems" xml:space="preserve">
-    <value>¡Bienvenido a BlocKey!\e0A\e0APuede crear su primer elemento pulsando el botón "+" de abajo</value>
+    <value>¡Bienvenido a BlocKey!\e0A\e0APuede guardar su primera contraseña pulsando el botón "Añadir elemento" de abajo</value>
   </data>
   <data name="NoItemsTap" xml:space="preserve">
     <value>No hay elementos en su caja fuerte para este sitio web o aplicación. Pulse para añadir uno.</value>
@@ -961,6 +964,12 @@ El escaneo se realizará automáticamente.</value>
   <data name="Photos" xml:space="preserve">
     <value>Fotos</value>
   </data>
+  <data name="PickerCipherAddTitle" xml:space="preserve">
+    <value>Pulse un tipo de elemento</value>
+  </data>
+  <data name="PickerCipherAddFooter" xml:space="preserve">
+    <value>Pulse para cambiar el tipo de elemento a Sitio web o Datos personales</value>
+  </data>
   <data name="CopyTotp" xml:space="preserve">
     <value>Copiar código de clave de un solo uso</value>
   </data>
@@ -1005,6 +1014,9 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="LearnMore" xml:space="preserve">
     <value>Aprender más</value>
+  </data>
+  <data name="LengthFooter" xml:space="preserve">
+    <value>Número de caracteres que tendrá su contraseña. Si una contraseña es larga será más segura</value>
   </data>
   <data name="ApiUrl" xml:space="preserve">
     <value>URL del servidor de la API</value>
@@ -1262,13 +1274,13 @@ El escaneo se realizará automáticamente.</value>
     <comment>What Apple calls their facial recognition reader.</comment>
   </data>
   <data name="FaceIDDirection" xml:space="preserve">
-    <value>Usar Face ID para verificar.</value>
+    <value>Usar Face ID para comprobar.</value>
   </data>
   <data name="UseFaceIDToUnlock" xml:space="preserve">
     <value>Usar Face ID para desbloquear</value>
   </data>
   <data name="VerifyFaceID" xml:space="preserve">
-    <value>Verificar Face ID</value>
+    <value>Comprobar Face ID</value>
   </data>
   <data name="WindowsHello" xml:space="preserve">
     <value>Windows Hello</value>
@@ -1433,10 +1445,10 @@ El escaneo se realizará automáticamente.</value>
     <value>Comprobar si la contraseña ha sido comprometida.</value>
   </data>
   <data name="PasswordExposed" xml:space="preserve">
-    <value>Esta contraseña ha sido expuesta {0} veces(s) en filtraciones de datos. Debería cambiarla.</value>
+    <value>Esta contraseña es insegura porque otras personas la han descubierto {0} veces(s). Cámbiela por una contraseña que no conozca nadie para que sea más segura.</value>
   </data>
   <data name="PasswordSafe" xml:space="preserve">
-    <value>Esta contraseña no fue encontrada en ninguna filtración de datos conocida. Debería poder utilizarla de forma segura.</value>
+    <value>Esta contraseña es segura porque no la conoce nadie.</value>
   </data>
   <data name="IdentityName" xml:space="preserve">
     <value>Nombre</value>
@@ -1572,13 +1584,13 @@ El escaneo se realizará automáticamente.</value>
     <comment>ex: Logged in as user@example.com on bitwarden.com.</comment>
   </data>
   <data name="VaultLockedMasterPassword" xml:space="preserve">
-    <value>Su caja fuerte está bloqueada. Verifique su contraseña de BlocKey para continuar.</value>
+    <value>Su caja fuerte está bloqueada. Compruebe su contraseña de BlocKey para continuar.</value>
   </data>
   <data name="VaultLockedPIN" xml:space="preserve">
-    <value>Su caja fuerte está bloqueada. Verifique su código PIN para continuar.</value>
+    <value>Su caja fuerte está bloqueada. Compruebe su código PIN para continuar.</value>
   </data>
   <data name="VaultLockedIdentity" xml:space="preserve">
-    <value>Su caja fuerte está bloqueada. Verifique su identidad para continuar.</value>
+    <value>Su caja fuerte está bloqueada. Compruebe su identidad para continuar.</value>
   </data>
   <data name="Dark" xml:space="preserve">
     <value>Oscuro</value>
@@ -1826,7 +1838,7 @@ El escaneo se realizará automáticamente.</value>
     <comment>Confirmation alert message when soft-deleting a cipher.</comment>
   </data>
   <data name="AccountBiometricInvalidated" xml:space="preserve">
-    <value>El desbloqueo biométrico para esta cuenta está deshabilitado hasta que se verifique la contraseña de BlocKey.</value>
+    <value>El desbloqueo biométrico para esta cuenta está deshabilitado hasta que se compruebe la contraseña de BlocKey.</value>
   </data>
   <data name="AccountBiometricInvalidatedExtension" xml:space="preserve">
     <value>El desbloqueo biométrico para autorrelleno de esta cuenta está deshabilitado hasta que realice la verificación de la contraseña de BlocKey.</value>
@@ -2143,7 +2155,7 @@ El escaneo se realizará automáticamente.</value>
     <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
   </data>
   <data name="SendFileEmailVerificationRequired" xml:space="preserve">
-    <value>Debe verificar su correo electrónico para usar archivos con Send. Puede verificar su correo electrónico en la caja fuerte web.</value>
+    <value>Debe comprobar su correo electrónico para usar archivos con Send. Puede comprobar su correo electrónico en la caja fuerte web.</value>
     <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
   </data>
   <data name="PasswordPrompt" xml:space="preserve">
@@ -2153,7 +2165,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Confirmación de contraseña de BlocKey</value>
   </data>
   <data name="PasswordConfirmationDesc" xml:space="preserve">
-    <value>Esta acción está protegida, para continuar por favor vuelva a introducir su contraseña de BlocKey para verificar su identidad.</value>
+    <value>Esta acción está protegida, para continuar por favor vuelva a introducir su contraseña de BlocKey para comprobar su identidad.</value>
   </data>
   <data name="CaptchaRequired" xml:space="preserve">
     <value>Captcha requerido</value>
@@ -2850,22 +2862,22 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>¡Alerta!</value>
   </data>
   <data name="SupportSecurityAnalysisVeryWeakPassword" xml:space="preserve">
-    <value>Contraseña muy débil: {0}</value>
+    <value>Contraseña insegura. {0}</value>
   </data>
   <data name="SupportSecurityAnalysisVeryWeakPasswordText" xml:space="preserve">
-    <value>Su contraseña con “Título” {0} es muy débil, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es muy débil si tiene 7 o menos caracteres, y se puede descifrar en segundos o minutos por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
+    <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AEsta contraseña es insegura porque tiene 7 o menos caracteres, y puede ser adivinada en segundos o minutos por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisWeakPassword" xml:space="preserve">
-    <value>Contraseña débil: {0}</value>
+    <value>Contraseña insegura. {0}</value>
   </data>
   <data name="SupportSecurityAnalysisWeakPasswordText" xml:space="preserve">
-    <value>Su contraseña con “Título” {0} es débil, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es débil si tiene 10 o menos caracteres, y se puede descifrar en horas o días por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
+    <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es insegura porque tiene 10 o menos caracteres, y puede ser adivinada en horas o días por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisReusedPassword" xml:space="preserve">
-    <value>Contraseña reutilizada: {0}</value>
+    <value>Contraseña reutilizada. {0}</value>
   </data>
   <data name="SupportSecurityAnalysisReusedPasswordText" xml:space="preserve">
-    <value>Su contraseña con “Título” {0} se repite en más de una contraseña.\e0A\e0AUna contraseña reutilizada en muchas cuentas puede dar acceso no autorizado a sus otras cuentas. Pruebe a generar una contraseña diferente con 14 o más caracteres.</value>
+    <value>Su contraseña con “Título” {0} está repetida más de una vez.\e0A\e0AUna contraseña repetida en muchas cuentas puede dar acceso no autorizado a sus otras cuentas. Pruebe a generar una contraseña diferente con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisProblemSolveAndSupport" xml:space="preserve">
     <value>Solución de problemas y soporte</value>
@@ -2886,7 +2898,7 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Gestionar una cuenta</value>
   </data>
   <data name="SupportYourAccountManageAccountText" xml:space="preserve">
-    <value>Una vez en BlocKey con la sesión iniciada, abajo a la izquierda en la pestaña “Mi caja fuerte”, pulse arriba a la derecha un icono de su perfil. Desde ahí, podrá añadir más cuentas, si así lo desea, para poder iniciar sesión rápidamente entre ellas.\e0A\e0AArriba a la derecha, toque los tres puntos y verá tres opciones. Podrá “Bloquear” la cuenta, y entonces le pedirá la contraseña de BlocKey otra vez. “Cerrar la aplicación” es igual, pero también cerrará la aplicación.\e0A\e0AAbajo a la izquierda, en la pestaña “Ajustes”, en la sección “Cuenta” verá tres opciones. “Cambiar contraseña de BlocKey” le llevará a una web donde iniciará sesión y podrá cambiar la contraseña. “Cerrar sesión” cerrará su sesión de BlocKey completamente.\e0A\e0AExisten múltiples opciones de configuración en la aplicación, así que puede explorar con tranquilidad los ajustes.</value>
+    <value>Una vez en BlocKey con la sesión iniciada, abajo a la izquierda en la pestaña “Mi caja fuerte”, pulse arriba a la derecha un icono de su perfil. Desde ahí, podrá añadir más cuentas, si así lo desea, para poder iniciar sesión rápidamente entre ellas.\e0A\e0AArriba a la derecha, toque los tres puntos y verá tres opciones. Podrá “Bloquear” la cuenta, y entonces le pedirá la contraseña de BlocKey otra vez.\e0A\e0AAbajo a la izquierda, en la pestaña “Ajustes”, en la sección “Cuenta” verá tres opciones. “Cambiar contraseña de BlocKey” le llevará a una web donde iniciará sesión y podrá cambiar la contraseña. “Cerrar sesión” cerrará su sesión de BlocKey completamente.\e0A\e0AExisten múltiples opciones de configuración en la aplicación, así que puede explorar con tranquilidad los ajustes.</value>
   </data>
   <data name="SupportYourAccountLogIn" xml:space="preserve">
     <value>Iniciar sesión</value>
@@ -2937,7 +2949,7 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Solución de problemas con contraseñas</value>
   </data>
   <data name="SupportYourSavedPasswordsPasswordProblemSolveText" xml:space="preserve">
-    <value>Si alguna contraseña guardada no tiene un enlace a una página real, es probable que cause problemas.\e0A\e0AVerifique que los campos de sus contraseñas estén bien escritos y compruébelos al guardarlas.\e0A\e0ASi no carga alguna contraseña al pulsarle, pruebe a reiniciar la aplicación.\e0A\e0ASi sigue teniendo dudas, puede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
+    <value>Si alguna contraseña guardada no tiene un enlace a una página real, es probable que cause problemas.\e0A\e0ACompruebe que los campos de sus contraseñas estén bien escritos y compruébelos al guardarlas.\e0A\e0ASi no carga alguna contraseña al pulsarle, pruebe a reiniciar la aplicación.\e0A\e0ASi sigue teniendo dudas, puede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
   </data>
   <data name="SupportFAQ" xml:space="preserve">
     <value>Preguntas más frecuentes</value>

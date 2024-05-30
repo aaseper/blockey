@@ -444,7 +444,7 @@ namespace Bit.App.Pages
 
         public async Task SelectCipherAsync(CipherView cipher)
         {
-            var page = new CipherDetailsPage(cipher.Id);
+            var page = new CipherAddEditPage(cipher.Id);
             await Page.Navigation.PushModalAsync(new NavigationPage(page));
         }
 
@@ -623,6 +623,10 @@ namespace Bit.App.Pages
                         {
                             NoFolderCiphers = new List<CipherView>();
                         }
+                        // Add type to name as tag or tip if it's not already there
+                        c.Name = c.Type is CipherType.Login ? 
+                            !c.Name.Contains(AppResources.TypeLogin) ? $"{AppResources.TypeLogin}: {c.Name}" : c.Name :
+                            !c.Name.Contains(AppResources.TypeIdentity) ? $"{AppResources.TypeIdentity}: {c.Name}" : c.Name;
                         NoFolderCiphers.Add(c);
                     }
 

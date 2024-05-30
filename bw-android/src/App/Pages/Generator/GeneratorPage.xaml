@@ -425,6 +425,12 @@
                                 Increment="1"
                                 AutomationId="PasswordLengthSlider" />
                         </StackLayout>
+                        <StackLayout>
+                            <Label
+                                Text="{u:I18n LengthFooter}"
+                                StyleClass="box-footer-label"
+                                AutomationId="LengthFooter" />
+                        </StackLayout>
                         <BoxView StyleClass="box-row-separator" />
                         <StackLayout StyleClass="box-row, box-row-switch">
                             <Label

@@ -2276,6 +2276,15 @@ namespace Bit.App.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string EditItemHelp {
+            get {
+                return ResourceManager.GetString("EditItemHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit Send.
         /// </summary>
         public static string EditSend {
@@ -3820,6 +3829,15 @@ namespace Bit.App.Resources {
         public static string Length {
             get {
                 return ResourceManager.GetString("Length", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string LengthFooter {
+            get {
+                return ResourceManager.GetString("LengthFooter", resourceCulture);
             }
         }
         
@@ -5371,6 +5389,24 @@ namespace Bit.App.Resources {
         public static string Photos {
             get {
                 return ResourceManager.GetString("Photos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string PickerCipherAddFooter {
+            get {
+                return ResourceManager.GetString("PickerCipherAddFooter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string PickerCipherAddTitle {
+            get {
+                return ResourceManager.GetString("PickerCipherAddTitle", resourceCulture);
             }
         }
         

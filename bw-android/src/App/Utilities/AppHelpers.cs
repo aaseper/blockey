@@ -15,6 +15,7 @@ using Bit.Core.Enums;
 using Bit.Core.Exceptions;
 using Bit.Core.Models.Data;
 using Bit.Core.Models.View;
+using Bit.Core.Services;
 using Bit.Core.Utilities;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
@@ -30,13 +31,15 @@ namespace Bit.App.Utilities
             var eventService = ServiceContainer.Resolve<IEventService>("eventService");
             var vaultTimeoutService = ServiceContainer.Resolve<IVaultTimeoutService>("vaultTimeoutService");
             var clipboardService = ServiceContainer.Resolve<IClipboardService>("clipboardService");
+            var syncService = ServiceContainer.Resolve<ISyncService>("syncService");
 
             var options = new List<string> { AppResources.View };
             if (!cipher.IsDeleted)
             {
                 options.Add(AppResources.Edit);
+                options.Add(AppResources.Delete);
             }
-            if (cipher.Type == Core.Enums.CipherType.Login)
+            if (cipher.Type == CipherType.Login)
             {
                 if (!string.IsNullOrWhiteSpace(cipher.Login.Username))
                 {
@@ -104,6 +107,13 @@ namespace Bit.App.Utilities
                      await passwordRepromptService.PromptAndCheckPasswordIfNeededAsync(cipher.Reprompt))
             {
                 await page.Navigation.PushModalAsync(new NavigationPage(new CipherAddEditPage(cipher.Id)));
+            }
+            else if (selection == AppResources.Delete
+                     &&
+                     await passwordRepromptService.PromptAndCheckPasswordIfNeededAsync(cipher.Reprompt))
+            {
+                await DeleteAsync(cipher);
+                await syncService.FullSyncAsync(true);
             }
             else if (selection == AppResources.CopyUsername)
             {
@@ -586,6 +596,40 @@ namespace Bit.App.Utilities
             policyService.ClearCache();
             searchService.ClearIndex();
             usernameGenerationService.ClearCache();
+        }
+
+        public static async Task<bool> DeleteAsync(CipherView c)
+        {
+            var platformUtilsService = ServiceContainer.Resolve<IPlatformUtilsService>("platformUtilsService");
+            var deviceActionService = ServiceContainer.Resolve<IDeviceActionService>("deviceActionService");
+            var cipherService = ServiceContainer.Resolve<ICipherService>("cipherService");
+            var messagingService = ServiceContainer.Resolve<IMessagingService>("messagingService");
+
+            if (Xamarin.Essentials.Connectivity.NetworkAccess == Xamarin.Essentials.NetworkAccess.None)
+            {
+                await platformUtilsService.ShowDialogAsync(AppResources.InternetConnectionRequiredMessage,
+                    AppResources.InternetConnectionRequiredTitle);
+                return false;
+            }
+            try
+            {
+                await deviceActionService.ShowLoadingAsync(AppResources.SoftDeleting);
+                await cipherService.SoftDeleteWithServerAsync(c.Id);
+                await deviceActionService.HideLoadingAsync();
+                platformUtilsService.ShowToast("success", null, AppResources.ItemSoftDeleted);
+                messagingService.Send("softDeletedCipher", c);
+                return true;
+            }
+            catch (ApiException e)
+            {
+                await deviceActionService.HideLoadingAsync();
+                if (e?.Error != null)
+                {
+                    await platformUtilsService.ShowDialogAsync(e.Error.GetSingleMessage(),
+                        AppResources.AnErrorHasOccurred);
+                }
+            }
+            return false;
         }
     }
 }

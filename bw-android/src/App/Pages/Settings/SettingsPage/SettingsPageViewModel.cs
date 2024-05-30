@@ -52,13 +52,13 @@ namespace Bit.App.Pages
         private readonly static List<KeyValuePair<string, int?>> VaultTimeoutOptions =
             new List<KeyValuePair<string, int?>>
             {
-                new KeyValuePair<string, int?>(AppResources.Immediately, 0),
-                new KeyValuePair<string, int?>(AppResources.OneMinute, 1),
-                new KeyValuePair<string, int?>(AppResources.FiveMinutes, 5),
-                new KeyValuePair<string, int?>(AppResources.FifteenMinutes, 15),
-                new KeyValuePair<string, int?>(AppResources.ThirtyMinutes, 30),
-                new KeyValuePair<string, int?>(AppResources.OneHour, 60),
                 new KeyValuePair<string, int?>(AppResources.FourHours, 240),
+                new KeyValuePair<string, int?>(AppResources.OneHour, 60),
+                new KeyValuePair<string, int?>(AppResources.ThirtyMinutes, 30),
+                new KeyValuePair<string, int?>(AppResources.FifteenMinutes, 15),
+                new KeyValuePair<string, int?>(AppResources.FiveMinutes, 5),
+                new KeyValuePair<string, int?>(AppResources.OneMinute, 1),
+                new KeyValuePair<string, int?>(AppResources.Immediately, 0),
                 new KeyValuePair<string, int?>(AppResources.OnRestart, -1),
                 new KeyValuePair<string, int?>(AppResources.Never, null),
                 new KeyValuePair<string, int?>(AppResources.Custom, CustomVaultTimeoutValue),
@@ -578,7 +578,7 @@ namespace Bit.App.Pages
                 },
                 new SettingsPageListItem
                 {
-                    Name = AppResources.LockNow,
+                    Name = AppResources.Lock,
                     ExecuteAsync = () => LockAsync()
                 },
                 new SettingsPageListItem
