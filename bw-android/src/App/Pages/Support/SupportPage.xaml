@@ -6,6 +6,7 @@
     x:Class="Bit.App.Pages.SupportPage"
     xmlns:pages="clr-namespace:Bit.App.Pages"
     xmlns:controls="clr-namespace:Bit.App.Controls"
+    xmlns:behaviors="clr-namespace:Bit.App.Behaviors"
     xmlns:u="clr-namespace:Bit.App.Utilities"
     xmlns:effects="clr-namespace:Bit.App.Effects"
     xmlns:core="clr-namespace:Bit.Core;assembly=BitwardenCore"
@@ -41,20 +42,35 @@
                             HorizontalTextAlignment="Center" />
                     </Frame>
                     <controls:CustomLabel IsVisible="{Binding UseFrame, Converter={StaticResource inverseBool}}"
-                           Text="{Binding Name, Mode=OneWay}"
-                           LineBreakMode="{Binding LineBreakMode}"
-                           HorizontalOptions="StartAndExpand"
-                           VerticalOptions="CenterAndExpand"
-                           StyleClass="list-title"
-                           AutomationId="{Binding AutomationIdSettingName}" />
+                        Text="{Binding Name, Mode=OneWay}"
+                        LineBreakMode="{Binding LineBreakMode}"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        TextColor="{Binding LabelColor}"
+                        StyleClass="list-title"
+                        AutomationId="{Binding AutomationIdSettingName}"/>
                     <controls:CustomLabel  Text="{Binding SubLabel, Mode=OneWay}"
-                           IsVisible="{Binding ShowSubLabel}"
-                           HorizontalOptions="End"
-                           HorizontalTextAlignment="End"
-                           VerticalOptions="CenterAndExpand"
-                           TextColor="{Binding SubLabelColor}"
-                           StyleClass="list-sub"
-                           AutomationId="{Binding AutomationIdSettingStatus}" />
+                        IsVisible="{Binding ShowSubLabel}"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="End"
+                        VerticalOptions="CenterAndExpand"
+                        FontSize="Small"
+                        TextColor="{Binding SubLabelColor}"
+                        StyleClass="box-sub-label"
+                        AutomationId="{Binding AutomationIdSettingStatus}" />
+                    <controls:IconButton 
+                        StyleClass="box-row-button, box-row-button-platform"
+                        ImageSource="expand.png"
+                        Text=""
+                        Grid.Column="1"
+                        IsEnabled="False"
+                        AutomationProperties.IsInAccessibleTree="True"
+                        AutomationId="PressButton" >
+                        <Button.Behaviors>
+                            <behaviors:LongPressBehavior LongPressed="Icon_LongPressed"/>
+                        </Button.Behaviors>
+                    </controls:IconButton>
+                    
                 </controls:ExtendedStackLayout>
             </DataTemplate>
             <DataTemplate
@@ -80,13 +96,38 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     
-    <controls:ExtendedCollectionView
-        ItemsSource="{Binding GroupedItems}"
+    <AbsoluteLayout
+        x:Name="_absLayout"
         VerticalOptions="FillAndExpand"
-        ItemTemplate="{StaticResource listItemDataTemplateSelector}"
-        SelectionMode="Single"
-        SelectionChanged="RowSelected"
-        StyleClass="list, list-platform"
-        ExtraDataForLogging="Support page" />
-    
+        HorizontalOptions="FillAndExpand">
+        <StackLayout
+            VerticalOptions="CenterAndExpand"
+            Padding="20, 0"
+            Spacing="5"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize">
+            <StackLayout
+                StyleClass="box-row">
+                <Button
+                    Image="swipe.png"
+                    Style="{StaticResource btn-fab}"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize"
+                    AutomationProperties.IsInAccessibleTree="True"
+                    AutomationId="SwipeIcon">
+                    <Button.Effects>
+                        <effects:FabShadowEffect />
+                    </Button.Effects>
+                </Button>
+            </StackLayout>
+        </StackLayout>
+        <controls:ExtendedCollectionView
+            ItemsSource="{Binding GroupedItems}"
+            VerticalOptions="FillAndExpand"
+            ItemTemplate="{StaticResource listItemDataTemplateSelector}"
+            SelectionMode="Single"
+            SelectionChanged="RowSelected"
+            StyleClass="list, list-platform"
+            ExtraDataForLogging="Support page" />
+    </AbsoluteLayout>
 </pages:BaseContentPage>

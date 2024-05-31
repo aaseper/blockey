@@ -151,7 +151,7 @@
     <value>Atrás</value>
     <comment>Navigate back to the previous screen.</comment>
   </data>
-  <data name="Bitwarden" xml:space="preserve">
+  <data name="BlocKey" xml:space="preserve">
     <value>BlocKey</value>
     <comment>App name. Shouldn't ever change.</comment>
   </data>
@@ -425,7 +425,7 @@
     <value>Visite nuestro sitio web</value>
   </data>
   <data name="VisitOurWebsiteDescription" xml:space="preserve">
-    <value>Visite nuestro sitio web para recibir ayuda, noticias, contactarnos por correo o aprender más sobre como utilizar Bitwarden.</value>
+    <value>Visite nuestro sitio web para recibir ayuda, noticias, contactarnos por correo o aprender más sobre como utilizar BlocKey.</value>
   </data>
   <data name="Website" xml:space="preserve">
     <value>Web</value>
@@ -450,7 +450,7 @@
     <value>Extensión de Aplicación</value>
   </data>
   <data name="AutofillAccessibilityDescription" xml:space="preserve">
-    <value>Utiliza el servicio de accesibilidad de Bitwarden para autorellenar entradas entre aplicaciones y sitios web.</value>
+    <value>Utiliza el servicio de accesibilidad de BlocKey para autorellenar entradas entre aplicaciones y sitios web.</value>
   </data>
   <data name="AutofillService" xml:space="preserve">
     <value>Servicio de autorrellenado</value>
@@ -458,32 +458,32 @@
   <data name="AvoidAmbiguousCharacters" xml:space="preserve">
     <value>Evitar caracteres ambiguos</value>
   </data>
-  <data name="BitwardenAppExtension" xml:space="preserve">
-    <value>Extensión de Aplicación de Bitwarden</value>
+  <data name="BlocKeyAppExtension" xml:space="preserve">
+    <value>Extensión de Aplicación de BlocKey</value>
   </data>
-  <data name="BitwardenAppExtensionAlert2" xml:space="preserve">
-    <value>La forma más fácil de añadir nuevas entradas a su caja fuerte es utilizando la extensión de navegador de Bitwarden. Aprenda más sobre cómo utilizar este servicio en la sección de "Ajustes".</value>
+  <data name="BlocKeyAppExtensionAlert2" xml:space="preserve">
+    <value>La forma más fácil de añadir nuevas entradas a su caja fuerte es utilizando la extensión de navegador de BlocKey. Aprenda más sobre cómo utilizar este servicio en la sección de "Ajustes".</value>
   </data>
-  <data name="BitwardenAppExtensionDescription" xml:space="preserve">
-    <value>Utilice Bitwarden en Safari y otras aplicaciones para autorellenar sus entradas.</value>
+  <data name="BlocKeyAppExtensionDescription" xml:space="preserve">
+    <value>Utilice BlocKey en Safari y otras aplicaciones para autorellenar sus entradas.</value>
   </data>
-  <data name="BitwardenAutofillService" xml:space="preserve">
-    <value>Servicio de Autorellenado de Bitwarden</value>
+  <data name="BlocKeyAutofillService" xml:space="preserve">
+    <value>Servicio de Autorellenado de BlocKey</value>
   </data>
-  <data name="BitwardenAutofillAccessibilityServiceDescription" xml:space="preserve">
-    <value>Utilice el servicio de accesibilidad de Bitwarden para autorellenar entradas.</value>
+  <data name="BlocKeyAutofillAccessibilityServiceDescription" xml:space="preserve">
+    <value>Utilice el servicio de accesibilidad de BlocKey para autorellenar entradas.</value>
   </data>
   <data name="ChangeEmail" xml:space="preserve">
     <value>Cambiar correo electrónico</value>
   </data>
   <data name="ChangeEmailConfirmation" xml:space="preserve">
-    <value>Puede cambiar su correo electrónico en la caja fuerte web de bitwarden.com. ¿Quiere visitar ahora el sitio web?</value>
+    <value>Puede cambiar su correo electrónico en la caja fuerte web de blockey.alejandroasensio.site. ¿Quiere visitar ahora el sitio web?</value>
   </data>
   <data name="ChangeMasterPassword" xml:space="preserve">
     <value>Cambiar contraseña de BlocKey</value>
   </data>
   <data name="ChangePasswordConfirmation" xml:space="preserve">
-    <value>Puede cambiar su contraseña de BlocKey en la caja fuerte web de bitwarden.com. ¿Quiere visitar ahora el sitio web?</value>
+    <value>Puede cambiar su contraseña de BlocKey en la caja fuerte web de blockey.alejandroasensio.site. ¿Quiere visitar ahora el sitio web?</value>
   </data>
   <data name="Close" xml:space="preserve">
     <value>Cerrar</value>
@@ -529,7 +529,7 @@
     <value>Activar Extensión de Aplicación</value>
   </data>
   <data name="ExtensionInSafari" xml:space="preserve">
-    <value>En Safari, busque Bitwarden en el icono compartir (pista: desplácese a la derecha en la última fila del menú).</value>
+    <value>En Safari, busque BlocKey en el icono compartir (pista: desplácese a la derecha en la última fila del menú).</value>
     <comment>Safari is the name of apple's web browser</comment>
   </data>
   <data name="ExtensionInstantAccess" xml:space="preserve">
@@ -542,13 +542,13 @@
     <value>Sus entradas son ahora fácilmente accesibles desde Safari, Chrome y otras aplicaciones soportadas.</value>
   </data>
   <data name="ExtensionSetup2" xml:space="preserve">
-    <value>En Safari y Chrome, busque Bitwarden en el icono compartir (pista: desplácese a la derecha en la última fila del menú).</value>
+    <value>En Safari y Chrome, busque BlocKey en el icono compartir (pista: desplácese a la derecha en la última fila del menú).</value>
   </data>
   <data name="ExtensionTapIcon" xml:space="preserve">
-    <value>Pulse en el icono de Bitwarden del menú para iniciar la extensión.</value>
+    <value>Pulse en el icono de BlocKey del menú para iniciar la extensión.</value>
   </data>
   <data name="ExtensionTurnOn" xml:space="preserve">
-    <value>Para activar Bitwarden en Safari y otras aplicaciones, pulsa en el icono "más" de la última fila del menú.</value>
+    <value>Para activar BlocKey en Safari y otras aplicaciones, pulsa en el icono "más" de la última fila del menú.</value>
   </data>
   <data name="Favorite" xml:space="preserve">
     <value>Favorito</value>
@@ -566,7 +566,7 @@
     <value>Importar elementos</value>
   </data>
   <data name="ImportItemsConfirmation" xml:space="preserve">
-    <value>Puede importar elementos desde la caja fuerte web de bitwarden.com. ¿Quiere visitar el sitio web ahora?</value>
+    <value>Puede importar elementos desde la caja fuerte web de blockey.alejandroasensio.site. ¿Quiere visitar el sitio web ahora?</value>
   </data>
   <data name="ImportItemsDescription" xml:space="preserve">
     <value>Importe rápida y masivamente elementos desde otras aplicaciones gestoras de contraseñas.</value>
@@ -644,7 +644,7 @@
     <value>Más ajustes</value>
   </data>
   <data name="MustLogInMainApp" xml:space="preserve">
-    <value>Debe identificarse en la aplicación principal de Bitwarden antes de poder uitilizar la extensión.</value>
+    <value>Debe identificarse en la aplicación principal de BlocKey antes de poder uitilizar la extensión.</value>
   </data>
   <data name="Never" xml:space="preserve">
     <value>Nunca</value>
@@ -672,7 +672,7 @@
     <comment>Confirmation, like "Ok, I understand it"</comment>
   </data>
   <data name="OptionDefaults" xml:space="preserve">
-    <value>Lo valores por defecto se establecen desde la aplicación principal de Bitwarden en la herramienta de generador de contraseñas.</value>
+    <value>Lo valores por defecto se establecen desde la aplicación principal de BlocKey en la herramienta de generador de contraseñas.</value>
   </data>
   <data name="Options" xml:space="preserve">
     <value>Ajustes</value>
@@ -699,7 +699,7 @@
     <value>¿Está seguro de que quiere sobreescribir la contraseña actual?</value>
   </data>
   <data name="PushNotificationAlert" xml:space="preserve">
-    <value>Bitwarden mantiene su caja fuerte sincronizada automáticamente utilizando notificaciones push. Para tener la mejor experiencia posible, por favor, pulse "Permitir" en la próxima notificación donde se le pregunta si quiere habilitar las notificaciones push.</value>
+    <value>BlocKey mantiene su caja fuerte sincronizada automáticamente utilizando notificaciones push. Para tener la mejor experiencia posible, por favor, pulse "Permitir" en la próxima notificación donde se le pregunta si quiere habilitar las notificaciones push.</value>
     <comment>Push notifications for apple products</comment>
   </data>
   <data name="RateTheApp" xml:space="preserve">
@@ -760,7 +760,7 @@
     <value>Autenticación en dos pasos</value>
   </data>
   <data name="TwoStepLoginConfirmation" xml:space="preserve">
-    <value>La autenticación en dos pasos hace que su cuenta sea mucho más segura requiriendo que introduzca un código de seguridad de una aplicación de autenticación cada vez que accede. La autenticación en dos pasos puede ser habilitada en la caja fuerte web de bitwarden.com. ¿Quiere visitar ahora el sitio web?</value>
+    <value>La autenticación en dos pasos hace que su cuenta sea mucho más segura requiriendo que introduzca un código de seguridad de una aplicación de autenticación cada vez que accede. La autenticación en dos pasos puede ser habilitada en la caja fuerte web de blockey.alejandroasensio.site. ¿Quiere visitar ahora el sitio web?</value>
   </data>
   <data name="UnlockWith" xml:space="preserve">
     <value>Desbloquear con {0}</value>
@@ -779,7 +779,7 @@
     <value>Ver elemento</value>
   </data>
   <data name="WebVault" xml:space="preserve">
-    <value>Caja fuerte web de Bitwarden</value>
+    <value>Caja fuerte web de BlocKey</value>
   </data>
   <data name="Lost2FAApp" xml:space="preserve">
     <value>¿Ha perdido la autenticación en dos pasos?</value>
@@ -805,19 +805,19 @@
     <value>No hay elementos en su caja fuerte para {0}.</value>
     <comment>This is used for the autofill service. ex. "There are no items in your vault for twitter.com".</comment>
   </data>
-  <data name="BitwardenAutofillServiceOverlay" xml:space="preserve">
-    <value>Cuando seleccione un campo de entrada y vea un recuadro flotante de autorellenado de Bitwarden, puede pulsarlo para iniciar el servicio de autorellenado.</value>
+  <data name="BlocKeyAutofillServiceOverlay" xml:space="preserve">
+    <value>Cuando seleccione un campo de entrada y vea un recuadro flotante de autorellenado de BlocKey, puede pulsarlo para iniciar el servicio de autorellenado.</value>
   </data>
-  <data name="BitwardenAutofillServiceNotificationContent" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceNotificationContent" xml:space="preserve">
     <value>Pulsa en esta notificación para autorellenar una entrada desde su caja fuerte.</value>
   </data>
-  <data name="BitwardenAutofillServiceOpenAccessibilitySettings" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceOpenAccessibilitySettings" xml:space="preserve">
     <value>Abrir ajustes de Accesibilidad</value>
   </data>
-  <data name="BitwardenAutofillServiceStep1" xml:space="preserve">
-    <value>1. En los ajustes de Accesibilidad, pulse en "Bitwarden" bajo el menú Servicios.</value>
+  <data name="BlocKeyAutofillServiceStep1" xml:space="preserve">
+    <value>1. En los ajustes de Accesibilidad, pulse en "BlocKey" bajo el menú Servicios.</value>
   </data>
-  <data name="BitwardenAutofillServiceStep2" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceStep2" xml:space="preserve">
     <value>2. Active el interruptor y pulse en OK para aceptar.</value>
   </data>
   <data name="Disabled" xml:space="preserve">
@@ -835,8 +835,8 @@
   <data name="Status" xml:space="preserve">
     <value>Estado</value>
   </data>
-  <data name="BitwardenAutofillServiceAlert2" xml:space="preserve">
-    <value>La forma más fácil de añadir nuevas entradas a su caja fuerte es utilizando el Servicio de Autorellenado de Bitwarden. Aprenda más sobre cómo utilizar este servicio en la sección de "Ajustes".</value>
+  <data name="BlocKeyAutofillServiceAlert2" xml:space="preserve">
+    <value>La forma más fácil de añadir nuevas entradas a su caja fuerte es utilizando el Servicio de Autorellenado de BlocKey. Aprenda más sobre cómo utilizar este servicio en la sección de "Ajustes".</value>
   </data>
   <data name="Autofill" xml:space="preserve">
     <value>Autorellenar</value>
@@ -844,7 +844,7 @@
   <data name="AutofillOrView" xml:space="preserve">
     <value>¿Quiere autorellenar o ver esta entrada?</value>
   </data>
-  <data name="BitwardenAutofillServiceMatchConfirm" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceMatchConfirm" xml:space="preserve">
     <value>¿Está seguro de que quiere autorellenar esta entrada? No es una coincidencia completa para "{0}".</value>
   </data>
   <data name="MatchingItems" xml:space="preserve">
@@ -856,7 +856,7 @@
   <data name="Search" xml:space="preserve">
     <value>Buscar</value>
   </data>
-  <data name="BitwardenAutofillServiceSearch" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceSearch" xml:space="preserve">
     <value>Está buscando una entrada para autorellenar "{0}".</value>
   </data>
   <data name="LearnOrg" xml:space="preserve">
@@ -1042,7 +1042,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Entorno de alojamiento propio</value>
   </data>
   <data name="SelfHostedEnvironmentFooter" xml:space="preserve">
-    <value>Especifique la URL base de su instalación de Bitwarden de alojamiento propio.</value>
+    <value>Especifique la URL base de su instalación de BlocKey de alojamiento propio.</value>
   </data>
   <data name="ServerUrl" xml:space="preserve">
     <value>URL del servidor</value>
@@ -1050,7 +1050,7 @@ El escaneo se realizará automáticamente.</value>
   <data name="WebVaultUrl" xml:space="preserve">
     <value>URL del servidor de la caja fuerte web</value>
   </data>
-  <data name="BitwardenAutofillServiceNotificationContentOld" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceNotificationContentOld" xml:space="preserve">
     <value>Pulsa en esta notificación para ver las entradas de su caja fuerte.</value>
   </data>
   <data name="CustomFields" xml:space="preserve">
@@ -1236,8 +1236,8 @@ El escaneo se realizará automáticamente.</value>
   <data name="IconsUrl" xml:space="preserve">
     <value>URL del servidor de iconos</value>
   </data>
-  <data name="AutofillWithBitwarden" xml:space="preserve">
-    <value>Autorellenar con Bitwarden</value>
+  <data name="AutofillWithBlocKey" xml:space="preserve">
+    <value>Autorellenar con BlocKey</value>
   </data>
   <data name="VaultIsLocked" xml:space="preserve">
     <value>Caja fuerte bloqueada</value>
@@ -1261,12 +1261,12 @@ El escaneo se realizará automáticamente.</value>
     <value>Servicio de accesibilidad de autorellenado</value>
   </data>
   <data name="AutofillServiceDescription" xml:space="preserve">
-    <value>El servicio de autorellenado de Bitwarden utiliza el marco de autocompletado de Android para ayudarle a rellenar entradas, tarjetas de crédito e identidades en otras aplicaciones de su dispositivo.</value>
+    <value>El servicio de autorellenado de BlocKey utiliza el marco de autocompletado de Android para ayudarle a rellenar entradas, tarjetas de crédito e identidades en otras aplicaciones de su dispositivo.</value>
   </data>
-  <data name="BitwardenAutofillServiceDescription" xml:space="preserve">
-    <value>Utiliza el servicio de accesibilidad de Bitwarden para autorrellenar entradas.</value>
+  <data name="BlocKeyAutofillServiceDescription" xml:space="preserve">
+    <value>Utiliza el servicio de accesibilidad de BlocKey para autorrellenar entradas.</value>
   </data>
-  <data name="BitwardenAutofillServiceOpenAutofillSettings" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceOpenAutofillSettings" xml:space="preserve">
     <value>Abrir opciones de autorellenado</value>
   </data>
   <data name="FaceID" xml:space="preserve">
@@ -1285,7 +1285,7 @@ El escaneo se realizará automáticamente.</value>
   <data name="WindowsHello" xml:space="preserve">
     <value>Windows Hello</value>
   </data>
-  <data name="BitwardenAutofillGoToSettings" xml:space="preserve">
+  <data name="BlocKeyAutofillGoToSettings" xml:space="preserve">
     <value>No se ha podido abrir automáticamente las opciones de autorellenado de Android. Puede ir al menú de opciones de autorellenado manualmente desde Ajustes de Android &gt; Sistema &gt; Idiomas y entradas &gt; Avanzado &gt; Servicio autocompletar.</value>
   </data>
   <data name="CustomFieldName" xml:space="preserve">
@@ -1365,7 +1365,7 @@ El escaneo se realizará automáticamente.</value>
   <data name="YubiKeyInstructionIos" xml:space="preserve">
     <value>Para continuar, mantenga su YubiKey NEO contra la parte trasera de su dispositivo.</value>
   </data>
-  <data name="BitwardenAutofillAccessibilityServiceDescription2" xml:space="preserve">
+  <data name="BlocKeyAutofillAccessibilityServiceDescription2" xml:space="preserve">
     <value>El servicio de accesibilidad puede ser útil para utilizarlo con aplicaciones que no soportan el sistema de autorellenado estándar.</value>
   </data>
   <data name="DatePasswordUpdated" xml:space="preserve">
@@ -1380,7 +1380,7 @@ El escaneo se realizará automáticamente.</value>
     <value>¡Autorellenado activado!</value>
   </data>
   <data name="MustLogInMainAppAutofill" xml:space="preserve">
-    <value>Debe identificarse en la aplicación principal de Bitwarden antes de poder utilizar Autorellenado.</value>
+    <value>Debe identificarse en la aplicación principal de BlocKey antes de poder utilizar Autorellenado.</value>
   </data>
   <data name="AutofillSetup" xml:space="preserve">
     <value>Sus entradas son ahora fácilmente accesibles desde su teclado mientras se identifica en aplicaciones y sitios web.</value>
@@ -1388,7 +1388,7 @@ El escaneo se realizará automáticamente.</value>
   <data name="AutofillSetup2" xml:space="preserve">
     <value>Se recomienda deshabilitar cualquier otra aplicación de Autorellenado desde Ajustes si no piensa utilizarlas.</value>
   </data>
-  <data name="BitwardenAutofillDescription" xml:space="preserve">
+  <data name="BlocKeyAutofillDescription" xml:space="preserve">
     <value>Acceda a su caja fuerte directamente desde su teclado para autorellenar contraseñas rápidamente.</value>
   </data>
   <data name="AutofillTurnOn" xml:space="preserve">
@@ -1407,13 +1407,13 @@ El escaneo se realizará automáticamente.</value>
     <value>4. Habilite el autorellenado</value>
   </data>
   <data name="AutofillTurnOn5" xml:space="preserve">
-    <value>5. Seleccione "Bitwarden"</value>
+    <value>5. Seleccione "BlocKey"</value>
   </data>
   <data name="PasswordAutofill" xml:space="preserve">
     <value>Autorellenado de contraseña</value>
   </data>
-  <data name="BitwardenAutofillAlert2" xml:space="preserve">
-    <value>La forma más fácil de añadir nuevas entradas a su caja fuerte es utilizando la extensión de Autorellenado de contraseñas de Bitwarden. Aprenda más sobre cómo utilizar la extensión de Autorellenado de contraseñas de Bitwarden en la sección de "Ajustes".</value>
+  <data name="BlocKeyAutofillAlert2" xml:space="preserve">
+    <value>La forma más fácil de añadir nuevas entradas a su caja fuerte es utilizando la extensión de Autorellenado de contraseñas de BlocKey. Aprenda más sobre cómo utilizar la extensión de Autorellenado de contraseñas de BlocKey en la sección de "Ajustes".</value>
   </data>
   <data name="InvalidEmail" xml:space="preserve">
     <value>Dirección de correo electrónico incorrecta. Revise que contenga el arroba (@).</value>
@@ -1556,7 +1556,7 @@ El escaneo se realizará automáticamente.</value>
     <comment>A 'fingerprint phrase' is a unique word phrase (similar to a passphrase) that a user can use to authenticate their public key with another user, for the purposes of sharing.</comment>
   </data>
   <data name="LearnOrgConfirmation" xml:space="preserve">
-    <value>Bitwarden le permite compartir su caja fuerte con otras personas utilizando una cuenta de organización. ¿Quieres visitar la web bitwarden.com para conocer más?</value>
+    <value>BlocKey le permite compartir su caja fuerte con otras personas utilizando una cuenta de organización. ¿Quieres visitar la web blockey.alejandroasensio.site para conocer más?</value>
   </data>
   <data name="ExportVault" xml:space="preserve">
     <value>Exportar caja fuerte</value>
@@ -1577,11 +1577,11 @@ El escaneo se realizará automáticamente.</value>
     <value>30 minutos</value>
   </data>
   <data name="SetPINDescription" xml:space="preserve">
-    <value>Establezca su código PIN para desbloquear Bitwarden. Sus ajustes de PIN se reiniciarán si alguna vez cierra su sesión completamente de la aplicación.</value>
+    <value>Establezca su código PIN para desbloquear BlocKey. Sus ajustes de PIN se reiniciarán si alguna vez cierra su sesión completamente de la aplicación.</value>
   </data>
   <data name="LoggedInAsOn" xml:space="preserve">
     <value>Iniciado como {0} en {1}.</value>
-    <comment>ex: Logged in as user@example.com on bitwarden.com.</comment>
+    <comment>ex: Logged in as user@example.com on blockey.alejandroasensio.site.</comment>
   </data>
   <data name="VaultLockedMasterPassword" xml:space="preserve">
     <value>Su caja fuerte está bloqueada. Compruebe su contraseña de BlocKey para continuar.</value>
@@ -1653,7 +1653,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Cerrar la aplicación</value>
   </data>
   <data name="ExitConfirmation" xml:space="preserve">
-    <value>¿Está seguro de que desea salir de Bitwarden?</value>
+    <value>¿Está seguro de que desea salir de BlocKey?</value>
   </data>
   <data name="PINRequireMasterPasswordRestart" xml:space="preserve">
     <value>¿Quiere solicitar el desbloqueo con su contraseña de BlocKey cuando se reinicie la aplicación?</value>
@@ -1683,7 +1683,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Al reiniciar la aplicación</value>
   </data>
   <data name="AutofillServiceNotEnabled" xml:space="preserve">
-    <value>El autocompletado facilita el acceso seguro a la caja fuerte de Bitwarden desde otros sitios web y aplicaciones. Parece que no ha habilitado un servicio de autocompletado para Bitwarden. Habilite el autocompletado para Bitwarden desde la pantalla "Ajustes".</value>
+    <value>El autocompletado facilita el acceso seguro a la caja fuerte de BlocKey desde otros sitios web y aplicaciones. Parece que no ha habilitado un servicio de autocompletado para BlocKey. Habilite el autocompletado para BlocKey desde la pantalla "Ajustes".</value>
   </data>
   <data name="ThemeAppliedOnRestart" xml:space="preserve">
     <value>Los cambios en el tema se aplicarán al reiniciar la aplicación.</value>
@@ -1717,19 +1717,19 @@ El escaneo se realizará automáticamente.</value>
     <value>Utilizar biometría para desbloquear</value>
   </data>
   <data name="AccessibilityOverlayPermissionAlert" xml:space="preserve">
-    <value>Bitwarden necesita atención - Ver "Servicio de Accesibilidad Auto-rellenar" desde los ajustes de Bitwarden</value>
+    <value>BlocKey necesita atención - Ver "Servicio de Accesibilidad Auto-rellenar" desde los ajustes de BlocKey</value>
   </data>
-  <data name="BitwardenAutofillServiceOverlayPermission" xml:space="preserve">
-    <value>3. En la pantalla de configuración de la aplicación Android Bitwarden, seleccione "Mostrar sobre otras aplicaciones" (en "Avanzado") y toque el interruptor para habilitar el soporte de superposición.</value>
+  <data name="BlocKeyAutofillServiceOverlayPermission" xml:space="preserve">
+    <value>3. En la pantalla de configuración de la aplicación Android BlocKey, seleccione "Mostrar sobre otras aplicaciones" (en "Avanzado") y toque el interruptor para habilitar el soporte de superposición.</value>
   </data>
   <data name="OverlayPermission" xml:space="preserve">
     <value>Permiso</value>
   </data>
-  <data name="BitwardenAutofillServiceOpenOverlayPermissionSettings" xml:space="preserve">
+  <data name="BlocKeyAutofillServiceOpenOverlayPermissionSettings" xml:space="preserve">
     <value>Abrir configuración de permisos de superposición</value>
   </data>
-  <data name="BitwardenAutofillServiceStep3" xml:space="preserve">
-    <value>3. En la pantalla de configuración de la aplicación Android Bitwarden, seleccione "Mostrar sobre otras aplicaciones" (en "Avanzado") y active el interruptor para permitir la superposición.</value>
+  <data name="BlocKeyAutofillServiceStep3" xml:space="preserve">
+    <value>3. En la pantalla de configuración de la aplicación Android BlocKey, seleccione "Mostrar sobre otras aplicaciones" (en "Avanzado") y active el interruptor para permitir la superposición.</value>
   </data>
   <data name="Denied" xml:space="preserve">
     <value>Denegado</value>
@@ -1759,7 +1759,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Esta exportación encripta sus datos usando la clave de cifrado de su cuenta. Si alguna vez gira la clave de cifrado de su cuenta debe volver a exportar, ya que no podrá descifrar este archivo de exportación.</value>
   </data>
   <data name="EncExportAccountWarning" xml:space="preserve">
-    <value>Las claves de cifrado de cuenta son únicas para cada cuenta de usuario de Bitwarden, por lo que no puede importar una exportación cifrada a una cuenta diferente.</value>
+    <value>Las claves de cifrado de cuenta son únicas para cada cuenta de usuario de BlocKey, por lo que no puede importar una exportación cifrada a una cuenta diferente.</value>
   </data>
   <data name="ExportVaultConfirmationTitle" xml:space="preserve">
     <value>Confirmar exportación de la caja fuerte</value>
@@ -1792,7 +1792,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Archivo adjunto guardado con éxito</value>
   </data>
   <data name="AutofillTileAccessibilityRequired" xml:space="preserve">
-    <value>Por favor, habilite "Servicio de accesibilidad de autorrelleno" en la configuración de Bitwarden para utilizar la función de autorrelleno.</value>
+    <value>Por favor, habilite "Servicio de accesibilidad de autorrelleno" en la configuración de BlocKey para utilizar la función de autorrelleno.</value>
   </data>
   <data name="AutofillTileUriNotFound" xml:space="preserve">
     <value>No se han detectado campos de contraseña</value>
@@ -1910,7 +1910,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Política de privacidad</value>
   </data>
   <data name="AccessibilityDrawOverPermissionAlert" xml:space="preserve">
-    <value>Bitwarden necesita atención - Activar "Sobrescribir" en "Servicios de Auto-llenado" desde la configuración de Bitwarden</value>
+    <value>BlocKey necesita atención - Activar "Sobrescribir" en "Servicios de Auto-llenado" desde la configuración de BlocKey</value>
   </data>
   <data name="AutofillServices" xml:space="preserve">
     <value>Servicios de Autollenado</value>
@@ -1925,13 +1925,13 @@ El escaneo se realizará automáticamente.</value>
     <value>Usar accesibilidad</value>
   </data>
   <data name="AccessibilityDescription" xml:space="preserve">
-    <value>Utilice el Servicio de Accesibilidad de Bitwarden para rellenar automáticamente sus entradas a través de aplicaciones y la web. Cuando esté habilitado, mostraremos una ventana emergente cuando se seleccionen los campos de inicio de sesión.</value>
+    <value>Utilice el Servicio de Accesibilidad de BlocKey para rellenar automáticamente sus entradas a través de aplicaciones y la web. Cuando esté habilitado, mostraremos una ventana emergente cuando se seleccionen los campos de inicio de sesión.</value>
   </data>
   <data name="AccessibilityDescription2" xml:space="preserve">
-    <value>Utilice el Servicio de Accesibilidad de Bitwarden para auto-llenar sus entradas a través de aplicaciones y la web. (Requiere que se habilite Sobrescribir también)</value>
+    <value>Utilice el Servicio de Accesibilidad de BlocKey para auto-llenar sus entradas a través de aplicaciones y la web. (Requiere que se habilite Sobrescribir también)</value>
   </data>
   <data name="AccessibilityDescription3" xml:space="preserve">
-    <value>Utilice el Servicio de Accesibilidad de Bitwarden para usar el Tile de Acción de Autorelleno, y/o mostrar una ventana emergente usando Draw-Over (si está habilitado).</value>
+    <value>Utilice el Servicio de Accesibilidad de BlocKey para usar el Tile de Acción de Autorelleno, y/o mostrar una ventana emergente usando Draw-Over (si está habilitado).</value>
   </data>
   <data name="AccessibilityDescription4" xml:space="preserve">
     <value>Requerida para utilizar el Tile de Acción de Autorelleno, o para aumentar el servicio de autorelleno usando Draw-Over (si está habilitado).</value>
@@ -1940,10 +1940,10 @@ El escaneo se realizará automáticamente.</value>
     <value>Usar Sobrescribir</value>
   </data>
   <data name="DrawOverDescription" xml:space="preserve">
-    <value>Cuando está habilitado, permite que el Servicio de Accesibilidad de Bitwarden muestre una ventana emergente cuando se seleccionan los campos de acceso.</value>
+    <value>Cuando está habilitado, permite que el Servicio de Accesibilidad de BlocKey muestre una ventana emergente cuando se seleccionan los campos de acceso.</value>
   </data>
   <data name="DrawOverDescription2" xml:space="preserve">
-    <value>Si está activado, el Servicio de Accesibilidad de Bitwarden mostrará una ventana emergente cuando se seleccionen los campos de inicio de sesión para ayudar a rellenar automáticamente sus inicios de sesión.</value>
+    <value>Si está activado, el Servicio de Accesibilidad de BlocKey mostrará una ventana emergente cuando se seleccionen los campos de inicio de sesión para ayudar a rellenar automáticamente sus inicios de sesión.</value>
   </data>
   <data name="DrawOverDescription3" xml:space="preserve">
     <value>Si está activado, la accesibilidad mostrará una ventana emergente para aumentar el servicio de autorelleno para aplicaciones antiguas que no soportan la estructura de autorelleno de Android.</value>
@@ -1956,19 +1956,19 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Send</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="AllSends" xml:space="preserve">
     <value>Todos los Send</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="Sends" xml:space="preserve">
     <value>Sends</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="NameInfo" xml:space="preserve">
     <value>Un nombre amigable para describir este Send.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="Text" xml:space="preserve">
     <value>Texto</value>
@@ -1981,7 +1981,7 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="HideTextByDefault" xml:space="preserve">
     <value>Al acceder a este Send, ocultar este texto por defecto</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="TypeFile" xml:space="preserve">
     <value>Archivo</value>
@@ -2009,7 +2009,7 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="DeletionDateInfo" xml:space="preserve">
     <value>El Send se eliminará permanentemente en la fecha y hora especificada.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="PendingDelete" xml:space="preserve">
     <value>Eliminación pendiente</value>
@@ -2022,7 +2022,7 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="ExpirationDateInfo" xml:space="preserve">
     <value>Si se configura, el acceso a este Send caducará en la fecha y hora especificada.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="Expired" xml:space="preserve">
     <value>Caducó</value>
@@ -2032,7 +2032,7 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="MaximumAccessCountInfo" xml:space="preserve">
     <value>Si se configura, los usuarios ya no podrán acceder a este Send una vez que se alcance el número máximo de accesos.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="MaximumAccessCountReached" xml:space="preserve">
     <value>Número máximo de accesos alcanzado</value>
@@ -2045,7 +2045,7 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="PasswordInfo" xml:space="preserve">
     <value>Opcionalmente requieren una contraseña para que los usuarios accedan al Send.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="RemovePassword" xml:space="preserve">
     <value>Eliminar contraseña</value>
@@ -2061,19 +2061,19 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="NotesInfo" xml:space="preserve">
     <value>Notas privadas sobre este Send.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="DisableSend" xml:space="preserve">
     <value>Desactivar este Send para que nadie pueda acceder a él.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="NoSends" xml:space="preserve">
     <value>No hay Sends en su cuenta.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="AddASend" xml:space="preserve">
     <value>Añadir un Send</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="CopyLink" xml:space="preserve">
     <value>Copiar enlace</value>
@@ -2083,35 +2083,35 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="SendLink" xml:space="preserve">
     <value>Enviar enlace</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="SearchSends" xml:space="preserve">
     <value>Buscar Sends</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="EditSend" xml:space="preserve">
     <value>Editar Send</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="AddSend" xml:space="preserve">
     <value>Añadir Send</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="AreYouSureDeleteSend" xml:space="preserve">
     <value>¿Seguro que quiere eliminar este Send?</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="SendDeleted" xml:space="preserve">
     <value>El Send se ha eliminado.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="SendUpdated" xml:space="preserve">
     <value>Send actualizado.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="NewSendCreated" xml:space="preserve">
     <value>Nuevo Send creado.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="OneDay" xml:space="preserve">
     <value>1 día</value>
@@ -2133,30 +2133,30 @@ El escaneo se realizará automáticamente.</value>
   </data>
   <data name="ShareOnSave" xml:space="preserve">
     <value>Compartir este Send al guardarlo.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="SendDisabledWarning" xml:space="preserve">
     <value>Debido a una política empresarial, sólo puede eliminar un Send existente.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="AboutSend" xml:space="preserve">
     <value>Acerca de Send</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="HideEmail" xml:space="preserve">
     <value>Oculte su dirección de correo electrónico a los destinatarios.</value>
   </data>
   <data name="SendOptionsPolicyInEffect" xml:space="preserve">
     <value>Una o más políticas de organización están afectando sus opciones del Send.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="SendFilePremiumRequired" xml:space="preserve">
     <value>Las cuentas gratuitas están restringidas a compartir texto solamente. Se requiere una membresía premium para usar archivos con Send.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="SendFileEmailVerificationRequired" xml:space="preserve">
     <value>Debe comprobar su correo electrónico para usar archivos con Send. Puede comprobar su correo electrónico en la caja fuerte web.</value>
-    <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
+    <comment>'Send' is a noun and the name of a feature called 'BlocKey Send'. It should not be translated.</comment>
   </data>
   <data name="PasswordPrompt" xml:space="preserve">
     <value>Volver a preguntar contraseña de BlocKey</value>
@@ -2315,7 +2315,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Enviar registros de fallos</value>
   </data>
   <data name="SubmitCrashLogsDescription" xml:space="preserve">
-    <value>Ayude a Bitwarden a mejorar la estabilidad de la aplicación mediante el envío de informes de error.</value>
+    <value>Ayude a BlocKey a mejorar la aplicación</value>
   </data>
   <data name="OptionsExpanded" xml:space="preserve">
     <value>Las opciones están expandidas, toque para colapsar.</value>
@@ -2559,7 +2559,7 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Revelación del servicio de accesibilidad</value>
   </data>
   <data name="AccessibilityDisclosureText" xml:space="preserve">
-    <value>Bitwarden utiliza el Servicio de Accesibilidad para buscar campos de inicio de sesión en aplicaciones y sitios web, establecer los identificadores de campo apropiados para introducir un nombre de usuario y contraseña cuando se encuentre una coincidencia para la aplicación o el sitio. No almacenamos ninguna de las informaciones presentadas por el servicio, tampoco intentamos controlar ningún elemento en pantalla más allá de la introducción de credenciales de texto.</value>
+    <value>BlocKey utiliza el Servicio de Accesibilidad para buscar campos de inicio de sesión en aplicaciones y sitios web, establecer los identificadores de campo apropiados para introducir un nombre de usuario y contraseña cuando se encuentre una coincidencia para la aplicación o el sitio. No almacenamos ninguna de las informaciones presentadas por el servicio, tampoco intentamos controlar ningún elemento en pantalla más allá de la introducción de credenciales de texto.</value>
   </data>
   <data name="Decline" xml:space="preserve">
     <value>Rechazar</value>
@@ -2839,7 +2839,7 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
   <data name="LoginApproved" xml:space="preserve">
     <value>Inicio de sesión aprobado</value>
   </data>
-  <data name="LogInWithDeviceMustBeSetUpInTheSettingsOfTheBitwardenAppNeedAnotherOption" xml:space="preserve">
+  <data name="LogInWithDeviceMustBeSetUpInTheSettingsOfTheBlocKeyAppNeedAnotherOption" xml:space="preserve">
     <value>El inicio de sesión con dispositivo debe estar configurado en los ajustes de la aplicación. ¿Necesita otra opción?</value>
   </data>
   <data name="LogInWithDevice" xml:space="preserve">

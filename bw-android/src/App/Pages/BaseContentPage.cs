@@ -44,7 +44,7 @@ namespace Bit.App.Pages
             await SaveActivityAsync();
         }
 
-        public bool DoOnce(Action action = null, int milliseconds = 1000)
+        public bool DoOnce(Action action = null, int milliseconds = 3000)
         {
             if (LastPageAction.HasValue && (DateTime.UtcNow - LastPageAction.Value).TotalMilliseconds < milliseconds)
             {

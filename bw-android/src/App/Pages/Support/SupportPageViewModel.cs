@@ -22,6 +22,7 @@ using Bit.Core.Utilities;
 using Xamarin.CommunityToolkit.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
+using Xamarin.Forms.Xaml;
 
 namespace Bit.App.Pages
 {
@@ -274,6 +275,11 @@ namespace Bit.App.Pages
         public void Exit()
         {
             _messagingService.Send("exit");
+        }
+
+        public void Icon_LongPressed(object sender, EventArgs e)
+        {
+            // Execute async delegates
         }
     }
 }

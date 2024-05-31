@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Bit.App.Controls.CipherViewCell"
     xmlns:controls="clr-namespace:Bit.App.Controls"
+    xmlns:behaviors="clr-namespace:Bit.App.Behaviors"
     xmlns:u="clr-namespace:Bit.App.Utilities"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:core="clr-namespace:Bit.Core;assembly=BitwardenCore"
@@ -111,16 +112,31 @@
             AutomationProperties.Name="{u:I18n Attachments}"
             AutomationId="CipherWithAttachmentsIcon" />
     </Grid>
+    <controls:IconButton 
+        StyleClass="list-row-button, list-row-button-platform"
+        ImageSource="expand.png"
+        Text=""
+        VerticalOptions="CenterAndExpand"
+        HorizontalOptions="EndAndExpand"
+        Grid.Row="0"
+        Grid.Column="1"
+        IsEnabled="False"
+        AutomationProperties.IsInAccessibleTree="True"
+        AutomationId="PressButton"/>
     <controls:MiButton
         Grid.Row="0"
         Grid.Column="2"
         Text="{Binding Source={x:Static core:BitwardenIcons.ViewCellMenu}}"
-        StyleClass="list-row-button, list-row-button-platform, btn-disabled"
+        StyleClass="list-row-button, list-row-button-platform"
         Clicked="MoreButton_Clicked"
         VerticalOptions="CenterAndExpand"
         HorizontalOptions="EndAndExpand"
         AutomationProperties.IsInAccessibleTree="True"
         AutomationProperties.Name="{u:I18n Options}"
-        AutomationId="CipherOptionsButton" />
-
+        AutomationId="CipherOptionsButton">
+        <Button.Behaviors>
+            <behaviors:LongPressBehavior LongPressed="MoreButton_Clicked"/>
+        </Button.Behaviors>
+    </controls:MiButton>
+    
 </controls:ExtendedGrid>

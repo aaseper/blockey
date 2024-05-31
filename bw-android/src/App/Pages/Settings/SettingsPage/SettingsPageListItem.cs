@@ -16,7 +16,11 @@ namespace Bit.App.Pages
         public TimeSpan? Time { get; set; }
         public bool UseFrame { get; set; }
         public Func<Task> ExecuteAsync { get; set; }
-
+        public Color LabelColor => Name == AppResources.SupportSecurityAnalysisCongratulation ?
+            ThemeManager.GetResourceColor("SuccessColor") :
+            SubLabel == AppResources.SupportSecurityAnalysisAlert ?
+            ThemeManager.GetResourceColor("DangerColor") :
+            ThemeManager.GetResourceColor("TextColor");
         public bool SubLabelTextEnabled => SubLabel == AppResources.On;
         public string LineBreakMode => SubLabel == null ? "TailTruncation" : "";
         public bool ShowSubLabel => SubLabel.Length != 0;

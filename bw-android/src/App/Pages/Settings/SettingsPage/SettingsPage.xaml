@@ -4,6 +4,7 @@
              x:Class="Bit.App.Pages.SettingsPage"
              xmlns:pages="clr-namespace:Bit.App.Pages"
              xmlns:controls="clr-namespace:Bit.App.Controls"
+             xmlns:effects="clr-namespace:Bit.App.Effects"
              xmlns:u="clr-namespace:Bit.App.Utilities"
              x:DataType="pages:SettingsPageViewModel"
              Title="{Binding PageTitle}">
@@ -114,13 +115,40 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <controls:ExtendedCollectionView
-        ItemsSource="{Binding GroupedItems}"
-        VerticalOptions="FillAndExpand"
-        ItemTemplate="{StaticResource listItemDataTemplateSelector}"
-        SelectionMode="Single"
-        SelectionChanged="RowSelected"
-        StyleClass="list, list-platform"
-        ExtraDataForLogging="Settings Page" />
+    
 
+    <AbsoluteLayout
+        x:Name="_absLayout"
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand">
+        <StackLayout
+            VerticalOptions="CenterAndExpand"
+            Padding="20, 0"
+            Spacing="5"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize">
+            <StackLayout
+                StyleClass="box-row">
+                <Button
+                    Image="swipe.png"
+                    Style="{StaticResource btn-fab}"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize"
+                    AutomationProperties.IsInAccessibleTree="True"
+                    AutomationId="SwipeIcon">
+                    <Button.Effects>
+                        <effects:FabShadowEffect />
+                    </Button.Effects>
+                </Button>
+            </StackLayout>
+        </StackLayout>
+        <controls:ExtendedCollectionView
+            ItemsSource="{Binding GroupedItems}"
+            VerticalOptions="FillAndExpand"
+            ItemTemplate="{StaticResource listItemDataTemplateSelector}"
+            SelectionMode="Single"
+            SelectionChanged="RowSelected"
+            StyleClass="list, list-platform"
+            ExtraDataForLogging="Settings Page" />
+    </AbsoluteLayout>
 </pages:BaseContentPage>

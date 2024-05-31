@@ -26,7 +26,6 @@ namespace Bit.App.Pages
             InitializeComponent();
             _vm = BindingContext as SupportPageViewModel;
             _vaultTimeoutService = ServiceContainer.Resolve<IVaultTimeoutService>("vaultTimeoutService");
-            _vm.StartRegisterAction = () => Device.BeginInvokeOnMainThread(async () => await StartRegisterAsync());
             ToolbarItems.Add(_lockItem);
         }
 
@@ -43,12 +42,6 @@ namespace Bit.App.Pages
                 return true;
             }
             return base.OnBackButtonPressed();
-        }
-
-        private async Task StartRegisterAsync()
-        {
-            await Navigation.PushModalAsync(new NavigationPage(new SecurityAnalysisPage()));
-
         }
 
         private void RowSelected(object sender, SelectionChangedEventArgs e)
@@ -68,6 +61,11 @@ namespace Bit.App.Pages
         private void Exit_Clicked(object sender, EventArgs e)
         {
             _vm.Exit();
+        }
+
+        private void Icon_LongPressed(object sender, EventArgs e)
+        {
+            _vm.Icon_LongPressed(sender, e);
         }
     }
 }

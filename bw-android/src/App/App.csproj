@@ -77,9 +77,6 @@
     <Compile Update="Pages\Settings\SyncPage.xaml.cs">
       <DependentUpon>SyncPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Pages\Support\SecurityAnalysisPage.xaml.cs">
-      <DependentUpon>SecurityAnalysisPage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Pages\Support\SupportPage.xaml.cs">
       <DependentUpon>SupportPage.xaml</DependentUpon>
     </Compile>
@@ -135,7 +132,6 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Behaviors\" />
     <Folder Include="Lists\" />
     <Folder Include="Lists\ItemLayouts\" />
     <Folder Include="Lists\DataTemplateSelectors\" />

@@ -60,8 +60,8 @@
     <Color x:Key="ButtonTextColorDisabled">#555555</Color>
     <Color x:Key="ButtonTextColorOpacity">#000032</Color>
 
-    <Color x:Key="FabColor">#000032</Color>
-    <Color x:Key="FabPressedColor">#7682E0</Color>
+    <Color x:Key="FabColor">#555555</Color>
+    <Color x:Key="FabPressedColor">#555555</Color>
 
     <Color x:Key="TabBarBackgroundColor">#F8F8F8</Color>
     <Color x:Key="TabBarItemColor">#555555</Color>

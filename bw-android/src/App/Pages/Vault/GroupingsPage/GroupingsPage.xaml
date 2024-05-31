@@ -198,14 +198,14 @@
                     HorizontalTextAlignment="Center"
                     FontSize="Small"
                     StyleClass="box-sub-label"
-                    AutomationId="NoDataDisplayed"/>
+                    AutomationId="AddElementLabel"/>
                 <Button 
                     x:Name="_fab"
                     Text="{u:I18n AddItem}"
                     StyleClass="btn-primary"
                     Clicked="AddButton_Clicked"
                     AutomationProperties.IsInAccessibleTree="True"
-                    AutomationId="AddElementLabel"/>
+                    AutomationId="AddElementButton"/>
             </StackLayout>
         </StackLayout>
 
