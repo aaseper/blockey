@@ -399,7 +399,7 @@
     <comment>Label for a username.</comment>
   </data>
   <data name="ValidationFieldRequired" xml:space="preserve">
-    <value>No ha puesto nada en el campo "{0}". Si no pone su constraseña, no podrá inciar sesión. Por favor, rellénelo para poder continuar.</value>
+    <value>No ha puesto nada en el campo "{0}". Por favor, rellénelo para continuar.</value>
     <comment>Validation message for when a form field is left blank and is required to be entered.</comment>
   </data>
   <data name="ValueHasBeenCopied" xml:space="preserve">
@@ -508,16 +508,16 @@
     <value>Introduzca el correo electrónico de su cuenta para recibir la pista de su contraseña de BlocKey.</value>
   </data>
   <data name="ErrorBadRequestByEmail" xml:space="preserve">
-    <value>El campo correo electrónico es incorrecto. Revise la ortografía, y que contenga el arroba (@) y algo después.</value>
+    <value>El campo correo electrónico es incorrecto. Revise la ortografía, que contenga la arroba (@) y texto después.</value>
   </data>
   <data name="ErrorBadRequestByEmailAndPass" xml:space="preserve">
-    <value>Correo electrónico o contraseña de BlocKey incorrecta.\e0A\e0ARevise el correo electrónico y su ortografía, por favor. Si está bien escrita, la contraseña es incorrecta.\e0A\e0ASi no recuerda la contraseña, recuerde qué puso en ella. Por ejemplo, su fecha de nacimiento, su mascota o su colegio. </value>
+    <value>Correo electrónico o contraseña incorrecta.\e0A\e0ARevise el correo electrónico. Si el correo está bien, entonces la contraseña es incorrecta.\e0A\e0ASi no piense la contraseña, recuerde qué puso en ella. Por ejemplo, su fecha de nacimiento, su mascota o su colegio.</value>
   </data>
   <data name="ErrorBadEmailFormat" xml:space="preserve">
-    <value>"La dirección de correo electrónico es errónea.\e0A\e0ARevise que después del arroba (@) haya dominio válido, como "gmail.com". Si no, pruebe otro correo, por favor."</value>
+    <value>La dirección de correo electrónico es errónea.\e0A\e0ARevise que después del arroba (@) haya un nombre válido, como "gmail.com". Si no, pruebe otro.</value>
   </data>
   <data name="ErrorUnhandled" xml:space="preserve">
-    <value>Ha ocurrido un error inesperado. Contacte con el soporte o la organización para resolver este problema</value>
+    <value>Ha ocurrido un error. Escriba un correo a "a.asensio.2019@alumnos.urjc.es" para resolver este problema.</value>
   </data>
   <data name="ExntesionReenable" xml:space="preserve">
     <value>Reactivar Extension de Aplicación</value>
@@ -1031,7 +1031,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Las URLs del entorno han sido guardadas.</value>
   </data>
   <data name="FormattedIncorrectly" xml:space="preserve">
-    <value>{0} no está formateado correctamente.</value>
+    <value>{0} está mal escrito.</value>
     <comment>Validation error when something is not formatted correctly, such as a URL or email address.</comment>
   </data>
   <data name="IdentityUrl" xml:space="preserve">
@@ -1445,7 +1445,7 @@ El escaneo se realizará automáticamente.</value>
     <value>Comprobar si la contraseña ha sido comprometida.</value>
   </data>
   <data name="PasswordExposed" xml:space="preserve">
-    <value>Esta contraseña es insegura porque otras personas la han descubierto {0} veces(s). Cámbiela por una contraseña que no conozca nadie para que sea más segura.</value>
+    <value>Esta contraseña es insegura porque otras personas la han descubierto {0} veces. Cámbiela por una contraseña que no conozca nadie para que sea segura.</value>
   </data>
   <data name="PasswordSafe" xml:space="preserve">
     <value>Esta contraseña es segura porque no la conoce nadie.</value>
@@ -2676,7 +2676,7 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Contraseña de BlocKey débil y conocida</value>
   </data>
   <data name="WeakPasswordIdentifiedAndFoundInADataBreachAlertDescription" xml:space="preserve">
-    <value>Contraseña insegura usada o conocida por otros. Utilice una contraseña que no conozca nadie para proteger su cuenta. ¿Está seguro de que desea utilizar una contraseña insegura?</value>
+    <value>Contraseña insegura usada o conocida por otros. Utilice una contraseña que no conozca nadie. ¿Está seguro de utilizar una contraseña insegura?</value>
   </data>
   <data name="OrganizationSsoIdentifierRequired" xml:space="preserve">
     <value>Se requiere un inicio de sesión único de la organización.</value>
@@ -2865,25 +2865,25 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Contraseña insegura. {0}</value>
   </data>
   <data name="SupportSecurityAnalysisVeryWeakPasswordText" xml:space="preserve">
-    <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AEsta contraseña es insegura porque tiene 7 o menos caracteres, y puede ser adivinada en segundos o minutos por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
+    <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AEsta contraseña es insegura porque tiene 7 caracteres o menos, y puede ser adivinada en segundos o minutos por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisWeakPassword" xml:space="preserve">
     <value>Contraseña insegura. {0}</value>
   </data>
   <data name="SupportSecurityAnalysisWeakPasswordText" xml:space="preserve">
-    <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es insegura porque tiene 10 o menos caracteres, y puede ser adivinada en horas o días por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
+    <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es insegura porque tiene 10 caracteres o menos, y puede ser adivinada en horas o días por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisReusedPassword" xml:space="preserve">
     <value>Contraseña reutilizada. {0}</value>
   </data>
   <data name="SupportSecurityAnalysisReusedPasswordText" xml:space="preserve">
-    <value>Su contraseña con “Título” {0} está repetida más de una vez.\e0A\e0AUna contraseña repetida en muchas cuentas puede dar acceso no autorizado a sus otras cuentas. Pruebe a generar una contraseña diferente con 14 o más caracteres.</value>
+    <value>Su contraseña con “Título” {0} está repetida en más de un elemento tipo sitio web.\e0A\e0AUna contraseña repetida en muchas cuentas puede dar acceso no autorizado a sus otras cuentas. Pruebe a generar una contraseña diferente con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisProblemSolveAndSupport" xml:space="preserve">
     <value>Solución de problemas y soporte</value>
   </data>
   <data name="SupportSecurityAnalysisProblemSolveAndSupportText" xml:space="preserve">
-    <value>Si no tiene ninguna alerta sobre sus contraseñas, es porque no tiene ninguna contraseña guardada o todas sus contraseñas son seguras.\e0A\e0ASi por otro lado hay una alerta de contraseña débil o reutilizada, sería bueno que cambiara la contraseña que indica la alerta, desde abajo a la izquierda en la pestaña “Mi caja fuerte”.\e0A\e0ASi no comprende por qué tiene una alerta sobre su o sus contraseñas, lea a continuación. BlocKey clasifica una contraseña como débil o muy débil si es fácil de adivinar por los atacantes. Además, si usa la misma contraseña en más de una página web, será más fácil de adivinar por los atacantes también.\e0A\e0AEl “Análisis de seguridad” le ayuda a mejorar la seguridad de sus contraseñas.\e0A\e0ASi sigue teniendo dudas, puede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
+    <value>Si no tiene ninguna alerta sobre sus contraseñas, es porque no tiene ninguna contraseña guardada o todas sus contraseñas son seguras.\e0A\e0ASi hay una alerta de contraseña débil o reutilizada, debería cambiar la contraseña que indica la alerta, desde abajo a la izquierda en la pestaña “Mi caja fuerte”.\e0A\e0ABlocKey clasifica una contraseña como débil o muy débil si es fácil de adivinar. Además, si usa la misma contraseña en más de una página web, será más fácil de adivinar por los atacantes también.\e0A\e0AEl “Análisis de seguridad” le ayuda a mejorar la seguridad de sus contraseñas.\e0A\e0ASi sigue teniendo dudas, puede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
   </data>
   <data name="SupportYourAccount" xml:space="preserve">
     <value>Su cuenta</value>
@@ -2892,25 +2892,25 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>Crear una cuenta</value>
   </data>
   <data name="SupportYourAccountCreateAccountText" xml:space="preserve">
-    <value>1. Inicie la aplicación BlocKey desde su dispositivo.\e0A\e0A2. Abajo en el medio, pulse el botón “Crear una cuenta”.\e0A\e0A3. Complete los campos para crear una cuenta, en orden de aparición.\e0A\e0A    a. Un “Correo electrónico” para iniciar sesión con él.\e0A\e0A    b. Una “Contraseña de BlocKey” para acceder con el correo. Cuide de no perderla, porque no se puede recuperar.\e0A\e0A    c. Vuelva a escribir la “Contraseña de BlocKey” debajo.\e0A\e0A    d. Opcionalmente, agregue una “Pista de contraseña de BlocKey”, por si no se acuerda en un futuro de ella.\e0A\e0A    e. Active la palanca de “Términos y condiciones del servicio, Política de privacidad”.\e0A\e0A    f. Seleccione arriba a la derecha “Enviar”. ¡Enhorabuena! Ahora podrá iniciar sesión con su cuenta.</value>
+    <value>1. Dirígase a la pantalla de inicio.\e0A\e0A2. Abajo en el medio, pulse el botón “Crear una cuenta”.\e0A\e0A3. Complete los campos para crear una cuenta, en orden de aparición.\e0A\e0A    a. Un “Correo electrónico” para iniciar sesión con él.\e0A\e0A    b. Una “Contraseña de BlocKey” para acceder a la aplicación. No la pierda, porque no se puede recuperar.\e0A\e0A    c. Vuelva a escribir la “Contraseña de BlocKey” debajo.\e0A\e0A    d. Opcionalmente, agregue una “Pista de contraseña de BlocKey”, por si no se acuerda en un futuro de ella.\e0A\e0A    e. Acepte los “Términos y condiciones, Política de privacidad”.\e0A\e0A    f. Seleccione al final abajo o arriba a la derecha “Enviar”. ¡Enhorabuena! Ahora podrá iniciar sesión con su cuenta.</value>
   </data>
   <data name="SupportYourAccountManageAccount" xml:space="preserve">
     <value>Gestionar una cuenta</value>
   </data>
   <data name="SupportYourAccountManageAccountText" xml:space="preserve">
-    <value>Una vez en BlocKey con la sesión iniciada, abajo a la izquierda en la pestaña “Mi caja fuerte”, pulse arriba a la derecha un icono de su perfil. Desde ahí, podrá añadir más cuentas, si así lo desea, para poder iniciar sesión rápidamente entre ellas.\e0A\e0AArriba a la derecha, toque los tres puntos y verá tres opciones. Podrá “Bloquear” la cuenta, y entonces le pedirá la contraseña de BlocKey otra vez.\e0A\e0AAbajo a la izquierda, en la pestaña “Ajustes”, en la sección “Cuenta” verá tres opciones. “Cambiar contraseña de BlocKey” le llevará a una web donde iniciará sesión y podrá cambiar la contraseña. “Cerrar sesión” cerrará su sesión de BlocKey completamente.\e0A\e0AExisten múltiples opciones de configuración en la aplicación, así que puede explorar con tranquilidad los ajustes.</value>
+    <value>Una vez en BlocKey con la sesión iniciada, abajo a la izquierda en la pestaña “Mi caja fuerte”, pulse arriba a la derecha en el icono de su perfil. Desde ahí, podrá añadir más cuentas, si así lo desea, para poder iniciar sesión rápidamente entre ellas.\e0A\e0AArriba a la derecha, toque los tres puntos y verá la opción de “Bloquear”. Podrá “Bloquear” la cuenta, y entonces le pedirá la contraseña de BlocKey otra vez.\e0A\e0AAbajo a la izquierda, en la pestaña “Ajustes”, en la sección “Cuenta” verá dos opciones: “Cambiar contraseña de BlocKey” le llevará a una web donde iniciará sesión y podrá cambiar la contraseña, y “Cerrar sesión” cerrará su sesión de BlocKey completamente.\e0A\e0AExisten múltiples opciones de configuración en la aplicación, así que puede explorar con tranquilidad los ajustes.</value>
   </data>
   <data name="SupportYourAccountLogIn" xml:space="preserve">
     <value>Iniciar sesión</value>
   </data>
   <data name="SupportYourAccountLogInText" xml:space="preserve">
-    <value>1. Inicie la aplicación BlocKey desde su dispositivo.\e0A\e0A2. En el centro, en el campo “Correo electrónico”, escriba el correo electrónico con el que creó su cuenta.\e0A\e0A3. Arriba, en “Contraseña de BlocKey” escriba la contraseña de su cuenta.\e0A\e0A4. Después, pulse debajo el botón “Iniciar sesión”. Si ha realizado correctamente los pasos, ¡bienvenido a BlocKey!</value>
+    <value>1. Dirígase a la pantalla de inicio.\e0A\e0A2. En el campo “Correo electrónico”, escriba el correo electrónico con el que creó su cuenta.\e0A\e0A3. Arriba, en “Contraseña de BlocKey” escriba la contraseña de su cuenta.\e0A\e0A4. Después, pulse debajo en el botón “Iniciar sesión”</value>
   </data>
   <data name="SupportYourAccountDeleteAccount" xml:space="preserve">
     <value>Eliminar una cuenta</value>
   </data>
   <data name="SupportYourAccountDeleteAccountText" xml:space="preserve">
-    <value>1. Inicie sesión con su cuenta, si no lo ha hecho.\e0A\e0A2. Navegue abajo a la derecha, a la pestaña “Ajustes”.\e0A\e0A3. Desplácese abajo del todo, y pulse “Eliminar cuenta”.\e0A\e0A4. En el centro, pulse el botón rojo “Eliminar cuenta”.\e0A\e0A5. En “Confirmación de contraseña de BlocKey”, escriba la contraseña de su cuenta.\e0A\e0A6. Si coincide la contraseña, al pulsar “Enviar” habrá eliminado su cuenta de BlocKey y todos sus datos asociados.</value>
+    <value>\e0A\e0A1. Navegue abajo a la derecha, a la pestaña “Ajustes”.\e0A\e0A2. Desplácese abajo del todo, y pulse “Eliminar cuenta”.\e0A\e0A3. De nuevo, en el centro pulse en el botón rojo “Eliminar cuenta” para confirmar.\e0A\e0A4. En “Confirmación de contraseña de BlocKey”, escriba la contraseña de BlocKey.</value>
   </data>
   <data name="SupportYourSavedPasswords" xml:space="preserve">
     <value>Sus contraseñas guardadas</value>
@@ -2919,37 +2919,37 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>¿Qué es una contraseña guardada?</value>
   </data>
   <data name="SupportYourSavedPasswordsWhatIsText" xml:space="preserve">
-    <value>Una contraseña guardada es un elemento que contiene la información de inicio de sesión de su cuenta en alguna página web. Por ejemplo, mi usuario, contraseña y el enlace de Amazon que guarde, formarán parte de un elemento seguro.\e0A\e0AEstas contraseñas guardadas o elementos estarán protegidos de los atacantes, y podrá verlas y editarlas con facilidad desde la aplicación.</value>
+    <value>Una contraseña guardada es un elemento que contiene la información de inicio de sesión de su cuenta en alguna página web. Por ejemplo, mi usuario, contraseña y el enlace de Amazon que guardé, formarán parte de un elemento seguro.\e0A\e0AEstas contraseñas guardadas o elementos estarán protegidos de los atacantes, y podrá verlas y editarlas con facilidad desde la aplicación.</value>
   </data>
   <data name="SupportYourSavedPasswordsSavePassword" xml:space="preserve">
     <value>Guardar una contraseña</value>
   </data>
   <data name="SupportYourSavedPasswordsSavePasswordText" xml:space="preserve">
-    <value>1. Navegue abajo a la izquierda, a la pestaña “Mi Caja Fuerte”.\e0A\e0A2. Pulse abajo en el centro, el icono + “Agregar”.\e0A\e0A3. Elija qué tipo de elemento crear (por ejemplo, “Sitio web”).\e0A\e0A4. Ingrese la información básica para este inicio de sesión.\e0A\e0A    a. Un “Título” para ayudarle a reconocerlo fácilmente (por ejemplo, “Cuenta de Twitter”).\e0A\e0A    b. Su “Nombre” de usuario.\e0A\e0A    c. Su actual “Contraseña” (se podrá reemplazar por una más fuerte después).\e0A\e0A    d. El “Enlace” donde inicia sesión en la cuenta (por ejemplo, “https://twitter.com/login”).\e0A\e0A5. Opcionalmente, seleccione una carpeta del menú desplegable “Carpeta”.\e0A\e0A6. ¡Buen trabajo! Seleccione arriba a la derecha “Guardar” para continuar.</value>
+    <value>1. Pulse en la pestaña “Mi Caja Fuerte” (abajo a la izquierda).\e0A\e0A2. Pulse abajo en el centro, el icono + “Agregar”.\e0A\e0A3. Elija qué tipo de elemento crear (por ejemplo, “Sitio web”).\e0A\e0A4. Ingrese la información básica:\e0A\e0A    a. Un “Título” para ayudarle a reconocerlo fácilmente (por ejemplo, “Cuenta de Instagram”).\e0A\e0A    b. Su “Nombre” de usuario.\e0A\e0A    c. Su actual “Contraseña” (se podrá reemplazar por una más fuerte después).\e0A\e0A    d. El “Enlace” donde inicia sesión en la cuenta (por ejemplo, “https://instagram.com/accounts/login/”).\e0A\e0A5. Seleccione al final abajo o arriba a la derecha “Guardar” para continuar.</value>
   </data>
   <data name="SupportYourSavedPasswordsEditPassword" xml:space="preserve">
     <value>Editar una contraseña</value>
   </data>
   <data name="SupportYourSavedPasswordsEditPasswordText" xml:space="preserve">
-    <value>1. Navegue abajo a la izquierda, a la pestaña “Mi Caja Fuerte”.\e0A\e0A2. Pulse la contraseña guardada que desea editar.\e0A\e0A3. Toque el icono del lápiz “Editar” para editar.\e0A\e0A4. A la derecha del campo “Contraseña”, seleccione el icono aleatorio “Generar”. Puede ajustar la contraseña como desee.\e0A\e0A5. Después, arriba a la derecha, pulse “Seleccionar” para guardarla.\e0A\e0A6. Arriba a la derecha, pulse “Guardar”. ¡Felicidades! ¡Su inicio de sesión ahora es más seguro!</value>
+    <value>1. Pulse en la pestaña “Mi Caja Fuerte” (abajo a la izquierda).\e0A\e0A2. Pulse la contraseña que desea editar.\e0A\e0A3. A la derecha del campo “Contraseña”, seleccione el icono aleatorio “Generar”. Puede ajustar la contraseña como desee.\e0A\e0A4. Después, al final abajo o arriba a la derecha, pulse “Seleccionar” para guardarla.\e0A\e0A5. Arriba a la derecha, pulse “Guardar”.</value>
   </data>
   <data name="SupportYourSavedPasswordsGenerateSecurePassword" xml:space="preserve">
     <value>Generar una contraseña segura</value>
   </data>
   <data name="SupportYourSavedPasswordsGenerateSecurePasswordText" xml:space="preserve">
-    <value>1. Navegue abaja a la izquierda, a la pestaña “Generador”.\e0A\e0A2. Aumente la “Longitud” de la contraseña con el botón “+” hasta 20 unidades, que es un buen número.\e0A\e0A3. Aumente el número “Mínimo de caracteres” con el botón “+” hasta 3 o más. ¡Genial! Ya puede generar contraseñas más seguras.</value>
+    <value>1. Pulse en la pestaña “Generador” (abajo a la izquierda).\e0A\e0A2. Aumente la “Longitud” de la contraseña con el botón “+” hasta 20 unidades.\e0A\e0A3. Aumente el número “Mínimo de caracteres” con el botón “+” hasta 3 o más.</value>
   </data>
   <data name="SupportYourSavedPasswordsDeletePassword" xml:space="preserve">
     <value>Eliminar una contraseña</value>
   </data>
   <data name="SupportYourSavedPasswordsDeletePasswordText" xml:space="preserve">
-    <value>1. Navegue abajo a la izquierda, a la pestaña “Mi Caja Fuerte”.\e0A\e0A2. Pulse la contraseña guardada que desea eliminar.\e0A\e0A3. Arriba a la derecha, toque los tres puntos y verá cuatro opciones.\e0A\e0A4. Pulse la opción “Eliminar”, y cuando vea el mensaje “El elemento ha sido enviado a la papelera” habrá eliminado la contraseña.</value>
+    <value>1. Pulse en la pestaña “Mi Caja Fuerte” (abajo a la izquierda).\e0A\e0A2. Pulse la contraseña que desea eliminar.\e0A\e0A3. Arriba a la derecha, toque los tres puntos y verá la opción" “Eliminar”.\e0A\e0A4. Pulse la opción “Eliminar”, y cuando vea el mensaje la contraseña se habrá eliminado.</value>
   </data>
   <data name="SupportYourSavedPasswordsPasswordProblemSolve" xml:space="preserve">
     <value>Solución de problemas con contraseñas</value>
   </data>
   <data name="SupportYourSavedPasswordsPasswordProblemSolveText" xml:space="preserve">
-    <value>Si alguna contraseña guardada no tiene un enlace a una página real, es probable que cause problemas.\e0A\e0ACompruebe que los campos de sus contraseñas estén bien escritos y compruébelos al guardarlas.\e0A\e0ASi no carga alguna contraseña al pulsarle, pruebe a reiniciar la aplicación.\e0A\e0ASi sigue teniendo dudas, puede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
+    <value>Compruebe que los campos de sus contraseñas estén bien escritos y compruébelos al guardarlas.\e0A\e0ASi no carga alguna contraseña al pulsarle, pruebe a reiniciar la aplicación.\e0A\e0APuede contactar con el equipo de soporte a través de la sección “Acerca de BlocKey” abajo, en la opción “Cómo contactar con nosotros”.</value>
   </data>
   <data name="SupportFAQ" xml:space="preserve">
     <value>Preguntas más frecuentes</value>
