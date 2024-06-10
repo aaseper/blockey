@@ -2862,19 +2862,19 @@ seleccione Agregar clave de un solo uso para almacenar la clave de forma segura<
     <value>¡Alerta!</value>
   </data>
   <data name="SupportSecurityAnalysisVeryWeakPassword" xml:space="preserve">
-    <value>Contraseña insegura. {0}</value>
+    <value>Contraseña insegura</value>
   </data>
   <data name="SupportSecurityAnalysisVeryWeakPasswordText" xml:space="preserve">
     <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AEsta contraseña es insegura porque tiene 7 caracteres o menos, y puede ser adivinada en segundos o minutos por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisWeakPassword" xml:space="preserve">
-    <value>Contraseña insegura. {0}</value>
+    <value>Contraseña insegura</value>
   </data>
   <data name="SupportSecurityAnalysisWeakPasswordText" xml:space="preserve">
     <value>Su contraseña con “Título” {0} es insegura, debería cambiarla cuanto antes.\e0A\e0AUna contraseña es insegura porque tiene 10 caracteres o menos, y puede ser adivinada en horas o días por un atacante. Pruebe a generar una nueva contraseña con 14 o más caracteres.</value>
   </data>
   <data name="SupportSecurityAnalysisReusedPassword" xml:space="preserve">
-    <value>Contraseña reutilizada. {0}</value>
+    <value>Contraseña reutilizada</value>
   </data>
   <data name="SupportSecurityAnalysisReusedPasswordText" xml:space="preserve">
     <value>Su contraseña con “Título” {0} está repetida en más de un elemento tipo sitio web.\e0A\e0AUna contraseña repetida en muchas cuentas puede dar acceso no autorizado a sus otras cuentas. Pruebe a generar una contraseña diferente con 14 o más caracteres.</value>
