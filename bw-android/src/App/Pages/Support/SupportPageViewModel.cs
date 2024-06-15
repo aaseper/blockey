@@ -72,7 +72,6 @@ namespace Bit.App.Pages
             var yourAccountItems = new List<SettingsPageListItem>();
             var yourPasswordsItems = new List<SettingsPageListItem>();
             var faqItems = new List<SettingsPageListItem>();
-            var aboutUsItems = new List<SettingsPageListItem>();
             
             IList<CipherView> veryWeakCiphers = new List<CipherView>();
             IList<CipherView> weakCiphers = new List<CipherView>();
@@ -207,17 +206,10 @@ namespace Bit.App.Pages
             });
             faqItems.Add(new SettingsPageListItem
             {
-                Name = AppResources.SupportFAQMissingPassword,
-                ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportFAQMissingPassword, AppResources.SupportFAQMissingPasswordText)
-            });
-
-            /* About Us */
-            aboutUsItems.Add(new SettingsPageListItem
-            {
                 Name = AppResources.SupportAboutBlocKeyWhy,
                 ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportAboutBlocKeyWhy, AppResources.SupportAboutBlocKeyWhyText)
             });
-            aboutUsItems.Add(new SettingsPageListItem
+            faqItems.Add(new SettingsPageListItem
             {
                 Name = AppResources.SupportAboutBlocKeyContactUs,
                 ExecuteAsync = () => OpenExplanationPopUp(AppResources.SupportAboutBlocKeyContactUs, AppResources.SupportAboutBlocKeyContactUsText)
@@ -229,7 +221,6 @@ namespace Bit.App.Pages
                 new SettingsPageListGroup(yourAccountItems, AppResources.SupportYourAccount, false, false),
                 new SettingsPageListGroup(yourPasswordsItems, AppResources.SupportYourSavedPasswords, false, false),
                 new SettingsPageListGroup(faqItems, AppResources.SupportFAQ, false, false),
-                new SettingsPageListGroup(aboutUsItems, AppResources.SupportAboutBlocKey, false, false)
             };
 
             var items = new List<ISettingsPageListItem>();
