@@ -151,7 +151,7 @@ Debido a que el desarrollo está centrado en Android, se han descartado los proy
 A continuación, se muestran los paquetes, librerías o extensiones NuGet que utiliza cada proyecto, junto a la versión de instalación.
 
 | Extensión NuGet | Proyecto | Versión |
-| ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | Google.Apis.AndroidPublisher.v3 | store\google\Publisher | 1.64.0.3240 |
 | Xamarin.GooglePlayServices.SafetyNet | src\Android\Android.csproj | 118.0.1.5 |
 | Xamarin.Google.Dagger | src\Android\Android.csproj | 2.46.1.2 |
