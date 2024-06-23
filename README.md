@@ -8,6 +8,7 @@
 4. **[Instrucciones de despliegue](#4-Instrucciones-de-despliegue)**
     1. **[Tecnologías](#41-Tecnologías)**
 	2. **[Despliegue](#42-Despliegue)**
+	3. **[Servidor](#43-Servidor)**
 5. **[Contribuir](#5-Contribuir)**
 
 ---
@@ -201,9 +202,90 @@ Por último, hay que distribuir el archivo, o lo que es lo mismo, empaquetarlo y
 
 ![Archive 2](assets/422-archive.png)
 
-Con todo, se ha generado la aplicación a partir de los pasos anteriormente descritos.
+Con todo, se ha generado la aplicación a partir de los pasos anteriormente descritos.
 
 Todas las versiones de la aplicación están publicadas junto al binario BlocKey.(ver).Installer.arm.apk, por lo que se puede descargarse y usarse directamente la aplicación.
+
+### 4.3 Servidor
+
+La aplicación móvil necesita de una API REST, un servicio web que se basa en el protocolo http, como servicio para almacenar los elementos y usuarios de forma remota.
+
+Bitwarden en su **[web](https://bitwarden.com/help/install-on-premise-manual/)** publica los requerimientos e instrucciones de despliegue de su servidor en Linux y Windows.
+
+En este caso, las características de la máquina de desarrollo para el despliegue son las siguientes.
+
+| OS | Versión |
+| ----------- | ----------- |
+| OpenSUSE Leap | 15.5 x86_64 |
+| Host Hyper-V UEFI  | Release v4. |
+| Kernel 5.14.21 | 150500.55.31-default |
+| Package Management System | rpm y zypper |
+
+Docker se empleó como tecnología de despliegue de contenedores, ya que es la primera recomendación de despliegue de Bitwarden.
+
+| Tecnología | Versión |
+| ----------- | ----------- |
+| Docker | 24.0.5-ce |
+| Docker Compose | 2.20.3 |
+
+Con la máquina preparada, hay que ejecutar secuencialmente estos pasos.
+
+#### 4.3.1 Buenas prácticas (opcional)
+
+Crear un usuario dedicado al servicio, tal y como la **[documentación de docker](https://docs.docker.com/engine/install/linux-postinstall/)** recomienda para garantizar el principio de mínimo privilegio.
+```
+adduser bitwarden
+passwd bitwarden
+groupadd docker
+usermod -aG docker bitwarden
+mkdir /opt/bitwarden
+chmod -R 700 /opt/bitwarden
+chown -R bitwarden:bitwarden /opt/bitwarden
+```
+
+Instalar un firewall por software, y abrir los puertos http y https.
+```
+apt install ufw
+ufw allow 8080
+ufw allow 8443
+systemctl restart ufw
+```
+
+#### 4.3.2 Instalación
+
+Primero hay que descargar desde la API de Bitwarden el ejecutable y darle permisos de ejecución. Después, se lanza el ejecutable de instalación.
+```
+curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
+~/home/bitwarden/bitwarden.sh install
+```
+
+Durante la instalación, hay que escoger las siguientes opciones. El *id* y la *key* se pueden obtener desde **[aquí](https://bitwarden.com/host/)**, mientras que la IP se debe corresponder con la de la máquina de desarrollo.
+```
+(!) domain name: 192.168.*.*
+(!) free SSL: n
+(!) id: XXX
+(!) key: YYY
+(!) region: EU
+(!) SSL: n
+(!) self-signed: y
+```
+
+Antes de iniciar el servidor, hay que cambiar las siguientes variables de entorno. *me@gmail.com* es el correo que envía los códigos de verificación, si se encuentra disponible por el proveedor de correo.
+```
+nano ~/home/bitwarden/data/env/global*
+globalSettings__mail__replyToEmail=me@gmail.com
+globalSettings__mail__smtp__host=smtp.gmail.com
+globalSettings__mail__smtp__username=me@gmail.com
+globalSettings__mail__smtp__password=password
+adminSettings__admins=me@gmail.com
+```
+
+Por último, hay que reiniciar el servicio para aplicar los cambios.
+```
+./bitwarden.sh restart
+```
+
+El servidor se encuentra desplegado y listo para atender peticiones desde la IP de la máquina de desarrollo.
 
 ## 5 Contribuir
 
