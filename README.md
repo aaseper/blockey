@@ -29,9 +29,7 @@ Trabajo de Fin de Grado de Diseño y Desarrollo de Videojuegos
 
 Autor: Alejandro Asensio Pérez
 
-Tutor: Estefanía Martín Barroso
-
-Cotutor: Isaac Lozano Osorio
+Tutores: Estefanía Martín Barroso, Isaac Lozano Osorio
 
 ## 2 Descripción del proyecto
 
